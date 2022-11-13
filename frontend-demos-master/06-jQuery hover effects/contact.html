@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Page</title>
+<style type="text/css">
+	img {
+		border: none;
+	}
+	#content {
+		position: relative;
+		width: 954px;
+	}
+	#content a {
+		/* IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	  /* IE 5-7 */
+	  filter: alpha(opacity=0);
+	
+	  /* Netscape */
+	  -moz-opacity: 0;
+	
+	  /* Safari 1.x */
+	  -khtml-opacity: 0;
+	
+	  /* Good browsers */
+	  opacity: 0;
+	}
+	#address-book-link {
+		position: absolute;
+		top: 105px;
+		left: 468px;
+	}
+	#contact-form-link {
+		position: absolute;
+		top: 291px;
+		left: 197px;
+	}
+	#mailto-link {
+		position: absolute;
+		top: 276px;
+		left: 316px;
+	}
+	#call-link {
+		position: absolute;
+		top: 190px;
+		left: 731px;
+	}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+	$(function() {
+		 //ipad and iphone fix
+        if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+
+			$("#content > a").click(function() {
+				var $link = $(this)
+				if($link.css("opacity")>0.2){$link.css("opacity",0);return true;}
+				$(this).stop(true,true);
+				$link.animate({"opacity":1},1000);
+				return false;
+			});
+        } else {
+		$("#content > a").hover(
+			function(){
+				$(this).animate({"opacity":1},{duration:1000});
+			},
+			function(){
+				$(this).stop(true,true);
+				$(this).css("opacity",0);
+			}
+		)
+		}
+	})
+</script>
+</head>
+
+<body>
+
+	<div id="content">
+		<a href="http://www.lokitimestwo.com/LokiLokiMarketingByDesign.vcf" target="_blank" id="address-book-link"><img src="images/address-book-text.png" width="69" height="83" alt="" /></a>
+		<a href="http://www.lokitimestwo.com/contact-form" target="_blank" id="contact-form-link"><img src="images/contact-form-text.png" width="75" height="114" alt="" /></a>
+		<a href="mailto:info@lokittimestwo.com" id="mailto-link"><img src="images/mailto-text.png" width="303" height="200" alt="" /></a>
+		<a href="#" id="call-link"><img src="images/call-text.png" width="166" height="162" alt="" /></a>
+		<img src="images/contact-bg.jpg" width="954" height="523" alt="" />
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="../core/css/evolved_core.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+	$(function() {
+		$("#account-cart > a").mouseover(function(e) {
+			$("#account-cart > a").removeClass("active");
+			$(this).addClass("active");
+			$("#cart").css("display", "block");
+		});
+		$("#account-cart > a").mouseleave(function(e) {
+			$(this).removeClass("active");
+			$("#cart").css("display", "none");
+		});
+		$("#cart").mouseleave(function(e) {
+			$("#account-cart > a:nth-child(2)").removeClass("active");
+			$("#cart").css("display", "none");
+		});
+		$("#cart").mouseover(function(e) {
+			$("#account-cart > a:nth-child(2)").addClass("active");
+			$("#cart").css("display", "block");
+		});
+	})
+	
+</script>
+</head>
+<body id="home">
+	<div id="header-wrap">
+		<div id="header" class="page clearfix">
+			<a href="#"><img src="images/logo.png" width="398" height="78" alt="" /></a>
+			<div id="telephone">
+				<span class="item">telephone australia</span>
+				<span class="value">02 6680 7007</span>
+			</div>
+			<div id="account-cart" class="clearfix">
+				<a href="#">account</a>
+				<a href="#" class="cart">cart</a>
+				<div id="cart">
+					<ul>
+						<li class="clearfix">
+							<a href="#"><img src="images/dummy/product_1.jpg" width="64" height="64" alt="" /></a>
+							<a class="product-name" href="#">anenome</a>
+							<span class="price">$139.95</span>
+						</li>
+						<li class="clearfix">
+							<img src="images/dummy/product_1.jpg" width="64" height="64" alt="" />
+							<a class="product-name" href="#">long product name</a>
+							<span class="price">$139.95</span>
+						</li>
+					</ul>
+					<hr />
+					<div>
+						<span class="total">subtotal</span>
+						<span class="price">$139.95</span><br />
+						<a href="#">view cart</a>
+					</div>
+					<a href="#" class="button">checkout now</a>
+				</div><!-- end cart -->
+			</div><!-- end account-cart -->
+		</div><!-- end header -->
+	</div><!-- end header-wrap -->
+	<div id="content" class="page clearfix">
+		<div id="main">
+			<div id="banner">
+				<img src="images/dummy/banner.jpg" width="762" height="306" alt="Banner" />
+			</div><!-- end banner -->
+			<img src="images/separate.png" width="763" height="2" alt="" />
+			<div id="new-arrivals" class="product-list clearfix">
+				<div>
+					<h2><span>New</span>  Arrivals</h2>
+					<p>Take a look at what’s new in stock</p>
+				</div>
+				<ul>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">long product name goes over 2 lines</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div><!-- end new-arrivals -->
+			<img src="images/separate.png" width="763" height="2" alt="" />
+			<div id="top-sellers" class="product-list clearfix">
+				<div>
+					<h2><span>Top</span> Sellers</h2>
+					<p>Always popular, great lights at great prices</p>
+				</div>
+				<ul>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">long product name goes over 2 lines</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+					<li class="last">
+						<a href="#"><img src="images/dummy/product_2.jpg" width="169" height="152" alt="" /></a>
+						<div>
+							<a href="#" class="product-name">anenome</a>
+							<span class="price">$139.95</span>
+							<p>
+								Boutique aluminum GLS and Metal Halide highbay.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div><!-- end top-sellers -->
+			<img src="images/separate.png" width="763" height="2" alt="" />
+			<div class="info-text">
+				<h2>creative lighting solutions</h2>
+				<p>
+					Em qui idit entemqui consend eliatem lat am nobis dolor asincip iendand erspelit aliquiam soluptas 
+					nis di quo molorerit, cum voluptae venest, odi comnia quiae solorec aboremodi vendae nonsendiorro 
+					ilicit aut quissin cipicae es ari dolutem oluptatem facearit ipiti te ad et aut quis rae. Ut enieture 
+					natet faccum fugitam faccum voloreptas eatur sunt.
+				</p>
+				<p>
+					Mus et moluptatus excerat escipis sitiam fugit atempos sedignia conseca boreperspel ius acea corercim 
+					reperum quo is cus rempost rest, siminum ute volest aut re dolestrum re denis est, sam inti ullorro ius est, 
+					consequ idignate porum ra natemperis eturece rnatios ni berrum sit autenis a quam conesto tatemporum que 
+					nihit porest, ut late ne nimo officab in preperi orestem alis comnis elic torio. Ma cum fugiasi tatemod 
+					erepelecest, tem quis eossimi, serio disque dolupta tiones asima vide in nos incturem. Id moluptat mo is 
+					veri amus nosaeperro idenimus mod eium fuga. Ucienda erumquasped mod quam late consequi verum qui id magnatur, 
+					sit pliquati samustias et aut preic to ea pro exceri as soluptas et quia ipsum asped milibus exces ab im quam, 
+					ea dolore ium dolupta ecaboris dem si odi nus etur sedis ipient moluptaecepe doloris pla consequam aut vid min 
+					eum eos volessi as repereptaque eos acculles aliqui cuptam, ut offic to que quas sinum entiasp erovide leniet 
+					molorei umquam, natatempores dolest ipiende bisquodia ad mintis aliquatum et laborem audaecab is ne vent quam 
+					eici in ea nis re, simus pelita con corro cuptat.
+				</p>
+			</div>
+			
+
+
+<h2>Heading 2</h2>
+
+<h3>Heading 3</h3>
+<p>And some lovely lorem ipsum!</p>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<h4>Heading 4</h4>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><strong>Bold text ipsum dolor sit amet</strong>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><em>Italic text ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel</em> molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><a href="/ecommerce/p/13">Links to something dolor sit amet</a>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<blockquote>
+<p>Blockquote blockquote ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+</blockquote>
+<ul>
+<li>bullet list 1</li>
+<li>bullet list 2</li>
+<li>bullet list 3</li>
+</ul>
+<ol>
+<li>numbered list 1</li>
+<li>numbered list 2</li>
+<li>numbered list 3</li>
+</ol>			
+			
+			
+			
+		</div><!-- end main -->
+		<div id="sidebar">
+			<input type="text" name="" placeholder="Search" />
+			<ul>
+				<li class="active">
+					<a href="">categories</a>
+					<ul>
+						<li><a href="#">New Arrivals</a></li>
+						<li><a href="#">Top Sellers</a></li>
+						<li><a href="#">LED</a></li>
+						<li><a href="#">Downlights</a></li>
+						<li><a href="#">Deck Lights</a></li>
+						<li><a href="#">Garden Lights</a></li>
+						<li><a href="#">Pendants</a></li>
+						<li><a href="#">CDC - close to ceiling</a></li>
+						<li><a href="#">Shades</a></li>
+						<li><a href="#">Chandeliers</a></li>
+						<li><a href="#">Wall Lights</a></li>
+						<li><a href="#">Oyster Lights</a></li>
+						<li><a href="#">Desk and Table Lamps</a></li>
+						<li><a href="#">Floor Lamps</a></li>
+						<li><a href="#">Exterior Lighting</a></li>
+						<li><a href="#">Ceiling Fans</a></li>
+						<li><a href="#">Fluorescent</a></li>
+						<li><a href="#">Globes</a></li>
+						<li><a href="#">Spotlights</a></li>
+						<li><a href="#">Step Lights</a></li>
+						<li><a href="#">Trapeze Lights</a></li>
+						<li><a href="#">Transformers and LED Drivers</a></li>
+						<li><a href="#">Tracks and Track Lights</a></li>
+						<li><a href="#">Bathroom Heaters and Exhaust Fans</a></li>
+						<li><a href="#">Clearance</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">about us</a>
+				</li>
+				<li>
+					<a href="#">service</a>
+				</li>
+				<li>
+					<a href="#">contact us</a>
+				</li>
+			</ul>
+			<img src="images/guarantee.png" width="172" height="154" alt="" />
+		</div><!-- end sidebar -->
+	</div><!-- end content -->
+	
+	<div id="footer-wrap">
+		<div id="footer-link" class="page clearfix">
+			<div class="col1">
+				<a href="#"><img src="images/footer_logo.png" width="103" height="61" alt="" /></a>
+			</div>
+			<div class="col2">
+				<ul>
+					<li><a href="#">New Arrivals</a></li>
+					<li><a href="#">Top Sellers</a></li>
+					<li><a href="#">LED</a></li>
+					<li><a href="#">Clearance</a></li>
+				</ul>
+			</div>
+			<div class="col3">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Services</a></li>
+				</ul>
+			</div>
+			<div class="col4">
+				<h3>Contact Us</h3>
+				<p>
+					T 02 <strong>6680 7766  •</strong>  F 02 6680 7008  •  M 0407 509 330<br />
+					E <a href="mailto:info@creativelightingsolutions.com.au">info@creativelightingsolutions.com.au</a><br />
+					Unit 5, 21-23 Tasman Way, Byron Bay NSW 2481 Australia
+				</p>
+			</div>
+		</div><!-- end footer-link -->
+		<div id="copyright" class="page">
+			<p>
+				Copyright 2012 Creative Lighting Solutions, Byron Bay, Australia. Site design by Hive Communication. Development by <a href="#">Evolved Websites</a>. 
+			</p>
+		</div><!-- end copyright -->
+	</div><!-- end footer-wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

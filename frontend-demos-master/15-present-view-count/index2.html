@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>present-view-count</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style>
+        #page {
+            margin: 0 auto;
+            width: 800px;
+        }
+        .present-view-count {
+            width: 100%;
+            white-space: nowrap;
+            overflow: scroll;
+        }
+        .present-view-count .media-wrap {
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .present-view-count .media-wrap img {
+            display: block;
+        }
+        .present-view-count .media-wrap .media-view-count {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+<div id="page">
+    <div class="present-view-count" id="media-container">
+
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+        <div class="media-wrap">
+            <img src="01.jpg" alt="" />
+            <div class="media-view-count">0</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var mediaJson = {
+        isInViewport: false,
+        startTimeInViewport: null, // current millisecond, when media scrolled into viewport, record the startTime
+        count: 0
+    };
+    var presentTime = 4000; // 4s
+    function isInView(element, container) {
+        var top_of_element = $(element).offset().top;
+        var bottom_of_element = $(element).offset().top + $(element).outerHeight();
+        var bottom_of_screen = $(container).scrollTop() + $(container).innerHeight();
+        var top_of_screen = $(container).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function checkViewed() {
+        $('.present-view-count .media-wrap').each(function(index, element) {
+            var preMediaJson = $(element).data('mediaJson');
+            preMediaJson = preMediaJson ? preMediaJson : JSON.parse(JSON.stringify(mediaJson));
+            if (parseInt(preMediaJson.count) > 0) return; // count only once in session
+            var newMediaJson = JSON.parse(JSON.stringify(preMediaJson));
+            var isInView = window.isInView(element, );
+            if (isInView) {
+                var curTime = new Date().getTime();
+                if (preMediaJson.isInViewport) {
+                    if (preMediaJson.startTimeInViewport && curTime - preMediaJson.startTimeInViewport >= presentTime) {
+                        newMediaJson.count = 1;
+                    }
+                } else {
+                    newMediaJson.startTimeInViewport = curTime;
+                }
+            } else {
+                newMediaJson.startTimeInViewport = null;
+            }
+            newMediaJson.isInViewport = isInView;
+            $(element).find('.media-view-count').text(newMediaJson.count);
+            $(element).data('mediaJson', newMediaJson);
+        });
+    }
+
+    $( document ).ready(function() {
+        window.setInterval(checkViewed, 500)
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#menu ul li a {
+	color: #dbdcde;
+}
+#menu ul li.practica a:hover {
+	color: #f37734;
+}
+#menu ul li.project a:hover {
+	color: #f37734;
+}
+#menu ul li.masterwall a:hover {
+	color: #bd2c2c;
+}
+#menu ul li.k-series a:hover {
+	color: #ad81df;
+}
+#menu ul li.skyline a:hover {
+	color: #52b2ef;
+}
+#menu ul li.masterfloor a:hover {
+	color: #90c05d;
+}
+#menu ul li.contact a:hover {
+	color: #f37734;
+}
+#side-menu ul li a {
+	color: #fff;
+}
+#side-menu ul li.current a,
+#side-menu ul li:hover a {
+	color: #b5121b;
+}
+#side-menu.t1 ul li.current a,
+#side-menu.t1 ul li:hover a {
+	color: #f37736;
+}
+#side-menu ul.talk-blog li a {
+	color: #fff !important;
+}
+#side-menu ul.talk-blog li.popular a,
+#side-menu ul.talk-blog li.categories a {
+	color: #4c4c4e !important;
+}

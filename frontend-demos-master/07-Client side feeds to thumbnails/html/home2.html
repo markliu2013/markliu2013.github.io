@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ajax Feed Example</title>
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("feeds", "1");</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="js/jquery.feed.js"></script>
+<script type="text/javascript">
+	$(function() {
+		
+		function formatTitle(title, currentArray, currentIndex, currentOpts) {
+			if ( !title || title == "" ) {
+				return false;
+			} else {
+				if ( $(currentArray[currentIndex]).next(".desc").length>0 ) {
+					return '<h3><a href="'+$(currentArray[currentIndex]).attr("alternate")+'" target="_blank">'+title+'</a></h3><p>'+$(currentArray[currentIndex]).next(".desc").html()+'</p>';
+				} else {
+					return '<h3><a href="'+$(currentArray[currentIndex]).attr("alternate")+'" target="_blank">'+title+'</a></h3>';
+				}
+			}
+		}
+		
+		$("#feed").feed(
+		{
+			urls: [
+				//'https://graph.facebook.com/nospuds?fields=photos.type(uploaded)'
+				//'http://api.flickr.com/services/feeds/photos_public.gne?id=36484592@N06'
+				//'http://ink361.com/feed/user/mulletover_',
+				//'http://vimeo.com/buicksix/videos/rss',
+				//'http://gdata.youtube.com/feeds/base/users/247theatre/uploads?alt=rss&amp;v=2&amp;orderby=published',
+				
+				//'http://gdata.youtube.com/feeds/base/users/Companybbelvoir/uploads?alt=rss&v=2&orderby=published'
+				//'http://gdata.youtube.com/feeds/base/users/Companybbelvoir/uploads?alt=rss&v=2&orderby=published'
+				//'http://gdata.youtube.com/feeds/base/users/acmionline/uploads?alt=rss&v=2&orderby=published'
+				//'https://api.foursquare.com/v2/venues/4b899f68f964a520164732e3/photos?client_id=R0RBYBYS1ECKMSDXVA4DTO3BXU23JMBZ51GIZYKS11NDM4YX&client_secret=FBK3WOGELT2WDZVUXHZUMND5AZTXUIINA0YY0YPHA3UJB4JH&v=20130412'
+				//'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=YFMSydney&include_entities=true'
+				'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=YFMSydney&include_entities=true&count=200'
+				],
+			entriesNum: 10,
+			onComplete: function() {
+				
+				$("#feed ul li a[rel=gallery]").fancybox({
+					titlePosition: 'inside',
+					titleFormat : formatTitle,
+					onComplete: function() {
+						$(window).trigger("resize");
+					}
+				});
+				$("#feed ul li a[rel=video]").fancybox({
+					centerOnScroll: true,
+					type: 'iframe',
+					titleShow: false,
+					onComplete: function() {
+						$(window).trigger("resize");
+					}
+				});
+				$("#feed ul li a .roll").css("opacity","0");
+				$("#feed ul li a .roll").hover(
+					function() {
+						$(this).stop().animate({opacity: 0.7}, "slow");
+					},
+					function() {
+						$(this).stop().animate({opacity: 0}, "slow");
+					}
+				);
+				$("#feed ul li a .roll").click(function() {
+					$(this).stop().animate({opacity: 0}, "slow");
+				})
+			}
+		})
+		
+	})
+	
+</script>
+</head>
+<body>
+
+	<div id="feed">
+	</div>
+
+</body>
+</html>

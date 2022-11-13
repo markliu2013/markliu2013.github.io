@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Job Center Page</title>
+  <meta http-equiv="keywords" content="enter,your,keywords,here" />
+  <meta http-equiv="description" content="A short description of this page." />
+  <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+  <link href="css/master.css" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <style type="text/css">
+      	#menu .nav li a {
+			padding: 0 13px;
+		}
+      </style>
+  <![endif]-->
+  
+  <script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+  <!--[if IE]>
+	<script type="text/javascript">
+		
+		$(function() {
+			$("[placeholder]").focus(function() {
+			  var input = $(this);
+			  input.css("color","#000000");
+			  if (input.val() == input.attr("placeholder")) {
+				input.val("");
+			  }
+			}).blur(function() {
+			  var input = $(this);
+			  if (input.val() == "" || input.val() == input.attr("placeholder")) {
+				input.val(input.attr("placeholder"));
+				input.css("color","#c2c2c2");
+			  }
+			}).blur();
+
+
+			$("[placeholder]").parents("form").submit(function() {
+			  $(this).find("[placeholder]").each(function() {
+				var input = $(this);
+				if (input.val() == input.attr("placeholder")) {
+				  input.val("");
+				}
+			  })
+			});
+		})
+		
+	</script>
+	<![endif]-->
+  
+  <script type="text/javascript">
+  $(function() {
+	    $("#job-tab ul li").click(function(e) {
+  			e.preventDefault();
+			$("#job-tab ul li.active").removeClass("active");
+			$(this).addClass("active");
+			var selectedTab = $(this).find("a").attr("href");
+			$("#job-tab .tab.active").removeClass("active");
+			$("#job-tab .tab."+selectedTab).addClass("active");
+ 		 }); 
+  })
+  </script>
+  
+</head>
+<body id="normal">
+<div id="page">
+  <div id="header" class="clearfix">
+  	<div class="logo">
+  	  <a href="#" class="shadow bottom_radius"><img src="images/logo.png" width="150" height="137" alt="Logo" title="Go to Northern Rivers Food Home Page" /></a>
+  	  <h2>feeding the soul</h2>
+  	</div>
+    <div class="user_info">
+      <div class="user_login">
+        <span>You are Logged in</span>
+        <a href="#" class="shadow">Member Login</a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" class="text" />
+        <input type="button" value="" class="button" />
+      </div>
+    </div>
+  </div><!-- end header -->
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="home.html">Home</a><span>|</span></li>
+      <li><a href="members.html">Our Members</a><span>|</span></li>
+      <li class="highlighted"><a href="listing.html">Resource Center</a><span>|</span></li>
+      <li>
+        <a href="#">Membership</a><span>|</span>
+        <ul class="subnav">
+          <li><a href="#">Member Benefits</a></li>
+          <li><a href="#">Member Case Studies</a></li>
+          <li><a href="#">Levels and Pricing</a></li>
+          <li><a href="#">Become a Member</a></li>
+        </ul>
+      </li>
+      <li><a href="#">News+Events</a><span>|</span></li>
+      <li><a href="#">Training</a><span>|</span></li>
+      <li><a href="#">Discover</a><span>|</span></li>
+      <li><a href="#">About Us</a><span>|</span></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div><!-- end menu -->
+  
+  <div id="content" class="shadow bottom_radius clearfix">
+    <div id="main">
+      <h1>Job Center</h1>
+      <div id="job-tab">
+        <ul>
+          <li class="active"><a href="tab1">Positions Available</a></li>
+          <li><a href="tab2">Positions Wanted</a></li>
+          <li><a href="tab3">Post New Listing</a></li>
+        </ul>
+        <div class="tab tab1 active">
+          <table>
+            <tr>
+              <th class="th_title">Title</th>
+              <th class="th_cat">Category</th>
+              <th class="th_loc">Location</th>
+              <th class="th_post">Posted</th>
+            </tr>
+            <tr>
+              <td class="title">Warehouse Manager</td>
+              <td>Manufacturing</td>
+              <td>Byron Bay NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">South Australian Area Sales Representative</td>
+              <td>Sales & Marketing</td>
+              <td>Adelaide SA</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Macadamia Picker</td>
+              <td>Agriculture</td>
+              <td>Eureka NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Purchasing Manager</td>
+              <td>Other</td>
+              <td>Grafton NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Business Development Manager</td>
+              <td>Sales & Marketing</td>
+              <td>Murwillumbah NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+          </table>
+        </div>
+        <div class="tab tab2">
+          <table>
+            <tr>
+              <th class="th_title">Title</th>
+              <th class="th_cat">Category</th>
+              <th class="th_loc">Location</th>
+              <th class="th_post">Posted</th>
+            </tr>
+            
+            <tr>
+              <td class="title">South Australian Area Sales Representative</td>
+              <td>Sales & Marketing</td>
+              <td>Adelaide SA</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Warehouse Manager</td>
+              <td>Manufacturing</td>
+              <td>Byron Bay NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Macadamia Picker</td>
+              <td>Agriculture</td>
+              <td>Eureka NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Business Development Manager</td>
+              <td>Sales & Marketing</td>
+              <td>Murwillumbah NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+            <tr>
+              <td class="title">Purchasing Manager</td>
+              <td>Other</td>
+              <td>Grafton NSW</td>
+              <td>May 12, 2012</td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="tab tab3">
+          a form is here
+        </div>
+      </div>
+    </div><!-- end main -->
+    <div id="sidebar" class="clearfix">
+      <div id="connect">
+        <h3>Connect with us</h3>
+        <ul>
+          <li><a href="#"><img src="images/facebook_2.png" width="31" height="31" alt="Facebook" /></a></li>
+          <li><a href="#"><img src="images/twitter_2.png" width="31" height="31" alt="Twitter" /></a></li>
+          <li><a href="#"><img src="images/in.png" width="31" height="31" alt="In" /></a></li>
+          <li><a href="#"><img src="images/youtube.png" width="31" height="31" alt="Youtube" /></a></li>
+          <li><a href="#"><img src="images/rss.png" width="31" height="31" alt="RSS" /></a></li>
+        </ul>
+      </div>
+      <div id="also">
+        <h3>Also in this section:</h3>
+        <div class="p">
+          <ul>
+            <li><a href="#">Meet Our Committee Members</a></li>
+            <li><a href="#">Sponsors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="member-case">
+        <h3>Member Case Studies</h3>
+        <div class="p">
+          <ul>
+            <li><a href="#">Nimbin Valley Cheese</a></li>
+            <li><a href="#">Lentilicious</a></li>
+            <li><a href="#">Nicholson’s Fine Foods</a></li>
+            <li><a href="#">Zentvelds Coffee</a></li>
+            <li><a href="#">Zest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="lastest-tweets" class="social_news">
+        <h3>Latest Tweets</h3>
+        <div class="p">
+          <p>
+            @AusMacadamias @thetodayshow You mean 
+            they weren't real??? I was ready to do a story 
+            on these rare trees for #RuralWeekly ;)
+          </p>
+          <p>
+            @mannii Lots of google searches this morning
+          </p>
+          <p class="last">
+            Eltham Valley Pantry 5th birthday celebration 
+            coming up 24th March. How good is this menu? 
+            bit.ly/y14UYD
+          </p>
+        </div>
+      </div>
+    </div><!-- end sidebar -->
+  </div><!-- end content -->
+  
+  <div id="footer" class="clearfix">
+    <ul class="col1">
+      <li class="first"><a href="#">Meet Our Members</a></li>
+      <li><a href="#">Member Directory</a></li>
+      <li><a href="#">Featured members</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li>&nbsp;</li>
+      <li class="first"><a href="#">Membership</a></li>
+      <li><a href="#">Benefits</a></li>
+      <li><a href="#">Membership Fees</a></li>
+      <li><a href="#">Become a Member</a></li>
+      <li>&nbsp;</li>
+      <li class="first"><a href="#">Resource Centre</a></li>
+      <li><a href="#">Current Listings</a></li>
+      <li><a href="#">Mentoring Programs <span>M</span></a></li>
+      <li><a href="#">Resource Directory <span>M</span></a></li>
+      <li><a href="#">Members Forum <span>M</span></a></li>
+    </ul>
+    <ul class="col2">
+      <li class="first"><a href="#">News + Events</a></li>
+      <li><a href="#">Current News</a></li>
+      <li><a href="#">News Archives</a></li>
+      <li><a href="#">Members News</a></li>
+      <li><a href="#">Industry News</a></li>
+      <li><a href="#">Press Mentions</a></li>
+      <li><a href="#">Trade Shows</a></li>
+      <li><a href="#">Networking Events</a></li>
+      <li><a href="#">Festivals</a></li>
+      <li>&nbsp;</li>
+      <li class="first"><a href="#">Training + Development</a></li>
+      <li><a href="#">Workshops</a></li>
+      <li><a href="#">Seminars / Conferences</a></li>
+      <li><a href="#">Resource Directory <span>M</span></a></li>
+      <li><a href="#">Become a Member</a></li>
+    </ul>
+    <ul class="col3">
+      <li class="first"><a href="#">Discover Our Region</a></li>
+      <li><a href="#">Regional Produce</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">The Environment</a></li>
+      <li><a href="#">Explore Food</a></li>
+      <li><a href="#">Recipes</a></li>
+      <li>&nbsp;</li>
+      <li class="first"><a href="#">About Us</a></li>
+      <li><a href="#">Our Mission</a></li>
+      <li><a href="#">Committee Members</a></li>
+      <li><a href="#">Become a Sponsor</a></li>
+    </ul>
+  
+   
+    <ul class="col4">
+      <li class="first">Contact Northern Rivers Food</li>
+      <li>
+        Email: <a href="mailto:info@northernriversfood.com.au">info@northernriversfood.com.au</a>
+      </li>
+      <li>Post: PO Box 000, Byron Bay NSW 2481</li>
+      <li>&nbsp;</li>
+      <li>
+        Facebook:<br />
+        <a href="http://www.facebook.com/northernriversfood">http://www.facebook.com/northernriversfood</a>
+      </li>
+      <li>&nbsp;</li>
+      <li>Twitter:  @NorthernRiversFood</li>
+    </ul>
+  </div><!-- end footer -->
+</div><!-- end page -->
+</body>
+</html>

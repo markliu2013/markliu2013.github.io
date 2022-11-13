@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="This Page is created by Mark Liu for Practice." />
+<title>Identity</title>
+<link href="style/reset.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<!-- For the less-enabled mobile browsers like Opera Mini -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="script/selectivizr.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="script/DD_belatedPNG_0.0.8a.js"></script>
+<script>
+  DD_belatedPNG.fix('.png_fix');
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+$(function() {
+
+    $('#gallery_slider').cycle({
+		fx: 'scrollLeft',
+		pager: '#gallery_nav'
+	});
+	$("#menu_tab ul li").click(function(e) {
+		e.preventDefault();
+	});
+	
+	$("#menu_tab ul li").mouseover(function(e) {
+		var selectedMenu = $("#menu_tab ul li.selected a").attr('href');
+		var hoveredMenu = $('a', this).attr('href');
+		if (selectedMenu == hoveredMenu) {
+			return;
+		}
+		$("#"+selectedMenu).stop(true, true);
+		
+		$("#"+selectedMenu).hide();
+		$("#"+hoveredMenu).fadeIn(2000);
+		$("#menu_tab ul li.selected").removeClass('selected');
+		$(this).addClass('selected');
+    });
+	
+	
+	
+})
+</script>      
+</head>
+
+<body>
+<header class="container clearfix">
+	<div id="top" class="clearfix">
+    	<a href="#"><img class="png_fix" src="images/logo.png" width="200" height="71" alt="Logo" /></a>
+        <div class="clearfix">
+            <span>888.555.5555</span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">HELP FILES</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                    <li>
+                        <a href="#">VIDEO FILES</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="menu" class="clearfix rounded">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#">FEATURES</a>
+                </li>
+                <li>
+                    <a href="#">BLOG</a>
+                </li>
+                <li>
+                    <a href="#">SHORTCODES</a>
+                </li>
+                <li>
+                    <a href="#">LATEST NEWS</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+        <menu>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/icons/facebook.png" width="19" height="20" alt="Facebook" class="png_fix" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/twitter.png" width="19" height="20" alt="Twitter" class="png_fix" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/linkedin.png" width="19" height="20" alt="Linkedin" class="png_fix" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/stumbleupon.png" width="19" height="20" alt="Stumbleupon" class="png_fix" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icons/delicious.png" width="19" height="20" alt="D	elicious" class="png_fix" /></a>
+                </li>
+            </ul>
+        </menu>
+    </div>
+</header>
+<div id="main" class="container clearfix">
+	<div id="primary">
+    	<div id="gallery">
+        	<div id="gallery_slider">
+            	<div class="gallery_content">
+                    <img src="images/Option-Gallore.jpg" width="470" height="266" alt="Options Gallore" />
+                    <div>
+                        <h2>Options Gallore</h2>
+                        <h3>Vpanel Plus</h3>
+                        <p>
+                            Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse  at mettus et.
+                        </p>
+                    </div>
+            	</div>
+                <div class="gallery_content">
+                    <img src="images/Option-Gallore.jpg" width="470" height="266" alt="Options Gallore" />
+                    <div>
+                        <h2>Slider 2</h2>
+                        <h3>Vpanel Plus</h3>
+                        <p>
+                            Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse  at mettus et.
+                        </p>
+                    </div>
+            	</div>
+                <div class="gallery_content">
+                    <img src="images/Option-Gallore.jpg" width="470" height="266" alt="Options Gallore" />
+                    <div>
+                        <h2>Slider 3</h2>
+                        <h3>Vpanel Plus</h3>
+                        <p>
+                            Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse  at mettus et.
+                        </p>
+                    </div>
+            	</div>
+                <div class="gallery_content">
+                    <img src="images/Option-Gallore.jpg" width="470" height="266" alt="Options Gallore" />
+                    <div>
+                        <h2>Slider 4</h2>
+                        <h3>Vpanel Plus</h3>
+                        <p>
+                            Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse  at mettus et.
+                        </p>
+                    </div>
+            	</div>
+            </div>
+            <div id="gallery_nav">
+             
+            </div>
+        </div><!-- end gallery -->
+       	<div id="description">
+        	<h2>Unbelieveable Wordpress Theme for a Killer Price</h2>
+            <p>
+            	Praesent at ligula vel nunc porttitor pretium id in dolor. Morbi faucibus malesuada lorem, ut gravida diam scelerisque in. Nullam ultrices ultrices lectus vel adipiscing. <a href="#">forum nexto magnus alt</a>. Praesent at ligula vel nunc porttitor pretium id in dolor. 
+            </p>
+        </div><!-- end description -->
+        <menu>
+        	<ul>
+            	<li>
+                	<a href="#" class="selected">Featured News</a>
+                </li>
+                <li>
+                	<a href="#">Popular Articles</a>
+                </li>
+                <li>
+                	<a href="#">Using This Theme</a>
+                </li>
+            </ul>
+        </menu>
+        <div id="article_wrap">
+            <article>
+                <a href="#"><img src="images/s1.jpg" width="212" height="98" alt="" /></a>
+                <a href="#">Magnus Altus Merger</a>
+                <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis altus felds nest.</p>
+            </article>
+      
+            <article>
+                <a href="#"><img src="images/s2.jpg" width="212" height="98" alt="" /></a>
+                <a href="#"><h2>Nisl Lectus Festicit</h2></a>
+                <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse elit ligula, vulputate ut ultrices et.</p>
+            </article>
+       
+            <article>
+                <a href="#"><img src="images/s3.jpg" width="212" height="98" alt="" /></a>
+                <a href="#"><h2>Sodales Tellus</h2></a>
+                <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis altus felds nest.</p>
+            </article>
+       
+            <article>
+                <a href="#"><img src="images/s4.jpg" width="212" height="98" alt="" /></a>
+                <a href="#"><h2>Ut Vviamus Orci Et Altusic</h2></a>
+                <p>Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse elit ligula, vulputate ut ultrices et.</p>
+            </article>
+        
+            <article>
+                <a href="#"><img src="images/s5.jpg" width="212" height="98" alt="" /></a>
+                <a href="#"><h2>Magnus Altus Merger</h2></a>
+                <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis altus felds nest.</p>
+            </article>
+        
+            <article>
+                <a href="#"><img src="images/s6.jpg" width="212" height="98" alt="" /></a>
+                <a href="#"><h2>Amet Lectus Lorem Ipsum</h2></a>
+                <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis. Suspendisse elit ligula, vulputate ut ultrices et.</p>
+            </article> 
+        </div><!-- end article_wrap -->
+    </div><!-- end primary -->
+    <div id="sidebar">
+    	<input type="text" placeholder="Search" class="rounded" />
+        <section id="vedio_widget">
+        	<h4>Identity Video Player</h4>
+            <a href="#"><img src="images/icons/arrow_left.png" width="12" height="20" alt="Left Arrow" /></a>
+            <a href="#"><img src="images/icons/arrow_right.png" width="12" height="20" alt="Right Arrow" /></a>
+            <div class="rounded">
+            	<img src="images/tron.jpg" width="181" height="94" alt="Tron" />
+            	<a href="#"><img src="images/icons/play.png" width="51" height="51" alt="Play" class="png_fix" /></a>
+            </div>
+        </section>
+        <section id="text_widget">
+        	<h2>Text Widget</h2>
+            <h3>Magnus Opus At Et Sodal</h3>
+            <img src="images/hands.jpg" width="69" height="60" alt="Hands" class="rounded_border" />
+            <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies.Duis sit amet lectus loremorci. Ut quis mi turpis. Suspendisse elit ligula, vulputate ut ultrices et.</p>
+            <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. </p>
+            <a href="#">Read More&nbsp;&gt;</a>
+        </section>
+        <section id="follow_widget">
+        	<h2>
+            	<span>Flow US</span>
+                <img src="images/icons/Android-Twitter.png" width="29" height="28" alt="Twitter" />
+            </h2>
+            
+            <p>
+            	Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Vivamus pretium tellus vel - <a href="#">2 days ago</a>
+            </p>
+        </section>
+        <section id="flickr_widget">
+        	<h2>
+            	<span>Flickr</span>
+                <img src="images/icons/Flickr-48.png" width="28" height="18" alt="Flickr" />
+            </h2>
+            <ul>
+            	<li>
+	                <a href="#"><img src="images/hands.jpg" width="69" height="60" alt="Hands" class="rounded_border" /></a>
+                </li>
+                <li>
+	                <a href="#"><img src="images/Flickr-2.jpg" width="69" height="60" alt="" class="rounded_border" /></a>
+                </li>
+                <li>
+	                <a href="#"><img src="images/Flickr-3.jpg" width="69" height="60" alt="" class="rounded_border" /></a>
+                </li>
+                <li>
+	                <a href="#"><img src="images/hands.jpg" width="69" height="60" alt="Hands" class="rounded_border" /></a>
+                </li>
+            </ul>
+        </section>
+    </div><!-- end sidebar -->
+</div><!-- end main -->
+
+<div id="subscribe" class="container rounded">
+	<span>Sign-Up to receive our free monthly newsletter</span>
+    <div>
+    	<button>Subscribe</button>
+    	<input type="text" placeholder="email" />
+    </div>
+</div><!-- end subscribe -->
+
+<div id="popular_wrap" class="container clearfix">
+	<div id="popular_stories">
+    	<h2>Popular Stories</h2>
+        <article>
+        	<img src="images/Left-Bottom-Article.jpg" width="85" height="79" alt="" class="rounded" />
+        	<h3>Phaelilus Loreet Adiscopt Magnus</h3>
+        	<p>
+        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet hendrerit velit, vel placerat metus cursus ac. Mauris arcu augue, pulvinar eget.
+        	</p>
+	        <a href="#">Read More</a>
+        </article>
+        <article>
+        	<img src="images/Left-Bottom-Article.jpg" width="85" height="79" alt="" class="rounded" />
+        	<h3>Phaelilus Loreet Adiscopt Magnus</h3>
+        	<p>
+        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet hendrerit velit, vel placerat metus cursus ac. Mauris arcu augue, pulvinar eget.
+        	</p>
+	        <a href="#">Read More</a>
+        </article>
+    </div><!-- end popular_stories -->
+    <div id="menu_tab">
+    	<ul class="clearfix">
+        	<li class="selected"><a href="menu1">Menu Tab 1</a></li>
+            <li><a href="menu2">Menu Tab 2</a></li>
+            <li><a href="menu3">Menu Tab 3</a></li>
+        </ul>
+        <section>
+        	<div id="menu1" class="clearfix">
+                <img src="images/tab.jpg" width="141" height="87" alt="Elephant" />
+                <h2>Vestibulum Non Gravida Tortor</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet hendrerit velit, vel placerat metus cursus ac. Mauris arcu augue, pulvinar eget
+                </p>
+                <p>
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                </p>
+                <p>
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
+                </p>
+            </div>
+            <div id="menu2" class="clearfix">
+                <img src="images/tab.jpg" width="141" height="87" alt="Elephant" />
+                <h2>Vestibulum Non Gravida Tortor2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet hendrerit velit, vel placerat metus cursus ac. Mauris arcu augue, pulvinar eget
+                </p>
+                <p>
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                </p>
+                <p>
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
+                </p>
+            </div>
+            <div id="menu3" class="clearfix">
+                <img src="images/tab.jpg" width="141" height="87" alt="Elephant" />
+                <h2>Vestibulum Non Gravida Tortor3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet hendrerit velit, vel placerat metus cursus ac. Mauris arcu augue, pulvinar eget
+                </p>
+                <p>
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+                </p>
+                <p>
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search
+                </p>
+            </div>
+        </section>
+    </div><!-- end menu_tab -->
+</div><!-- end popular_wrap -->
+
+<div id="footer_wrap" class="container">
+	<footer>
+    	<ul id="footer_tab_header" class="clearfix">
+        	<li class="selected">
+            	<a href="#">Footer</a>
+            </li>
+            <li>
+            	<a href="#">Customize Layout</a>
+            </li>
+        </ul>
+        <section>
+        	<div id="footer_tab">
+            	<h2>Praesent commodo accumsan augue nec mattis. Aliquam mauris est, aliquam in mollis non, interdum et lectus. </h2>
+                <ul class="footer_tab_content clearfix">
+                    <li class="footer_tab_content_li footer_tab_content_li1">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                        	<li><a href="#">Check Out Our Recent Work</a></li>
+                            <li><a href="#">Latest News and Events</a></li>
+                            <li><a href="#">Editing This Template</a></li>
+                            <li><a href="#">Check Out These Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer_tab_content_li footer_tab_content_li2">
+                        <h3>Text Widget</h3>
+                        <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis altus felds nest.</p>
+                    </li>
+                    <li class="footer_tab_content_li footer_tab_content_li3">
+                        <h3>Custom Menu</h3>
+                        <ul>
+                        	<li><a href="#">Check Out Our Recent Work</a></li>
+                            <li><a href="#">Latest News and Events</a></li>
+                            <li><a href="#">Editing This Template</a></li>
+                            <li><a href="#">Check Out These Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer_tab_content_li footer_tab_content_li4">
+                        <h3>Categories</h3>
+                        <ul>
+                        	<li><a href="#">Check Out Our Recent Work</a></li>
+                            <li><a href="#">Latest News and Events</a></li>
+                            <li><a href="#">Editing This Template</a></li>
+                            <li><a href="#">Check Out These Videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        	<div id="customize_layout_tab">
+            	<h2>Customize Layout</h2>
+                <ul class="footer_tab_content clearfix">
+                    <li>
+                        <h3>Recent Posts</h3>
+                        <ul>
+                        	<li><a href="#">Check Out Our Recent Work</a></li>
+                            <li><a href="#">Latest News and Events</a></li>
+                            <li><a href="#">Editing This Template</a></li>
+                            <li><a href="#">Check Out These Videos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Text Widget</h3>
+                        <p>Vivamus pretium tellus vel metus luctus non sodales nisl ultricies. Duis sit amet lectus lorem, nec rhoncus orci. Ut quis mi turpis altus felds nest.</p>
+                    </li>
+                    <li>
+                        <h3>Custom Menu</h3>
+                        <p>Check Out Our Recent Work Latest News and Events Editing This Template Check Out These Videos</p>
+                    </li>
+                    <li>
+                        <h3>Categories</h3>
+                        <p>Check Out Our Recent Work Latest News and Events Editing This Template Check Out These Videos</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</div>
+
+
+<div id="siteinfo" class="container">
+	<footer>
+    	<p>Copyright &copy 2011 Identity</p>
+        <nav>
+      		<ul>
+		        <li><a href="#">HOME</a></li>
+		        <li><a href="#">SERVICES</a></li>
+		        <li><a href="#">FEATURES</a></li>
+		        <li><a href="#">BLOG</a> </li>
+		        <li><a href="#">SHORTCODES</a></li>
+                <li><a href="#">LATEST NEWS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+      		</ul>
+	    </nav>
+    </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+</head>
+<body>
+<div id="images">
+ 
+</div>
+
+<script>
+	var url = "http://gdata.youtube.com/feeds/base/users/Companybbelvoir/uploads?alt=rss&v=2&orderby=published&callback=?";
+	console.log(url);
+	jQuery.get(url, function(data){console.log(data)})
+</script>
+ 
+</body>
+</html>

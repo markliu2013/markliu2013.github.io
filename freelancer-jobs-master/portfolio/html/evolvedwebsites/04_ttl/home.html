@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yesteryear|Source Sans Pro">
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+/* cart */
+$(function() {
+	$("#header .cart").hover(
+		  function () {
+			$(this).css("z-index", "99");
+    		$("#header .cart .header").css("background", "#085689");
+			$("#header .cart .info_wrap").css("display", "block");
+			$("#header .cart .footer").css("display", "block");
+  		  },
+		  function() {
+			$(this).css("z-index", "97");
+			$("#header .cart .header").css("background", "url(images/cart_title_bg.png) no-repeat");
+			$("#header .cart .info_wrap").css("display", "none");
+			$("#header .cart .footer").css("display", "none");
+		  }
+	);
+	
+	
+	$('.slideshow').cycle({
+  		fx: 'fade',
+  		timeout:  5000,
+  		speed:  2500
+  	});
+	
+	
+	//thumb scoll
+	var $li = $("#thumb ul li")
+	var liCount = $li.length;
+	var rowLiCount = Math.ceil(liCount/2);
+	var ulWidth = 0;
+	$li.each(function(index, element) {
+		if(index<rowLiCount) {
+			ulWidth = ulWidth + $(element).outerWidth(true);
+		}
+	});
+	$("#thumb ul").width(ulWidth);
+	
+	
+	
+	var moveLeftInterval = null;
+	var moveRightInterval = null;
+	$("#thumb-nav-prev").click(function(e) {
+		return false;
+	});
+	
+	$("#thumb-nav-prev").hover(
+		function() {
+			moveLeftInterval = setInterval(moveLeft,1);
+		},
+		function() {
+			if (moveLeftInterval) {
+				clearInterval(moveLeftInterval);
+			}
+		}
+	)
+	$("#thumb-nav-next").click(function(e) {
+		return false;
+	});
+	
+	$("#thumb-nav-next").hover(
+		function() {
+			moveRightInterval = setInterval(moveRight,1);
+		},
+		function() {
+			if (moveRightInterval) {
+				clearInterval(moveRightInterval);
+			}
+		}
+	)
+	
+	
+	
+	function moveLeft() {
+		var leftWidth = (parseInt($("#thumb ul").css("left")))*-1;
+		leftWidth=leftWidth-3;
+		if(leftWidth<0) leftWidth = 0;
+		$("#thumb ul").css("left", "-"+leftWidth+"px");
+	}
+	function moveRight() {
+		var leftWidth = (parseInt($("#thumb ul").css("left")))*-1;
+		leftWidth=leftWidth+3;
+		var maxLeftWidth = ulWidth-901;
+		if (leftWidth > maxLeftWidth) leftWidth = maxLeftWidth;
+		$("#thumb ul").css("left", "-"+leftWidth+"px");
+	}
+	
+	
+	
+	
+	
+	
+	
+})
+
+</script>
+
+<!--[if IE]>
+	<script type="text/javascript">
+		
+		$(function() {
+			$("[placeholder]").focus(function() {
+			  var input = $(this);
+			  input.css("color","#000000");
+			  if (input.val() == input.attr("placeholder")) {
+				input.val("");
+			  }
+			}).blur(function() {
+			  var input = $(this);
+			  if (input.val() == "" || input.val() == input.attr("placeholder")) {
+				input.val(input.attr("placeholder"));
+				input.css("color","#c2c2c2");
+			  }
+			}).blur();
+
+
+			$("[placeholder]").parents("form").submit(function() {
+			  $(this).find("[placeholder]").each(function() {
+				var input = $(this);
+				if (input.val() == input.attr("placeholder")) {
+				  input.val("");
+				}
+			  })
+			});
+		})
+		
+	</script>
+<![endif]-->
+</head>
+<body id="home">
+  <div id="header" class="clearfix">
+    <a href="#" class="logo"><img src="images/logo.png" width="247" height="70" alt="Logo" /></a>
+    <ul class="nav">
+      <li class="highlighted">
+        <a href="#">Shop</a>
+        <ul>
+          <li class="high-chai">
+            <div><span class="top"><a href="#">High Chai</a></span><span class="bottom">Exotic & Delicious</span></div>
+          </li>
+          <li class="summer-bird">
+            <div><span class="top"><a href="#">Summer Bird</a></span><span class="bottom">Golden lemon to refresh</span></div>
+          </li>
+          <li class="green-tea">
+            <div><span class="top"><a href="#">Green Tea Tonic</a></span><span class="bottom">Sencha leaf with jasmine</span></div>
+          </li>
+          <li class="rosy-tea">
+            <div><span class="top"><a href="#">Rosy Tea</a></span><span class="bottom">Rose and gentle spices</span></div>
+          </li>
+          <li class="nocturne">
+            <div><span class="top"><a href="#">Nocturne</a></span><span class="bottom">Chamomile blend for rest</span></div>
+          </li>
+          <li class="lighthouse-mint">
+            <div><span class="top"><a href="#">Lighthouse Mint</a></span><span class="bottom">Spearmint and lavendar</span></div>
+          </li>
+          <li class="liquorice-star">
+            <div><span class="top"><a href="#">Liquorice Star</a></span><span class="bottom">Roasted dandelion with a twist</span></div>
+          </li>
+          <li class="emerald-zing">
+            <div><span class="top"><a href="#">Emerald Zing</a></span><span class="bottom">Peppermint inspired</span></div>
+          </li>
+          <li class="rooibos-high">
+            <div><span class="top"><a href="#">Rooibos High Chai</a></span><span class="bottom">Caffienne-free classic</span></div>
+          </li>
+          <li class="ginger-bird">
+            <div><span class="top"><a href="#">Ginger Bird</a></span><span class="bottom">Summer Bird with a ginger kick</span></div>
+          </li>
+          <li class="earl-grey">
+            <div><span class="top"><a href="#">Earl Grey</a></span><span class="bottom">Bergamot infused 100% organic</span></div>
+          </li>
+          <li class="english-breakfast">
+            <div><span class="top"><a href="#">English Breakfast</a></span><span class="bottom">Classic favourite 100% organic</span></div>
+          </li>
+          <li class="last">
+            <div><span><a href="#">GIFTS AND TEAWARE</a></span></div>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Health Benefits</a></li>
+      <li><a href="#">Tea Stockists</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
+    <div class="cart">
+      <div class="header">Cart <span>0</span> items</div>
+      <div class="info_wrap">
+        <div class="info radius">
+          <div class="title">Cart Summary</div>
+          <p>
+            Free freight for orders over $50
+          </p>
+          <ul>
+            <li class="clearfix">
+              <span class="item"><a href="#">GREEN TEA TONIC Tin 100gm</a></span>
+              <span class="price">$18.95</span>
+            </li>
+            <li class="total clearfix">
+              <span class="item">Total</span>
+              <span class="price">$18.95</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer"><a href="#" class="radius">Checkout Now</a></div>
+    </div>
+    <img class="lady" src="images/lady.png" width="211" height="200" alt="Lady" />
+  </div><!-- end header -->
+  <div id="banner" class="page">
+    <img class="l" src="images/slider_c_l.png" width="181" height="180" alt="" />
+    <img class="r" src="images/slider_c_r.png" width="181" height="180" alt="" />
+    <div class="slideshow">
+      <img src="images/dummy/01_slider_w.jpg" width="904" height="360" alt="Slider" />
+      <img src="images/dummy/02_slider_w.jpg" width="904" height="360" alt="Slider" />
+      <img src="images/dummy/03_slider_w.jpg" width="904" height="360" alt="Slider" />
+      <img src="images/dummy/04_slider_w.jpg" width="904" height="360" alt="Slider" />
+    </div>
+  </div>
+  <div id="thumb" class="page">
+  	<a id="thumb-nav-prev" href="#">&lt;</a>
+	<a id="thumb-nav-next" href="#">&gt;</a>
+  <div id="thumb-inner">
+  	
+    <ul class="clearfix">
+      <li class="high-chai">
+        <a href="#"><img src="images/dummy/High_Chai.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">High Chai</a></h3>
+            <span>Exotic & Delicious</span>
+          </div>
+        </div>
+      </li>
+      <li class="summer-bird">
+        <a href="#"><img src="images/dummy/Summer_Bird.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Summer Bird</a></h3>
+            <span>Golden lemon to refresh</span>
+          </div>
+        </div>
+      </li>
+      <li class="green-tea">
+        <a href="#"><img src="images/dummy/Green_Tea.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Green Tea Tonic</a></h3>
+            <span>Sencha leaf with jasmine</span>
+          </div>
+        </div>
+      </li>
+      <li class="rosy-tea">
+        <a href="#"><img src="images/dummy/Rosy_Tea.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Rosy Tea</a></h3>
+            <span>Rose and gentle spices</span>
+          </div>
+        </div>
+      </li>
+      <li class="nocturne">
+        <a href="#"><img src="images/dummy/Nocturne.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Nocturne</a></h3>
+            <span>Chamomile blend for rest</span>
+          </div>
+        </div>
+      </li>
+      <li class="lighthouse-mint">
+        <a href="#"><img src="images/dummy/Lighthouse.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Lighthouse Mint</a></h3>
+            <span>Spearmint and lavender</span>
+          </div>
+        </div>
+      </li>
+      <li class="liquorice-star last">
+        <a href="#"><img src="images/dummy/Liquorice.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Liquorice Star</a></h3>
+            <span>Roasted dandelion with a twist</span>
+          </div>
+        </div>
+      </li>
+      <li class="emerald-zing">
+        <a href="#"><img src="images/dummy/Emerald-Zing.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Emerald Zing</a></h3>
+            <span>Peppermint inspired</span>
+          </div>
+        </div>
+      </li>
+      <li class="rooibos-chai">
+        <a href="#"><img src="images/dummy/Rooibos_Chai.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Rooibos High Chai</a></h3>
+            <span>Caffeine-free classic</span>
+          </div>
+        </div>
+      </li>
+      <li class="ginger-bird">
+        <a href="#"><img src="images/dummy/Ginger_Bird.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Ginger Bird</a></h3>
+            <span>Summer Bird with a ginger kick!</span>
+          </div>
+        </div>
+      </li>
+      <li class="earl-grey">
+        <a href="#"><img src="images/dummy/Earl_grey.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Earl Grey</a></h3>
+            <span>Bergamot infused 100% organic</span>
+          </div>
+        </div>
+      </li>
+      <li class="english-breakfast">
+        <a href="#"><img src="images/dummy/English_Breakfast.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">English Breakfast</a></h3>
+            <span>Classic favourite 100% organic</span>
+          </div>
+        </div>
+      </li>
+	  <li class="ginger-bird">
+        <a href="#"><img src="images/dummy/Ginger_Bird.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Ginger Bird</a></h3>
+            <span>Summer Bird with a ginger kick!</span>
+          </div>
+        </div>
+      </li>
+	  <li class="ginger-bird last">
+        <a href="#"><img src="images/dummy/Ginger_Bird.jpg" width="144" height="120" alt="" /></a>
+        <div class="cover">
+          <div>
+            <h3><a href="#">Ginger Bird</a></h3>
+            <span>Summer Bird with a ginger kick!</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div id="content" class="page clearfix">
+    <div id="main">
+      <h1>High Quality Organic Herbal Tea from The Tea Lady</h1>
+      <p>
+        Tea Lady Certified Organic Herbal Tea is an artisan-style, 
+        high quality tea range which honours the traditions of Herbal 
+        Medicine and European tisane therapy.
+      </p>
+      <p>
+        <img src="images/dummy/Organic-badge.png" width="91" height="61" alt="" />
+        Our delicious selection of teas are lovingly hand blended and 
+        packaged from the highest available quality Certified Organic ingredients.
+      </p>
+      <p>
+        The Tea Lady range is unique. Our delicious Tea Lady blends, 
+        have been expertly hand crafted and perfected by a renowned Australian 
+        herbalist over a 15 year period. Our beautiful teas combine medicinal 
+        quality herbs in a delicate balance which not only gives you all the health 
+        benefits of these potent herbs but unlike many herbal tea blends they are delicious!
+      </p>
+    </div>
+    <div id="sidebar">
+      <img class="product" src="images/dummy/tea.png" width="391" height="225" alt="" />
+      <p>
+        Our teas have been crafted by a medical herbalist for both the taste and health benefits they offer… 
+      </p>
+      <a href="#">read more</a>
+      <img class="underline" src="images/underline.png" width="305" height="16" alt="" />
+    </div>
+    
+
+    
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<p>And some lovely lorem ipsum!</p>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<h4>Heading 4</h4>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><strong>Bold text ipsum dolor sit amet</strong>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><em>Italic text ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</em></p>
+<p><a href="/ecommerce/p/13">Links to something dolor sit amet</a>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<blockquote>
+<p>Blockquote blockquote ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+</blockquote>
+<ul>
+<li>bullet list 1</li>
+<li>bullet list 2</li>
+<li>bullet list 3</li>
+</ul>
+<ol>
+<li>numbered list 1</li>
+<li>numbered list 2</li>
+<li>numbered list 3</li>
+</ol>
+
+
+    
+    
+  </div>
+  <div id="footer" class="page">
+    <div class="col1">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li class="clearfix"><span class="item">Phone</span><span class="value">0408 922 652</span></li>
+        <li class="clearfix"><span class="item">Email</span><span class="value"><a href="mailto:sales@thetealady.com.au">sales@thetealady.com.au</a></span></li>
+        <li class="clearfix"><span class="item">Address</span><span class="value">P.O. Box 248, (22 Edina Street) Ferntreee Gully. Vic 3156</span></li>
+      </ul>
+    </div>
+    <div class="col2">
+      <h3>join our mailing list</h3>
+      <p>And receive our free eBook report on organic tea blends, created by a medical herbalist Cath Minter:</p>
+      <form action="#" method="post">
+        <input class="text radius" type="text" name="name" placeholder="NAME" />
+        <input class="text radius" type="text" name="email" placeholder="EMAIL ADDRESS" />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="col3">
+      <h3>promotion code</h3>
+      <form action="#" method="post">
+        <input class="text radius" type="text" name="code" placeholder="ENTER CODE" />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <img class="flower_l" src="images/flower_l.png" width="122" height="45" alt="" />
+    <img class="flower_r" src="images/flower_r.png" width="122" height="45" alt="" />
+  </div>
+  <div id="siteinfo">
+    <p>&copy; Copyright 2009 The Tea Lady   Privacy Policy   Sitemap. 17 Apr 2012   valid HTML by Evolved Websites</p>
+  </div>
+</body>
+</html>

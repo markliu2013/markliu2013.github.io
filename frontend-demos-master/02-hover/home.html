@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+(function($) {
+	var cache = [];
+	$.preLoadImages = function() {
+		var args_len = arguments.length;
+		for (var i = args_len; i--;) {
+			var cacheImage = document.createElement('img');
+			cacheImage.src = arguments[i];
+			cache.push(cacheImage);
+		}
+	}
+})(jQuery)
+jQuery.preLoadImages("images/triangles02.png", "images/triangles03.png", "images/triangles04.png", "images/triangles05.png", "images/triangles06.png", "images/triangles07.png");
+$(function() {
+
+	var $trianglesImg = $("#triangles-img");
+	var $donateApplyImg = $("#donate-apply-img");
+	
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+	
+		$("#triangles-menu1").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles02.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles02.png");
+				return false;
+			}
+		});
+		
+		$("#triangles-menu2").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles03.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles03.png");
+				return false;
+			}
+		});
+		
+		$("#triangles-menu3").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles04.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles04.png");
+				return false;
+			}
+		});
+		
+		$("#triangles-menu4").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles05.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles05.png");
+				return false;
+			}
+		});
+		
+		$("#triangles-menu5").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles06.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles06.png");
+				return false;
+			}
+		});
+		
+		$("#triangles-menu6").bind("click", function() {
+			var imgSrc = $trianglesImg.attr("src");
+			if ( imgSrc == "images/triangles07.png" ) {
+				$trianglesImg.attr("src", "images/triangles01.png");
+				return true;
+			} else {
+				$trianglesImg.attr("src", "images/triangles07.png");
+				return false;
+			}
+		});
+		
+	} else {
+	
+		$("#triangles-menu1").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles02.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#triangles-menu2").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles03.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#triangles-menu3").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles04.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#triangles-menu4").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles05.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#triangles-menu5").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles06.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#triangles-menu6").hover(
+		function() {
+			$trianglesImg.attr("src", "images/triangles07.png");
+		},
+		function(){
+			$trianglesImg.attr("src", "images/triangles01.png");
+		});
+		
+		$("#donate-apply-link1").hover(
+		function() {
+			$donateApplyImg.attr("src", "images/donate-apply-02.png");
+		},
+		function(){
+			$donateApplyImg.attr("src", "images/donate-apply-01.png");
+		});
+		
+		$("#donate-apply-link2").hover(
+		function() {
+			$donateApplyImg.attr("src", "images/donate-apply-03.png");
+		},
+		function(){
+			$donateApplyImg.attr("src", "images/donate-apply-01.png");
+		});
+		
+	}
+	
+	
+});
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div id="triangles-menu">
+<img id="triangles-img" src="images/triangles01.png" width="949" height="263" usemap="#triangles-map" />
+<map name="triangles-map" id="triangles-map">
+	<area id="triangles-menu1" shape="poly" coords="0,0,242,0,121,263" href="/the-mentors" />
+	<area id="triangles-menu2" shape="poly" coords="141,263,261,0,382,263" href="/about-us/the-team" />
+	<area id="triangles-menu3" shape="poly" coords="282,0,403,263,524,0" href="/get-involved" />
+	<area id="triangles-menu4" shape="poly" coords="424,263,545,0,667,263" href="/get-involved" />
+	<area id="triangles-menu5" shape="poly" coords="566,0,687,263,808,0" href="/get-involved" />
+	<area id="triangles-menu6" shape="poly" coords="708,263,828,0,949,263" href="/about-us/sponsors" />
+</map>
+</div><!-- end triangles-menu -->
+
+<div id="donate-apply">
+<img id="donate-apply-img" src="images/donate-apply-01.png" width="158" height="106" usemap="#donate-apply-map" />
+<map name="donate-apply-map" id="donate-apply-map">
+	<area id="donate-apply-link1" shape="poly" coords="0,106,48,0,97,106" href="/get-involved/sponsor" />
+	<area id="donate-apply-link2" shape="poly" coords="60,0,109,106,158,0" href="/get-involved/apply" />
+</map>
+</div><!-- end donate-apply -->
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Cross Domain</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+var url = "http://date.jsontest.com/";
+if ($.browser.msie && window.XDomainRequest) {
+	var xdr = new XDomainRequest();
+	xdr.open("get", url);
+	xdr.send();
+	xdr.onload = function () {
+		alert(xdr.responseText)
+	}
+	xdr.onerror = function () { };
+	xdr.ontimeout = function () { };
+	xdr.onprogress = function () { };
+} else {
+	$.ajax({
+		url: url,
+		type: "GET",
+		complete: function(xhr, ts) {
+			if (ts == "success") {
+				alert(xhr.responseText)
+			}
+		}
+	});
+}
+</script>
+</head>
+<body>
+</body>
+</html>

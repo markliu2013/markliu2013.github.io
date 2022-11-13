@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+  <title>Find an event | MoneySmart Week</title>
+        
+  <link rel="AGLS_Metadata_Element_Set_v1-3" href="http://www.agls.gov.au/AGLS_Metadata_Element_Set_v1-3.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="en" />
+  <meta name="Description" content="MoneySmart Week is a national initiative promoting the importance of financial literacy. It&#39;s running from September 1 - 7 2013." />
+  <meta name="Keywords" content="MoneySmart Week, Financial Literacy Week Australia" />
+  <meta name="DC.Identifier" scheme="URL" content="/misc/find-an-event" />
+  <meta name="DC.Title" content="Find an event" />
+  <meta name="DC.Creator" scheme="GOLD" content="c=au;o=Australian Government;ou=Australian Government Australian Securities &amp; Investments Commission" />
+  <meta name="DC.Subject" scheme="Consumer protection; EF Economics and Finance" content="" />
+  <meta name="DC.Publisher" scheme="GOLD" lang="en" content="c=au;o=Australian Government;ou=Australian Government Australian Securities &amp; Investments Commission" /> 
+  <meta name="DC.Date.created" scheme="ISO8601" content="2013-04-10" />
+  <meta name="DC.Date.modified" scheme="ISO8601" content="2013-07-31" />
+  <meta name="DC.Description" content="MoneySmart Week is a national initiative promoting the importance of financial literacy. It&#39;s running from September 1 - 7 2013." />
+  <meta name="DC.Type.category" scheme="agls-document" content="Document" />
+
+  <style type="text/css" media="screen">
+        @import url("/css/msw-screen.css");
+      @import url("/css/fancybox.css");
+    </style>
+    <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+    <link rel="shortcut icon" href="/images/msw/favicon.ico" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+  //<![CDATA[ 
+  if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='/scripts/jquery-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  //]]>
+  </script>
+
+    <script src="/scripts/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+  <script src="/scripts/swfobject-2.2.js" type="text/javascript"></script>
+    <script src="/scripts/msw.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    //<![CDATA[ 
+        var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30407169-1']);
+      _gaq.push(['_trackPageview']);     
+  //]]>
+  </script>
+  
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css" /><![endif]-->
+  <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie7.css" /><![endif]-->
+  <!--[if lte IE 7]><script src="/scripts/ie.js" type="text/javascript" ></script><![endif]--> 
+  
+  <style type="text/css">
+    /* Calendar */
+#calendars a { text-decoration: none; }
+#calendars .event table td .date { float: left; width: 30px; }
+#calendars .event table td .date .month { background: #6B8E06; }
+#calendars .event table td .date a { display: block; height: 20px; line-height: 20px; text-align: center; }
+#calendars .event table td .date .month a { font-size: 0.8em; color: #fff; text-transform: uppercase; }
+#calendars .event table td .date .day { background: #e3eddc; }
+#calendars .event table td .date .day a { color: #6B8E06; }
+#calendars .event table td .content { float: left; margin-left: 5px; }
+#calendars .event table td .content h3 a { color: #6B8E06; }
+#calendars .event table td .description { margin-bottom: 10px; }
+  </style>
+  <script type="text/javascript">
+    //<![CDATA[ 
+    (function($) {
+
+$.fn.calendarFeed = function(options) {
+	var jQueryThis = this;
+	var o = $.extend({}, $.fn.calendarFeed.defaults, options || {});
+	var url = o.url;
+	if( !url ) {
+		console.log("Url is must");
+		return;
+	}
+	
+	var eventArr = {};
+	
+	if ($.browser.msie && window.XDomainRequest) {
+		var xdr = new XDomainRequest();
+		
+		xdr.open("get", url);
+		xdr.send();
+		
+		xdr.onload = function () {
+			
+			ajaxCallBack(xdr.responseText)
+		}
+		xdr.onerror = function () { };
+xdr.ontimeout = function () { };
+xdr.onprogress = function () { };
+	} else {
+		$.ajax({
+			url: url,
+			type: "GET",
+			complete: function(xhr, ts) {
+				if (ts == "success") {
+					ajaxCallBack(xhr.responseText)
+				}
+			}
+		});
+	}
+	
+	function ajaxCallBack(data) {
+		var jsonData = jQuery.parseJSON(data);
+		parseJSON(jsonData);
+		jQueryThis.html(parseEventArrToHTML(eventArr));
+		adjustWidth();
+	}
+	
+	return jQueryThis;//chainable
+	
+	function parseJSON(data) {
+		$.each(data.data, function(i, item) {
+			var event = {};
+			event.date = jsonToDate(item.what.whens[0].start_time);
+			event.name = item.what.name;
+			event.description = item.what.summary;
+			event.pageUrl = item.what.existing_web_address_url;
+			if (eventArr[item.what.address.state]) {
+				eventArr[item.what.address.state].push(event);
+			} else {
+				eventArr[item.what.address.state] = [event];
+			}
+		})
+	}
+	
+	
+	function parseEventArrToHTML(eventArr) {
+		var html = '';
+		html += '<div id="calendars">';
+		for (var key in eventArr) {
+			html += '<div class="event">';
+			html += '<h2><a name="'+ key +'" id="'+ key +'"/>' + key + '</h2>';
+			
+			var rowNum = Math.ceil(eventArr[key].length/2);
+			var isEven = eventArr[key].length % 2 == 0 ? true : false;
+			
+			html += '<table>';
+			for (var i=0; i<rowNum-1; i++) {
+				var event1 = eventArr[key][i*2];
+				var event2 = eventArr[key][i*2+1];
+				
+				html += '<tr>';
+				html += '<td>';
+				html += '<div class="date">';
+				html += '<div class="month"><a href="' + event1.pageUrl + '">' + parseMonth(event1.date) + '</a></div>';
+				html += '<div class="day"><a href="' + event1.pageUrl + '">' + event1.date.getDate() + '</a></div>';
+				html += '</div>';
+				html += '<div class="content">';
+				html += '<h3><a href="' + event1.pageUrl + '">' + event1.name + '</a></h3>';
+				html += '<div class="description">' + event1.description + '</div>';
+				html += '</div>';
+				html += '</td>';
+				html += '<td>';
+				html += '<div class="date">';
+				html += '<div class="month"><a href="' + event2.pageUrl + '">' + parseMonth(event2.date) + '</a></div>';
+				html += '<div class="day"><a href="' + event2.pageUrl + '">' + event2.date.getDate() + '</a></div>';
+				html += '</div>';
+				html += '<div class="content">';
+				html += '<h3><a href="' + event2.pageUrl + '">'+event2.name+'</a></h3>';
+				html += '<div class="description">'+event2.description+'</div>';
+				html += '</div>';
+				html += '</td>';
+				html += '</tr>';
+			}
+			
+			html += '<tr>';
+			html += '<td>';
+			html += '<div class="date">';
+			html += '<div class="month"><a href="' + eventArr[key][(rowNum-1)*2].pageUrl + '">' + parseMonth(eventArr[key][(rowNum-1)*2].date) + '</a></div>';
+			html += '<div class="day"><a href="' + eventArr[key][(rowNum-1)*2].pageUrl + '">' + eventArr[key][(rowNum-1)*2].date.getDate() + '</a></div>';
+			html += '</div>';
+			html += '<div class="content">';
+			html += '<h3><a href="' + eventArr[key][(rowNum-1)*2].pageUrl + '">' + eventArr[key][(rowNum-1)*2].name+'</a></h3>';
+			html += '<div class="description">'+eventArr[key][(rowNum-1)*2].description+'</div>';
+			html += '</div>';
+			html += '</td>';
+			
+			if (isEven) {
+				html += '<td>';
+				html += '<div class="date">';
+				html += '<div class="month"><a href="' + eventArr[key][(rowNum-1)*2+1].pageUrl + '">' + parseMonth(eventArr[key][(rowNum-1)*2+1].date) + '</a></div>';
+				html += '<div class="day"><a href="' + eventArr[key][(rowNum-1)*2+1].pageUrl + '">' + eventArr[key][(rowNum-1)*2+1].date.getDate() + '</a></div>';
+				html += '</div>';
+				html += '<div class="content">';
+				html += '<h3><a href="' + eventArr[key][(rowNum-1)*2+1].pageUrl + '">' + eventArr[key][(rowNum-1)*2+1].name + '</a></h3>';
+				html += '<div class="description">' + eventArr[key][(rowNum-1)*2+1].description + '</div>';
+				html += '</div>';
+				html += '</td>';
+			} else {
+				html += '<td></td>';
+			}
+			html += '</tr>';
+			html += '</table>';
+			html += '</div>';
+		}
+		html += '</div>';
+		return html;
+	}
+	
+	function jsonToDate(jsonStr) {
+		var tempArr1 = jsonStr.split("T");
+		var date = tempArr1[0];
+		var time = tempArr1[1].replace("Z", "");
+		var tempArr2 = date.split("-");
+		var tempArr3 = time.split(":");
+		var year = tempArr2[0];
+		var month = tempArr2[1];
+		var day = tempArr2[2];
+		var hour = tempArr3[0];
+		var min = tempArr3[1];
+		var second = tempArr3[2];
+		var date = new Date();
+		date.setFullYear(year,month-1,day);
+		date.setHours(hour);
+		date.setMinutes(min);
+		date.setSeconds(second);
+		
+		return date;
+	}
+	
+	
+	function parseMonth(date) {
+		var monthArr = {
+			1 : 'Jan',
+			2 : 'Feb',
+			3 : 'Mar',
+			4 : 'Apr',
+			5 : 'May',
+			6 : 'Jun',
+			7 : 'Jul',
+			8 : 'Aug',
+			9 : 'Sep',
+			10 : 'Oct',
+			11 : 'Nov',
+			12 : 'Dec'
+		};
+		return monthArr[date.getMonth()+1];
+	}
+	
+	function adjustWidth() {
+		var cWidth = $("#calendars").width();
+		var dateWidth = $("#calendars .event table td .date").width();
+		$("#calendars .event table td .content").width(cWidth/2 - dateWidth - 5 - 10);
+	}
+	
+	
+	
+	
+}
+
+
+
+$.fn.calendarFeed.defaults = {
+	
+}
+
+
+})(jQuery);
+
+$(function() {
+	$("#feed").calendarFeed({
+		url: "http://www.nospuds.com.au/whats.json?who=who/moneysmart-week_1374464654&max=50"
+	})
+});
+    //]]>
+  </script>
+  
+  
+    
+
+
+    </head> 
+    <body>
+        <div class="container">
+            <div id="header">
+                <a id="top" name="top"></a>
+          		<div id="header-logo"><a href="/" title="Home"><img src="/images/msw/header-logo.png" alt="MoneySmart Week (logo)" /></a></div>
+          		<div id="header-nav"><a href="#skip" id="skip-content">Skip to content</a><a href="/contact-us">Contact us</a><a href="/privacy">Privacy</a></div>
+               	<div style="float:right;margin: 20px 115px 0 0;">
+                	<img src="/media/362010/header-date.png" alt="September 2-8 2012" />
+                </div>
+            </div>
+            <!-- end #header -->
+        </div>
+        <!-- end container -->
+        
+    <div id="primary-nav-wrapper" class="no-rhs-bar"><ul id="primary-nav"><li><a href="/" id="n6845" title="MSW Home"><span>MSW Home</span></a></li><li><a href="/about-moneysmart-week" id="n6848" title="About MoneySmart Week"><span>About MoneySmart Week</span></a><ul><li><a href="/about-moneysmart-week/governance">Governance</a></li><li><a href="/about-moneysmart-week/moneysmart-week-ambassadors">MoneySmart Week Ambassadors</a></li><li><a href="/about-moneysmart-week/results-from-2012">Results from 2012</a></li><li class="last"><a href="/about-moneysmart-week/2013-partners">2013 Partners</a></li></ul></li><li><a href="/get-involved" id="n6849" title="Get involved"><span>Get involved</span></a><ul><li><a href="/get-involved/find-an-event">Find an event</a></li><li><a href="/get-involved/organising-a-community-event">Organising a community event</a></li><li><a href="/get-involved/organising-a-workplace-event">Organising a workplace event</a></li><li><a href="/get-involved/organising-an-event-in-schools">Organising an event in schools</a></li><li><a href="/get-involved/register-an-event">Register an event</a></li><li class="last"><a href="/get-involved/terms-and-conditions-of-holding-an-event">Terms and conditions of holding an event</a></li></ul></li><li><a href="/awards" id="n6850" title="Awards"><span>Awards</span></a><ul><li><a href="/awards/terms-and-conditions-for-outstanding-award-prize">Terms and conditions for outstanding award prize</a></li><li><a href="/awards/judging-panel">Judging panel</a></li><li><a href="/awards/faqs">FAQs</a></li><li class="last"><a href="/awards/past-awards">Past Awards</a></li></ul></li><li><a href="/resources" id="n6851" title="Resources"><span>Resources</span></a></li><li><a href="/media" id="n6852" title="Media"><span>Media</span></a></li><li><a href="/sitemap" id="n7131" title="Sitemap"><span>Sitemap</span></a></li><li><a href="/search-sitemap" id="n7132" title="Search-Sitemap"><span>Search-Sitemap</span></a></li></ul></div>
+
+        <div class="container">
+            <form method="post" action="/misc/find-an-event" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkcqrJlXRdPPnHaAyOtP+gs9FqXw0=" />
+</div>
+
+                
+    <div id="main-wrapper" class="no-rhs-bar">
+        <div id="secondary-nav">
+			 
+		</div>
+        <div id="content" class="l-nav-no-rhs-bar">
+            <div id="breadcrumbs-container"><div id="breadcrumb"><ul><li><a href="/msw-home">
+                                 Home
+                              </a> &gt;
+                          </li><li><a href="/misc">misc</a> &gt;
+                          </li><li>Find an event</li></ul></div><div class="tools"><a id="text-minus" title="Decrease text size" href="javascript:void(0);"><span class="offScreen">Decrease text size</span></a><a id="text-plus" title="Increase text size" href="javascript:void(0);"><span class="offScreen">Increase text size</span></a><a id="email" title="Email this page" class="addthis_button_email" href="javascript:void(0);"><span class="offScreen">Email this page</span></a><a id="print" title="Printer friendly format" href="javascript:void(0);"><span class="offScreen">Printer friendly format</span></a><a class="addthis_button_facebook" title="Send to Facebook" href="javascript:void(0);">Send to Facebook</a><a class="addthis_button_twitter" title="Send to Twitter" href="javascript:void(0);">Send to Twitter</a></div></div><a id="skip" name="skip" class="offScreen"> </a>
+            <h1>
+                
+                    Find an event
+                
+            </h1>
+
+            
+                <p class="article-title">Find a MoneySmart Week event near you</p>
+
+<p>See which community events are being held in your region during
+MoneySmart Week.&nbsp;</p>
+
+<ul class="anchor-links">
+<li><a href="#QLD">Events in Queensland (QLD)</a></li>
+
+<li><a href="#TAS">Events in Tasmania (TAS)</a></li>
+
+<li><a href="#SA">Events in South Australia (SA)</a></li>
+
+<li><a href="#WA">Events in Western Australia (WA)</a></li>
+
+<li><a href="#VIC">Events in Victoria (VIC)</a></li>
+
+<li><a href="#NSW">Events in New South Wales (NSW)</a></li>
+</ul>
+
+<div id="feed">&nbsp;</div>
+            
+
+            <p id="lastupdated">Last updated: 31 Jul 2013</p>
+        </div>
+        <!-- content -->
+    </div>
+    <!-- main-wrapper -->
+
+            </form>
+            <div id="footer"><div id="footer-top"> </div></div>
+
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=moneysmart"></script>
+
+      <script type="text/javascript">
+      //<![CDATA[ 
+        (function() {
+            var ga = document.createElement('script');     
+            ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+          
+          $(document).ready(function() {
+            $('.external-link').click(function() {     
+              var url = $(this).attr('href');
+              _gaq.push(['_trackEvent', 'Outbound Links', 'Click', url]);
+              window.open(this.href);           
+              return false;
+            });    
+            
+            $('.document-link').click(function(){      
+              var url = $(this).attr('href');
+              _gaq.push(['_trackPageview', url]);        
+              if ($(this).attr('target') == '_blank') { } else { 
+                window.open(this.href);
+                return false;
+              }
+            });          
+          });
+        //]]>      
+      </script>
+      
+            <script type="text/javascript" src="/scripts/rate-this-page.js"></script>
+
+        </div>
+        <!--end container -->
+    </body>
+    </html>

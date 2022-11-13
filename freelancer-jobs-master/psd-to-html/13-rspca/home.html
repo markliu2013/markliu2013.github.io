@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="css/font.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.2.88.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	/* pre-load images */
+	(function($) {
+  		var cache = [];
+  		// Arguments are image paths relative to the current page.
+  		$.preLoadImages = function() {
+    		var args_len = arguments.length;
+    		for (var i = args_len; i--;) {
+      			var cacheImage = document.createElement('img');
+      			cacheImage.src = arguments[i];
+      			cache.push(cacheImage);
+    		}
+  		}
+	})(jQuery)
+	jQuery.preLoadImages("images/getInfoBgHover.png", "images/getInfoBgClick.png", "images/getQuoteBgHover.png", "images/getQuoteBgClick.png", "images/playBtnBgHover.png", "images/playBtnBgClick.png");
+	
+	
+	
+	
+	
+	
+	
+	$('#slidershow').cycle({
+  		fx: 'scrollHorz',
+  		timeout:  2500,
+  		speed:  300,
+		next:   '#nextSlider', 
+    	prev:   '#prevSlider'
+  	});
+	$('#slidershow').cycle('pause');
+	
+	$("#openPrizeDetail").colorbox();
+	
+	$("#contactInfo a.getInfo").mousedown(function(e) {
+		$(this).addClass("click");
+	});
+	$("#contactInfo a.getInfo").mouseup(function(e) {
+		$(this).removeClass("click");
+	});
+	$("#contactInfo a.getQuote").mousedown(function(e) {
+		$(this).addClass("click");
+	});
+	$("#contactInfo a.getQuote").mouseup(function(e) {
+		$(this).removeClass("click");
+	});
+	$("#playBtnWrap a").mousedown(function(e) {
+		$(this).addClass("click");
+	});
+	$("#playBtnWrap a").mouseup(function(e) {
+		$(this).removeClass("click");
+	});
+	
+})
+
+</script>
+
+
+</head>
+<body>
+	<div id="header" class="page clearfix">
+		<div id="logo">
+			<a href="#"><img src="images/logo.png" width="175" height="68" alt="Logo" /></a>
+			<span id="tagline">Insure your pet and get peace of mind today!</span>
+		</div><!-- end logo -->
+		<div id="contactInfo">
+			<div class="clearfix">
+				<a href="#" class="getInfo"><img src="images/info.png" width="21" height="22" alt="" />Get An Info Pack</a>
+				<img src="images/separate.jpg" width="2" height="39" alt="" />
+				<a href="#" class="getQuote"><img src="images/tick.png" width="21" height="22" alt="" />Get A Quote Or Apply Now</a>
+			</div>
+			<p class="color-block">or <strong>Call 1300 670 612</strong> to speak to a representative today!</p>
+		</div><!-- end contactInfo -->
+	</div><!-- end header -->
+  	<div id="contentWrap">
+		<div id="content">
+			<div id="main">
+				<div id="titleWrap">
+					<div id="title">
+						<img class="star" src="images/star.png" width="300" height="293" alt="" />
+						<img class="paws" src="images/pawsBg.png" width="402" height="237" alt="" />
+						<img class="fame" src="images/pawsOfFame.png" width="446" height="248" alt="" />
+						<img class="win" src="images/winYourPet.png" width="411" height="88" alt="" />
+					</div>
+				</div>
+				<div id="scoop">	
+					<h2>Is your pet a superstar?</h2>
+					<p>
+						Enter our Paws of Fame celebrity matching competition for the chance to pick up some fantastic pet pampering prizes.
+					</p>
+					<div id="play" class="clearfix">
+						<div class="text">
+							<span class="top">Play Now</span>
+							<span class="bottom">on<img src="images/facebookLogo.png" width="75" height="26" alt="" /><img src="images/winText.png" width="77" height="27" alt="" /></span>
+						</div>
+						<div id="playBtnWrap">
+							<a href="#"></a>
+						</div><!-- end playBtnWrap -->
+					</div><!-- end play -->
+					<div class="description">
+						<img src="images/machin.png" width="273" height="217" alt=""  />
+						<p>
+							We’re rolling out the red carpet for some amazing pets with star quality. Your dog or cat could be the outright winner in our competition. Use our amazing pet profiler to <a href="#">find your pet’s celebrity match and win ›</a>
+						</p>
+					</div><!-- end description -->
+				</div><!-- end scoop -->
+				<div id="sliderWrap">
+					<div id="slider">
+						<img class="top" src="images/celeWatch.png" width="213" height="106" alt="" />
+						<a href="#" id="prevSlider" class="sliderNav"></a>
+						<a href="#" id="nextSlider" class="sliderNav"></a>
+						<div id="slidershow">
+							<div class="slide">
+								<div class="clearfix">
+									<div class="slideInfo">
+										1 MAX IS<br />as crazy as Charlie Sheen!
+									</div>
+									<div class="slideImg">
+										<img class="first" src="images/dog.png" width="155" height="140" alt="" />
+										<img class="second" src="images/sliderStar.png" width="120" height="120" alt="" />
+									</div>
+								</div>
+								<div class="links">
+									<a href="#">View Other Pet Celebrities ›</a>&nbsp;|&nbsp;<a href="#">Play Paws of Fame ›</a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="clearfix">
+									<div class="slideInfo">
+										2 MAX IS<br />as crazy as Charlie Sheen!
+									</div>
+									<div class="slideImg">
+										<img class="first" src="images/dog.png" width="155" height="140" alt="" />
+										<img class="second" src="images/sliderStar02.png" width="120" height="120" alt="" />
+									</div>
+								</div>
+								<div class="links">
+									<a href="#">View Other Pet Celebrities ›</a>&nbsp;|&nbsp;<a href="#">Play Paws of Fame ›</a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="clearfix">
+									<div class="slideInfo">
+										3 MAX IS<br />as crazy as Charlie Sheen!
+									</div>
+									<div class="slideImg">
+										<img class="first" src="images/dog.png" width="155" height="140" alt="" />
+										<img class="second" src="images/sliderStar03.png" width="120" height="120" alt="" />
+									</div>
+								</div>
+								<div class="links">
+									<a href="#">View Other Pet Celebrities ›</a>&nbsp;|&nbsp;<a href="#">Play Paws of Fame ›</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- end slider -->
+				</div><!-- end sliderWrap -->
+				<div id="prizePodWrap">
+					<div id="prizePod">
+						<img class="top" src="images/superStarPrizes.png" width="270" height="128" alt="SuperStar Prizes" />
+						<img src="images/movie.png" width="169" height="190" alt="" />
+						<h3>Win your pet the celebrity treatment with a fantastic superstar prize worth $1500!</h3>
+	
+						<p>
+							You can spoil your pet with a year’s worth of food from Hills Pet food and some star quality pampering with $500 to spend at the luxury boutique, Dogue!
+						</p>
+						<p>
+							We’re also giving away weekly gift vouchers worth $75 from Dogue boutique. <a href="prizeDetail.html" id="openPrizeDetail">Click here for prize details ›</a>
+						</p>
+					</div><!-- end prizePod -->
+				</div><!-- end prizePodWrap -->
+			</div><!-- end main -->
+		</div><!-- end content -->
+		</div><!-- end contentWrap -->
+	</div>
+	<div id="footerWrap">
+		<div id="footer" class="page">
+			<ul class="clearfix">
+				<li><a href="#">Pet insurance</a></li>
+				<li><a href="#">Dog insurance</a></li>
+				<li><a href="#">Cat insurance</a></li>
+				<li><a href="#">Compare Pet insurance</a></li>
+				<li class="highlight"><a href="#">Privacy policy</a></li>
+				<li class="highlight"><a href="#">Terms &amp; Conditions</a></li>
+				<li class="last highlight"><a href="#">Policy booklet</a></li>
+			</ul>
+			<p>
+				RSPCA Pet Insurance is issued and underwritten by The Hollard Insurance Company Pty Ltd ABN 78 090 584 473(AFSL No. 241436). It is distributed and promoted by
+				Hollard Financial Services Pty Ltd (HFS) ABN 53 128 692 884, AFSL 343079, of Level 38, 2 Park St, Sydney NSW 2000 and by its Authorised Representative RSPCA Australia
+				Incorporated (AR No 296287). Advice on this website is general only and does not consider your individual objectives or financial situation. Terms and Conditions apply.
+				Please read the <a href="#">Policy booklet</a> which contains the PDS and FSG to ensure these products are right for you.
+			</p>
+		</div><!-- end footer -->
+	</div><!-- end footerWrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

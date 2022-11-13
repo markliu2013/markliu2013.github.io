@@ -1,0 +1,12 @@
+.btn {
+	display: inline;
+	zoom: 1;
+}
+#places-available .number {
+	display: inline;
+	zoom: 1;
+	float: none;
+}
+#tagline span {
+	clear: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery UI Example</title>
+<link href="css/jquery.ui.core.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ui.datepicker.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#datepicker").datepicker(
+			{
+				changeYear: true,
+				yearRange: "-0:+3",
+				changeMonth: true,		
+			}
+		);
+		
+	})
+	
+	
+</script>
+<style type="text/css">
+#datepicker-wrap {
+	float: left;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	padding-top: 3px;
+}
+#datepicker-wrap h3 {
+	margin: 0;
+	padding-left: 3px;
+}
+#datepicker .ui-datepicker {
+	border: none;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+</style>
+</head>
+
+<body>
+
+<div id="datepicker-wrap">
+	<h3>开始日期</h3>
+	<div id="datepicker"></div>
+</div>
+</html>
+
+
+
+

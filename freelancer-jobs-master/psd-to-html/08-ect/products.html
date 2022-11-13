@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Products Page</title>
+<meta http-equiv="keywords" content="" />
+<meta http-equiv="description" content="" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/2671e0f3-3650-4657-959b-bcdd7ce915db.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+</head>
+<body id="products">
+
+	<div id="header" class="container clearfix">
+		<a href="home.html" class="logo"><img src="images/logo.png" width="129" height="51" alt="ETC" /></a>
+		<ul id="nav">
+			<li class="current"><a href="products.html">Products</a></li>
+			<li><a href="solutions.html">Solutions</a></li>
+			<li><a href="industry.html">Industry</a></li>
+			<li><a href="testimonials.html">Testimonials</a></li>
+			<li><a href="support.html">Support</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div id="top-phone-number">1800 80 84 80</div>
+		<div id="top-login" class="form-wrap">
+			<span class="btn-text">Login</span>
+			<form method="post" action="">
+				<h3>Already a customer?</h3>
+				<p>Select a product below.</p>
+				<div class="dropdown" id="select-product-dropdown">
+					<input type="hidden" name="productName" />
+					<label>Select your Product</label>
+					<ul>
+						<li value="1">iMeet</li>
+						<li value="2">GlobalMeet</li>
+						<li value="3">MeetNow</li>
+						<li value="4">OpAssist</li>
+						<li value="5">Help me decide</li>
+					</ul>
+				</div>
+				<div class="dropdown" id="product-pay-dropdown">
+					<label>View/Pay Online Bill</label>
+				</div>
+				<input type="text" name="" placeholder="Client Login" />
+				<input type="text" name="" placeholder="Password" />
+				<a href="#">Forgot Password?</a>
+				<input class="submit btn-text" type="submit" value="Login" />
+			</form>
+		</div><!-- end top-login -->
+	</div><!-- end header -->
+	
+	<div id="banner-bg"></div><!-- end banner-bg -->
+	<div id="content" class="container">
+		<div id="page-title">
+			<div id="page-nav">
+				<a href="http://www.ect.com.au/conferencing-home">Conferencing Home</a><span>›</span><a href="http://www.ect.com.au/conferencing-home/product">Products</a>
+			</div>
+			<form id="search-form" method="get" action="home.html">
+				<input id="search-input" type="text" name="q" placeholder="Search" />
+				<input class="submit" type="submit" value="" />
+			</form>
+		</div>
+		<h2>Products</h2>
+		<p class="highlight">ECT conferencing specialists for your complete conferencing needs.</p>
+		<div class="box-list">
+            <div class="box clearfix">
+				<a href="imeet.html" class="img-link"><img src="images/dummy/products/img02.jpg" width="352" height="230" alt="" /></a>
+				<div>
+					<h3><a href="imeet.html">Desktop Video Conferencing</a></h3>
+					<ul>
+						<li>Personally connect – get to know your colleagues with social media integration</li>
+						<li>Less frustrating meetings - join the video conference instantly via your desktop, laptop or smartphone*</li>
+						<li>Hassle-free access – no downloads required for your guest access</li>
+						<li>Keep it private – assigned key access to your room to monitor who’s in your room</li>
+						<li>Record, stop and rewind - record sessions for on-demand video viewing</li>
+					</ul>
+					<a href="contact.html?p=1" class="fourteen-day-imeet-free-trial-btn btn-text">14 DAY iMeet FREE TRIAL</a>
+				</div>
+			</div>
+			<img class="separate" src="images/sectionSeparate.png" width="618" height="5" />
+			<div class="box clearfix">
+				<a href="GlobalMeet.html" class="img-link"><img src="images/dummy/products/img01.jpg" width="352" height="230" alt="" /></a>
+				<div>
+					<h3><a href="GlobalMeet.html">Web Conferencing</a></h3>
+					<ul>
+						<li>Less frustrating meetings - join the meeting instantly via your desktop, laptop or smartphone*</li>
+						<li>Save time - create a meeting URL for reoccurring meetings to help calendar management</li>
+						<li>Direct access - one click access from Outlook</li>
+						<li>Hassle-free access - no downloads required for your guest access</li>
+						<li>Look who’s talking  - active talker tells you who’s talking in your meeting</li>
+						<li>Record, stop and rewind - record sessions for on-demand viewing and archiving</li>
+					</ul>
+					<a href="contact.html?p=2" class="thirty-day-globalmeet-free-trial-btn btn-text">30 DAY GLOBALMEET FREE TRIAL</a>
+				</div>
+			</div>
+			<img class="separate" src="images/sectionSeparate.png" width="618" height="5" />
+			<div class="box clearfix">
+				<a href="meetNow.html" class="img-link"><img src="images/dummy/products/img03.jpg" width="352" height="230" alt="" /></a>
+				<div>
+					<h3><a href="meetNow.html">Teleconferencing – self-service</a></h3>
+					<ul>
+						<li>Any time conferencing -  for national or international collaboration with up to 125 colleagues</li>
+						<li>Easy access  - no need to book or require any special equipment</li>
+						<li>Global reach - over 100 local and international access numbers for your global counterparts</li>
+					</ul>
+					<a id="contact-etc-conferencing-specialist" class="btn-text" href="contact.html?p=3">Contact an ECT Conferencing Specialist</a>
+				</div>
+			</div>
+			<img class="separate" src="images/sectionSeparate.png" width="618" height="5" />
+			<div class="box clearfix">
+				<a href="OPAssist.html" class="img-link"><img src="images/dummy/products/img04.jpg" width="352" height="230" alt="" /></a>
+				<div>
+					<h3><a href="OPAssist.html">Teleconferencing webinars– fully managed</a></h3>
+					<ul>
+						<li>In safe hands –fully trained event managers to manage all elements of your event</li>
+						<li>Personal service – personally designed service for your guests based on your needs</li>
+						<li>Market intelligence  -  capture information from your guests at registration to drive post event continuation</li>
+					</ul>
+					<a id="contact-etc-conferencing-specialist" class="btn-text" href="contact.html?p=4">Contact an ECT Conferencing Specialist</a>
+				</div>
+			</div>
+			<img class="separate" src="images/sectionSeparate.png" width="618" height="5" />
+		</div>
+		<p class="bottom-text">*iPhone&reg; and iPad&reg; application</p>
+	</div><!-- end content -->
+	<div id="footer-wrap">
+		<div id="footer" class="container">
+			<div id="icon-section">
+			<ul class="clearfix">
+				<li>
+					<h3>Desktop<br />Video Conferencing</h3>
+					<div class="icon-image-wrap">
+						<img class="normal" src="images/homeIconBlue.png" width="136" height="136" alt="" />
+						<img class="hover" src="images/homeIconBlueHover.png" width="136" height="136" alt="" />
+					</div>
+					<img class="bottom-shadow" src="images/iconSectionBottomShadow.png" width="228" height="4" />
+				</li>
+				<li>
+					<h3>Web<br />Conferencing</h3>
+					<div class="icon-image-wrap">
+						<img class="normal" src="images/homeIconOrange.png" width="136" height="136" alt="" />
+						<img class="hover" src="images/homeIconOrangeHover.png" width="136" height="136" alt="" />
+					</div>
+					<img class="bottom-shadow" src="images/iconSectionBottomShadow.png" width="228" height="4" />
+				</li>
+				<li>
+					<h3>Teleconferencing</h3>
+					<p>Self Service</p>
+					<div class="icon-image-wrap">
+						<img class="normal" src="images/homeIconRed.png" width="136" height="136" alt="" />
+						<img class="hover" src="images/homeIconRedHover.png" width="136" height="136" alt="" />
+					</div>
+					<img class="bottom-shadow" src="images/iconSectionBottomShadow.png" width="228" height="4" />
+				</li>
+				<li class="last">
+					<h3>Teleconferencing<br />&amp; Webinars</h3>
+					<p>Fully Managed</p>
+					<div class="icon-image-wrap">
+						<img class="normal" src="images/homeIconGreen.png" width="136" height="136" alt="" />
+						<img class="hover" src="images/homeIconGreenHover.png" width="136" height="136" alt="" />
+					</div>
+					<img class="bottom-shadow" src="images/iconSectionBottomShadow.png" width="228" height="4" />
+				</li>
+			</ul>
+		</div><!-- end icon-section -->
+			<div class="clearfix">
+				<div class="site-links clearfix">
+					<ul class="col col1">
+						<li>
+							<a href="#">Products</a>
+							<ul>
+								<li><a href="#">iMeet</a></li>
+								<li><a href="#">Global Meet</a></li>
+								<li><a href="#">Meet Now</a></li>
+								<li><a href="#">Op Assist</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Solutions</a></li>
+					</ul>
+					<ul class="col col2">
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+					<ul class="col col3">
+						<li>
+							<a href="#">industry</a>
+							<ul>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Not For Profit</a></li>
+								<li><a href="#">Health</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- end site-links -->
+				<div class="contact-info">
+					<img src="images/footerLogo.png" width="129" height="51" alt="ECT" />
+					<p>
+						Enterprise Care Teleconferencing<br /><br />
+						Level 2, 409 St. Kilda Road,<br />
+						Melbourne, VIC 3004
+					</p>
+				</div>
+			</div><!-- end top -->
+			<div class="bottom clearfix">
+				<div class="terms-privacy">
+					<a href="files/Terms and Conditions -ECT.pdf" target="_blank">Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="files/Privacy Policy - ECT.pdf" target="_blank">Privacy Policy</a>
+				</div>
+				<div class="copyright">
+					Copyright &copy; 2012 ECT&nbsp;&nbsp;|&nbsp;&nbsp;Website Design by <a href="#">Adrenalin Media</a>
+				</div>
+			</div><!-- end bottom -->
+		</div><!-- end footer -->
+	</div><!-- end footer-wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,615 @@
+/* @override 
+	http://cte.evolved-websites.com/1/css/master.css
+*/
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/* General */
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #666;
+}
+a {
+	color: #006699;
+	text-decoration: none;
+}
+a:hover {
+	color: #006699;
+	text-decoration: underline;
+}
+img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: #006699;
+}
+h1 strong, h2 strong, h3 strong, h4 strong {
+	font-family: "Helvetica Bold";
+	color: #003366;
+}
+h1 {
+	font-size: 25.5px;
+}
+
+h2 {
+	font-size: 17.5px;
+}
+
+h3 {
+	font-size: 15.5px;
+}
+
+h4 {
+	font-size: 13.75px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-size: 15px;
+	line-height: 20px;
+	color: #333;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+	margin: 2em;
+	padding: 0;
+	color: #999;
+}
+
+.shadow {
+	-moz-box-shadow: 1px 1px 8px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 1px 1px 8px rgba(0,0,0,0.15);
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.15);
+}
+
+/* Layout */
+.page {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+/* header */
+#header {
+	padding: 47px 0 23px 0;
+}
+#header a {
+	display: block;
+	margin-left: 27px;
+}
+#header h2 {
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 17.5px;
+	color: #666;
+	text-align: center;
+}
+/* banner */
+#banner {
+	position: relative;
+}
+#banner img {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+#banner img.last {
+	margin-right: 0;
+}
+#slider-control {
+	position: absolute;
+	bottom: 18px;
+	right: 60px;
+	z-index: 100;
+}
+#slider-control a, #slider-control span {
+	display: block;
+	float: left;
+	height: 22px;
+}
+#slider-control span {
+	width: 27px;
+	margin: 0 15px;
+	background: url(../images/slider_control.png) -32px 0 no-repeat;
+}
+#slider-control a {
+	width: 17px;
+}
+#prev-slide {
+	background: url(../images/slider_control.png) 0 0 no-repeat;
+}
+#next-slide {
+	background: url(../images/slider_control.png) -74px 0 no-repeat;
+}
+
+.slide {
+	position: relative;
+}
+.slide .slide-content {
+	position: absolute;
+	top: 0;
+	left: 122px;
+	width: 117px;
+	height: 165px;
+	background: url(../images/slider_info_bg.png) no-repeat;
+	padding: 34px 16px 0 16px;
+}
+.slide .slide-content p {
+	margin: 0;
+	font-size: 17.5px;
+	line-height: 1;
+	color: #d7d7d7;
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+}
+/* nav */
+#nav {
+	padding: 28px 0 0 0;
+}
+#project-list #nav {
+	padding-top: 0;
+}
+#project-container #nav {
+	padding-top: 0;
+}
+#team #nav {
+	padding-top: 0;
+}
+#nav ul {
+	list-style: none;
+	overflow: hidden;
+	margin: 0 0 11px 28px;
+}
+#nav ul li {
+	float: left;
+	padding: 0 33px;
+	height: 18px;
+	line-height: 18px;
+	border-right: 1px solid #d7d7d7;
+}
+#nav ul li.last {
+	border-right: none;
+}
+#nav ul li a {
+	color: #666;
+}
+#nav ul li.active a {
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+}
+#home #nav {
+	padding-bottom: 33px;
+}
+#home #nav ul {
+	margin: 0 0 0 28px;
+}
+/* content */
+#content {
+	margin: 0 auto;
+	width: 910px;
+	padding: 0 45px;
+}
+#content ul, 
+#content ol {
+	margin: 10px 18px;
+	color: #333;
+}
+#home #content .col {
+	float: left;
+	margin-bottom: 20px;
+	padding: 15px 14px 0 21px;
+	height: 332px;
+}
+#home #content .col h3 {
+	margin-bottom: 8px;
+	font-size: 22.5px;
+}
+#home #content .col h4 {
+	margin: 12px 0 4px 0;
+	color: #666;
+}
+#home #content .col p {
+	margin: 0;
+	font-size: 11.25px;
+	line-height: 12.5px;
+}
+#home #content .col1 {
+	margin-right: 13px;
+	width: 194px;
+}
+#home #content .col2 {
+	margin-right: 8px;
+	width: 401px;
+}
+#home #content .col3 {
+	width: 188px;
+}
+/* site-link */
+.horizontal-shadow {
+	height: 7px;
+	background: url(../images/top_shadow.png) no-repeat;
+}
+#site-link {
+	margin-top: 25px;
+}
+#site-link ul {
+	overflow: hidden;
+	list-style: none;
+	margin: 11px 0 0 0;
+	padding: 0 45px;
+}
+#site-link ul li {
+	float: left;
+	width: 134px;
+	padding: 13px 0 15px 20px;
+	border-left: 1px solid #dcdddf;
+}
+#site-link ul li h3 {
+	font-size: 11.25px;
+	color: #666;
+}
+#site-link ul li.first {
+	padding-left: 0;
+	border: none;
+}
+#site-link ul li ul {
+	margin: 0;
+	padding: 0;
+}
+#site-link ul li ul li {
+	float: none;
+	padding: 0;
+	border: none;
+}
+#site-link ul li ul li a {
+	font-size: 11.25px;
+	color: #666;
+}
+
+/* footer */
+#footer {
+	margin: 25px auto 0;
+	width: 910px;
+	padding: 0 45px;
+}
+#footer .left {
+	float: left;
+	width: 590px;
+}
+#footer .right {
+	float: right;
+	margin-top: 13px;
+	width: 320px;
+}
+#footer p, #footer p a {
+	font-size: 7.5px;
+	color: #999;
+}
+#footer ul {
+	list-style: none;
+	overflow: hidden;
+}
+#footer ul li {
+	float: left;
+	margin: 12px 13px 0 0;
+}
+#footer ul li.sec-last {
+	margin: 0 14px 0 14px;
+}
+#footer ul li.last {
+	margin: 0 0 0 14px;
+}
+
+/* normal */
+#normal #content {
+	padding-top: 33px;
+}
+#normal #content .left {
+	float: left;
+	margin-left: 0px;
+	width: 253px;
+}
+#normal #content .right {
+	float: left;
+	margin-left: 37px;
+	width: 603px;
+}
+#normal #content .left h2, #normal #content .left h3 {
+	margin-bottom: 27px;
+	font-size: 30px;
+	line-height: 22.5px;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	text-align: right;
+}
+#normal #content .left h3 {
+	margin: 0 0 10px 12px;
+	text-align: left;
+}
+#normal #content .left blockquote {
+	font-size: 30px;
+	line-height: 25px;
+	text-align: right;
+	margin: 0;
+}
+#normal #content .left ul {
+	margin: 0;
+	list-style: none;
+}
+#normal #content .left ul li {
+	list-style: none;
+	padding: 20px 0 20px 12px;
+	border-bottom: 1px solid #cacbcc;
+}
+#normal #content .left ul li.last {
+	border-bottom: none;
+}
+#normal #content .left ul li a {
+	font-size: 17.5px;
+	color: #666;
+}
+#normal #content .left ul li.active a {
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+}
+#normal #content .right p {
+	margin: 0 0 5px 0;
+	clear: both;
+}
+#normal #content .right h2 {
+	margin-bottom: 15px;
+	font-size: 22.5px;
+	color: #003366;
+}
+#normal #content .right h3 {
+	margin-bottom: 15px;
+	font-size: 22.5px;
+	line-height: 20px;
+}
+#normal #content .right h4 {
+	margin-bottom: 8px;
+	font-size: 17.5px;
+}
+#normal #content .right hr {
+	margin: 15px 0 15px 0;
+	border: none;
+	border-top:1px solid #cacbcc;
+}
+#normal #content .right .img-cap {
+	position: relative;
+	float: left;
+	margin: 7px 0 17px 0;
+}
+#normal #content .right .img-cap .caption {
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+}
+#normal #content .right .img-cap .caption span {
+	padding-left: 16px;
+	font-size: 11.25px;
+	color: #fff;
+}
+#normal #content .right .images {
+	margin-bottom: 13px;
+}
+#normal #content .right .images img {
+	float: left;
+	margin-right: 6px;
+}
+#normal #content .right .images img.last {
+	margin-right: 0;
+}
+/* project */
+#project #content h2 {
+	padding: 32px 0 18px 0;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+}
+#project #content h1 {
+	padding-bottom: 15px;
+	font-size: 30px;
+	color: #003366;
+}
+#project #content .left {
+	float: left;
+	width: 210px;
+	font-size: 13.75px;
+	color: #333;
+}
+#project #content .left dl {
+	margin: 0;
+}
+#project #content .left dt {
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+	line-height: 17.5px;
+}
+#project #content .left dd {
+	margin: 0;
+	padding: 5px 0 8px 0;
+	line-height: 17px;
+}
+#project #content .right {
+	float: right;
+	width: 585px;
+	font-size: 15px;
+}
+#project #content .right h3 {
+	margin-bottom: 7px;
+	font-size: 15px;
+}
+#project #content .right p {
+	
+	font-size: 15px;
+}
+#project #content .right ul {
+	margin-bottom: 7px;
+	padding-left: 15px;
+}
+#project #content .right ul li {
+	line-height: 20px;
+	color: #333;
+}
+/* project-list */
+#project-list #banner {
+	margin-top: 35px;
+}
+#project-list #content {
+	padding-top: 30px;
+}
+#project-list #content h2 {
+	margin-bottom: 15px;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 30px;
+}
+#project-list #content .list-header {
+	font-size: 14.07px;
+	color: #333;
+}
+#project-list #content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 19px;
+}
+#project-list #content table th {
+	text-align: left;
+}
+#project-list #content table tr {
+	font-size: 13.75px;
+	color: #333;
+}
+#project-list #content table th {
+	font-family: "Helvetica Bold", Helvetica, arial, sans-serif;
+}
+#project-list #content table tr {
+	height: 28px;
+}
+#project-list #content table tr.odd {
+	background: #ececec;
+}
+/* th width */
+#project-list #content table th.th-number {
+	width: 10%;
+}
+#project-list #content table th.th-name {
+	width: 28%;
+}
+#project-list #content table th.th-type {
+	width: 14%;
+}
+#project-list #content table th.th-location {
+	width: 25%;
+}
+#project-list #content table th.th-commenced {
+	width: 14%;
+}
+#project-list #content table th.th-complete {
+	width: 9%;
+}
+/* project-container */
+#project-container #content {
+	padding-top: 30px;
+}
+#project-container #content h2 {
+	margin-bottom: 15px;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 30px;
+}
+/* team */
+#team #content {
+	padding-top: 30px;
+}
+#team #content h2 {
+	margin-bottom: 15px;
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 30px;
+}
+#team #content .info {
+	margin-bottom: 10px;
+}
+#team #content .info .left {
+	float: left;
+	margin-right: 18px; 
+	width: 445px;
+}
+#team #content .info .right {
+	float: left;
+	width: 445px;
+}
+#team #content .info p {
+	font-size: 16.53px;
+	color: #666;
+}
+#team #content ul {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+}
+#team #content ul li {
+	float: left;
+	margin-right: 21px;
+	margin-bottom: 29px;
+	width: 95px;
+}
+#team #content ul li.last {
+	margin-right: 0;
+}
+#team #content ul li a img {
+	margin-bottom: 7px;
+	border: 1px solid #c7c7c7;
+}
+#team #content ul li h3 {
+	font-size: 11.25px;
+	color: #666;
+}
+#team #content ul li h4 {
+	font-family: "Helvetica Light", Helvetica, arial, sans-serif;
+	font-size: 11.25px;
+	color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

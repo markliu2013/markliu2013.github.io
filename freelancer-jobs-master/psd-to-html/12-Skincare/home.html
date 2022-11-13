@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/health-secrets.min.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<script type="text/javascript">
+	$(function() {
+		Skincare.Home.Init();
+	})
+</script>
+</head>
+<body id="home">
+	<div id="header-wrap">
+		<div id="header" class="container">
+			<div id="time-remaining" class="clearfix">
+				Your place has been temporarily reserved. Time remaining<span></span>
+			</div><!-- end time-remaining -->
+			<div id="places-available">
+				Current places remaining in the <span class="country">United Kingdom</span><span class="number"></span>
+			</div><!-- end places-available -->
+		</div><!-- end header -->
+	</div><!-- end header-wrap -->
+	<div id="logo-wrap">
+		<div id="logo" class="container">
+			<h1><a href="#">healthyskinstudy.com</a></h1>
+		</div><!-- end logo -->
+	</div><!-- end logo-wrap -->
+	<div id="content-wrap">
+		<!-- <img class="bg" src="images/bg.jpg" /> -->
+		<div id="content" class="container">
+			<div id="tagline" class="clearfix">
+				<span class="top">Companies need you</span>
+				<span class="bottom">to test top skin creams</span>
+			</div><!-- end tagline -->
+			<div class="desc">Answer 8 <small>simple</small> questions<br />to find the best skin cream <small>for you</small></div>
+			<div id="questions">
+				<!-- question 1 -->
+				<div class="question question1 clearfix">
+					<div class="number">1.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>What is your gender?</h3>
+							<div class="row">
+								<input type="radio" name="gender" value="1" id="gender-male"  /><label for="gender-male">Male</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="gender" value="2" id="gender-female" /><label for="gender-female">Female</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is knowing your gender important?</h3>
+							<p>Asking your gender is important because there are structural differences between men and womens skins. After puberty, Androgen stimulation causes men's skin to have a tougher texture and be about 25% thicker than a womans. Many companies design their products specifically for men or women so using the wrong product may not give the best results.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question1 -->
+				<!-- question 2 -->
+				<div class="question clearfix">
+					<div class="number">2.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>How old are you?</h3>
+							<div class="row">
+								<input type="radio" name="age" value="1" id="age-1"  /><label for="age-1">45-50 years old</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="age" value="2" id="age-2" /><label for="age-2">51-55 years old</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="age" value="3" id="age-3" /><label for="age-3">56-60 years old</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="age" value="4" id="age-4" /><label for="age-4">over 60 years old</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why your age important?</h3>
+							<p>With age, the <span class="tip" title="Known as your epidermis">outer skin layer</span> thins. <span class="tip" title="Known as melanocytes">Pigment-containing cells</span> decrease in number making aging skin appear thinner, pale, and more translucent. Skin can also lose its elasticity as it ages which cause wrinkles to appear. Knowing your age allows the best products to be selected. Products designed to match the age of your skin.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question2 -->
+				<!-- question 3 -->
+				<div class="question clearfix">
+					<div class="number">3.</div>
+					<div class="content clearfix adjustHeight">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>How many skin creams do you use each day</h3>
+							<div class="row">
+								<input type="radio" name="skin-creams-count" value="1" id="skin-creams-count-1" /><label for="skin-creams-count-1">none</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="skin-creams-count" value="2" id="skin-creams-count-2" /><label for="skin-creams-count-2">1 or 2</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="skin-creams-count" value="3" id="skin-creams-count-3" /><label for="skin-creams-count-3">3 or more</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is this important?</h3>
+							<p>Using many skin creams every day can mean that they build layer against your skin. Some skin care products work well together with others (many companies provide a range of products to work together). Some products work best when used against clean skin, free from other products.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question3 -->
+				<!-- question 4 -->
+				<div class="question clearfix">
+					<div class="number">4.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>Why do you use skin creams?</h3>
+							<div class="row">
+								<input type="radio" name="why-skin-creams" value="1" id="why-skin-creams-wrinkles"  /><label for="why-skin-creams-wrinkles">Wrinkles</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="why-skin-creams" value="2" id="why-skin-creams-moisturising"  /><label for="why-skin-creams-moisturising">Moisturising</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="why-skin-creams" value="3" id="why-skin-creams-acne" /><label for="why-skin-creams-acne">Acne</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="why-skin-creams" value="4" id="why-skin-creams-dermatitis" /><label for="why-skin-creams-dermatitis">Dermatitis/Eczema</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="why-skin-creams" value="5" id="why-skin-creams-other" /><label for="why-skin-creams-other">Other</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is this important?</h3>
+							<p>Knowing why you currently use skin creams helps us determine what results you are looking to achieve and recommend the best product to match.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question4 -->
+				<!-- question 5 -->
+				<div class="question clearfix">
+					<div class="number">5.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>Have you ever had to see a Dermatologist?</h3>
+							<div class="row">
+								<input type="radio" name="had-see-dermatologist" value="1" id="had-see-dermatologist-never"  /><label for="had-see-dermatologist-never">Never</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="had-see-dermatologist" value="2" id="had-see-dermatologist-over" /><label for="had-see-dermatologist-over">Over a year ago</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="had-see-dermatologist" value="3" id="had-see-dermatologist-less" /><label for="had-see-dermatologist-less">Less than 6 months ago</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why do we ask this?</h3>
+							<p>Some products are not recommend for people who have certain skin conditions or are seeking help from a Dermatologist. Some products may also prevent treatments prescribed by your Dermatologist from being fully effective.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question5 -->
+				<!-- question 6 -->
+				<div class="question clearfix">
+					<div class="number">6.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>Do you sunbathe or use a tanning booth?</h3>
+							<div class="row">
+								<input type="radio" name="tanning-booth" value="1" id="tanning-booth-never"  /><label for="tanning-booth-never">No, never</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="tanning-booth" value="2" id="tanning-booth-only"  /><label for="tanning-booth-only">I only sunbathe</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="tanning-booth" value="3" id="tanning-booth-sometimes"  /><label for="tanning-booth-sometimes">I sometimes sunbathe or use a tanning booth</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="tanning-booth" value="4" id="tanning-booth-regularly" /><label for="tanning-booth-regularly">I regularly use a tanning booth</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is this important?</h3>
+							<p>Sunbathing (a safe amount) means your skin is likely to have a healthy level of <span class="tip" title="Replenishes skin hydration and boosts elasticity. Vitamin D also helps smooth fine lines and wrinkles, enhances the skins radiance">vitamin D</span>.</p>
+							<p>Tanning booths mainly use UVA rays which are different from the sun. Using a tanning booth too much damages the skin and leads to wrinkles and additional signs of aging.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question6 -->
+				<!-- question 7 -->
+				<div class="question clearfix">
+					<div class="number">7.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>Do you use any special skin products?</h3>
+							<div class="row">
+								<input type="radio" name="special-skin-products" value="1" id="special-skin-products-none"/><label for="special-skin-products-none">None</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="special-skin-products" value="2" id="special-skin-products-normal" /><label for="special-skin-products-normal">Normal face masks, scrubs, or eye creams</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="special-skin-products" value="3" id="special-skin-products-skin" /><label for="special-skin-products-skin">Skin peel or body wrap treatments</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is this important?</h3>
+							<p>None of the products we recommend to you are dangerous, however some may cause irritation or tenderness if you have recently had an abrasive skin peel or chemical body wrap and for your comfort they should not be used.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question7 -->
+				<!-- question 8 -->
+				<div class="question clearfix">
+					<div class="number">8.</div>
+					<div class="content clearfix">
+						<img class="arrow" src="images/arrow.png" width="16" height="20" />
+						<div class="title">
+							<h3>What best matches your skin type?</h3>
+							<div class="row">
+								<input type="radio" name="skin-type" value="1" id="skin-type-normal" /><label for="skin-type-normal">Normal </label>
+							</div>
+							<div class="row">
+								<input type="radio" name="skin-type" value="2" id="skin-type-dry" /><label for="skin-type-dry">Dry</label>
+							</div>
+							<div class="row">
+								<input type="radio" name="skin-type" value="3" id="skin-type-oily" /><label for="skin-type-oily">Oily</label>
+							</div>
+							<div class="row last">
+								<input type="radio" name="skin-type" value="4" id="skin-type-sensitive" /><label for="skin-type-sensitive">Sensitive</label>
+							</div>
+						</div><!-- end question -->
+						<div class="note">
+							<h3>Why is my skin type important?</h3>
+							<p>Different product work best with different skin type. For example, some products are designed to help moisturise dry skin. Asking your skin type allows us to select the products to give you the best results.</p>
+						</div><!-- end note -->
+					</div><!-- end content -->
+				</div><!-- end question7 -->
+			</div><!-- end questions -->
+			
+			<div class="links">
+				<p>
+					<a href="#how-does-work" class="how-work">How Does it Work?</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#terms-conditions" class="terms-conditions">Terms &amp; Conditions</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#privacy-policy" class="privacy-policy">Privacy Policy</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#contact-us" class="contact-us">Contact Us</a>
+				</p>
+			</div>
+			
+			
+		</div><!-- end content -->
+	</div><!-- end content-wrap -->
+	
+	<div id="model-overlay"></div>
+	<div id="user-check"  class="check-submint popup">
+		<div class="top">
+			<h3>Validating your application. Please wait.</h3>
+			<div class="progress">
+				<div class="range"></div>
+			</div>
+		</div><!-- end top -->
+		<div class="bottom">
+			<div class="section checking-location">
+				<h4>Checking your location...</h4>
+				<div><span>United Kingdom</span></div>
+			</div>
+			<div class="section checking-available hidden">
+				<h4>Checking available free trials...</h4>
+				<div><img src="images/shape03.png" width="32" height="36" /><span>14 places available</span></div>
+			</div>
+			<div class="section result hidden">
+				<h4>Success!</h4>
+				<p>You will be guaranteed free skin care products if you apply in the <strong>15 minutes.</strong></p>
+				<a href="#" class="btn">Continue</a>
+			</div>
+		</div><!-- end bottom -->
+	</div><!-- end user-check -->
+	
+	<div id="user-submit" class="check-submint popup">
+		<div class="top">
+			<h3>Submitting your answers. Please wait.</h3>
+			<div class="progress">
+				<div class="range"></div>
+			</div>
+		</div>
+		<div class="content">
+			<p class="submitting">Submitting your answers...</p>
+			<p class="checking-available hidden">Checking available products...</p>
+			<p class="checking-discounts hidden">Checking user discounts...</p>
+		</div>
+		<div class="bottom hidden">
+			<img src="images/shape03.png" width="32" height="36" /> <span>results found</span>
+			<br />
+			<a href="#" class="btn">Continue</a>
+		</div>
+	</div><!-- end user-submit -->
+	
+	
+	
+	
+	<div id="how-does-work" class="popup">
+		<div class="top">
+			<h3>How does it work?</h3>
+		</div>
+		<div class="content">
+			<h4>How do i get free skin creams?</h4>
+			<p>Did you know that many companies give away free samples of their products for people to try? How many you times have seen a beauty product, perfume, or aftershave in Boots, Superdrug, or any other highstreet store that is free for you to try? Have you ever seen a cosmetics or beauty product stand set-up in your local shopping centre offering Free trials? Companies want as many people to try their products as possible to show how good they are.</p>
+			<p>Feel Beautiful has access to a wide range of companies and sends you the product which is best for you to try for free!</p>
+			<hr />
+			<h4>Is it really free?</h4>
+			<p>Yes, you will really receive products free of charge to try. Some companies require you to pay a shipping/postage cost, this will be clearly displayed before you accept and is usually only three or four pounds.</p>
+			<hr />
+			<h4>I'm not sure, whats the catch?</h4>
+			<p>There is no catch; these are full beauty products available to you to try for free. Often these products are only available in limited quantities and we can only reserve your application for a short time so apply now!</p>
+			<hr />
+			<h4>Is it safe?</h4>
+			<p>Yes, totally. All the products you receive are already for sale in many highstreet shops. Testing a product only means that you have received a free sample.</p>
+		</div>
+		<div class="bottom">
+			<span class="btn">Apply Now!</span>
+		</div>
+	</div><!-- end how-does-work -->
+	
+	<div id="terms-conditions-model" class="popup">
+		<div class="top">
+			<h3>Web Site Terms and Conditions of Use</h3>
+		</div>
+		<div class="content">
+			<h4>1. Terms</h4>
+			<p>By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.</p>
+			<hr />
+			<h4>2. Use License</h4>
+			<ol type="a">
+				<li>
+					Permission is granted to temporarily download one copy of the materials (information or software) on HealthySkinStudy's web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+					<ol type="i">
+						<li>modify or copy the materials;</li>
+						<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+						<li>attempt to decompile or reverse engineer any software contained on HealthySkinStudy's web site;</li>
+						<li>remove any copyright or other proprietary notations from the materials; or</li>
+						<li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+					</ol>
+				</li>
+				<li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by HealthySkinStudy at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
+			</ol>
+			<hr />
+			<h4>3. Disclaimer</h4>
+			<p>The materials on HealthySkinStudy's web site are provided "as is". HealthySkinStudy makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, HealthySkinStudy does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.</p>
+			<h4>4. Limitations</h4>
+			<p>In no event shall HealthySkinStudy or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on HealthySkinStudy's Internet site, even if HealthySkinStudy or a HealthySkinStudy authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+			<h4>5. Revisions and Errata</h4>
+			<p>The materials appearing on HealthySkinStudy's web site could include technical, typographical, or photographic errors. HealthySkinStudy does not warrant that any of the materials on its web site are accurate, complete, or current. HealthySkinStudy may make changes to the materials contained on its web site at any time without notice. HealthySkinStudy does not, however, make any commitment to update the materials.</p>
+			<h4>6. Links</h4>
+			<p>HealthySkinStudy has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by HealthySkinStudy of the site. Use of any such linked web site is at the user's own risk.</p>
+			<h4>7. Site Terms of Use Modifications</h4>
+			<p>HealthySkinStudy may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</p>
+			<h4>8. Governing Law</h4>
+			<p>Any claim relating to HealthySkinStudy's web site shall be governed by the laws of the State of California without regard to its conflict of law provisions.</p>
+			<p>General Terms and Conditions applicable to Use of a Web Site.</p>
+		</div>
+		<div class="bottom">
+			<span class="btn">Apply Now!</span>
+		</div>
+	</div><!-- end terms-conditions-model -->
+	
+	
+	<div id="privacy-policy-model" class="popup">
+		<div class="top">
+			<h3>Privacy Policy</h3>
+		</div>
+		<div class="content">
+			<p>Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.</p>
+			<ul>
+				<li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</li>
+				<li>We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.</li>
+				<li>We will only retain personal information as long as necessary for the fulfillment of those purposes.</li>
+				<li>We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</li>
+				<li>Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</li>
+				<li>We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</li>
+				<li>We will make readily available to customers information about our policies and practices relating to the management of personal information.</li>
+			</ul>
+			<p>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.</p>
+		</div>
+		<div class="bottom">
+			<span class="btn">Apply Now!</span>
+		</div>
+	</div><!-- end privacy-policy-model -->
+	
+	
+	<div id="contact-us-model" class="popup">
+		<a class="close"></a>
+		<div class="top">
+			<h3>Contact Us</h3>
+		</div>
+		<div class="content">
+			<form action="#" id="contact-form">
+				<div class="row">
+					<input type="text" name="name" id="contact-form-name" />
+					<label>Name<span>*</span></label>
+				</div>
+				<div class="row">
+					<input type="text" name="email" id="contact-form-email" />
+					<label>Email<span>*</span></label>
+				</div>
+				<div class="row">
+					<textarea name="message"></textarea>
+					<label>Message...</label>
+				</div>
+			</form>
+		</div>
+		<div class="bottom">
+			<span class="btn">Send</span>
+		</div>
+	</div><!-- end contact-us-model -->
+	
+	
+	<div id="timeout-warning-model" class="popup">
+		<div class="top">
+			<h3>Warning</h3>
+		</div>
+		<div class="content">
+			<h4>Your time has run out!</h4>
+			<p>Please answer the 8 simple questions below to<br />find the best skin cream for you or we will give your spot<br />to another participant.</p>
+		</div>
+		<div class="bottom">
+			<span class="btn">Continue</span>
+		</div>
+	</div><!-- end timeout-warning-model -->
+	
+	
+</body>
+</html>

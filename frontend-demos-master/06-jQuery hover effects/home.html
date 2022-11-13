@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home Page</title>
+<style type="text/css">
+	img {
+		border: none;
+	}
+	.light {
+		display: none;
+	}
+	ul {
+		list-style: none;
+	}
+	ul li {
+		float: left;
+	}
+	ul li a {
+		display: block;
+		float: left;
+		position: relative;
+	}
+	ul li a img {
+		position: absolute;
+	}
+	ul li.service {
+		width: 149px;
+		height: 226px;
+	}
+	ul li.portfolio {
+		width: 147px;
+		height: 226px;
+	}
+	ul li.about {
+		width: 252px;
+		height: 243px;
+	}
+	ul li.clients {
+		width: 144px;
+		height: 227px;
+	}
+	ul li.blog {
+		width: 144px;
+		height: 224px;
+	}
+	ul li.contact {
+		margin-top: 50px;
+		width: 89px;
+		height: 187px;
+	}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	var fadeSpeed = 1000;
+
+	$(function() {
+		$("ul li a").hover(
+			function() {
+				var $link = $(this);
+				$link.find(".light").stop(true,true);
+				$link.find(".no-light").stop(true,true);
+				$link.find(".light").hide();
+				$link.find(".no-light").show();
+				
+				$link.find(".light").fadeIn(fadeSpeed,function(){
+					$link.find(".no-light").fadeOut(0);
+				});
+			},
+			function() {
+				var $link = $(this);
+				$link.find(".light").stop(true,true);
+				$link.find(".no-light").stop(true,true);
+				$link.find(".light").hide();
+				$link.find(".no-light").show();
+			}
+		)
+	})
+</script>
+</head>
+
+<body>
+
+	<ul>
+		<li class="service">
+			<a href="http://www.lokitimestwo.com/services">
+				<img class="no-light" src="images/service.jpg" width="149" height="226" alt="" />
+				<img class="light" src="images/service-light.jpg" width="149" height="226" alt="" />
+			</a>
+		</li>
+		<li class="portfolio">
+			<a href="http://www.lokitimestwo.com/portfolio">
+				<img class="no-light" src="images/portfolio.jpg" width="147" height="226" alt="" />
+				<img class="light" src="images/portfolio-light.jpg" width="147" height="226" alt="" />
+			</a>
+		</li>
+		<li class="about">
+			<a href="http://www.lokitimestwo.com/about">
+				<img class="no-light" src="images/house.jpg" width="252" height="243" alt="" />
+				<img class="light" src="images/house-light.jpg" width="252" height="243" alt="" />
+			</a>
+		</li>
+		<li class="clients">
+			<a href="http://www.lokitimestwo.com/clients-and-testimonials">
+				<img class="no-light" src="images/clients.jpg" width="144" height="227" alt="" />
+				<img class="light" src="images/clients-light.jpg" width="144" height="227" alt="" />
+			</a>
+		</li>
+		<li class="blog">
+			<a href="http://www.lokitimestwo.com/blog">
+				<img class="no-light" src="images/blog.jpg" width="144" height="224" alt="" />
+				<img class="light" src="images/blog-light.jpg" width="144" height="224" alt="" />
+			</a>
+		</li>
+		<li class="contact">
+			<a href="http://www.lokitimestwo.com/contact">
+				<img class="no-light" src="images/contact.jpg" width="89" height="187" alt="" />
+				<img class="light" src="images/contact-light.jpg" width="89" height="187" alt="" />
+			</a>
+		</li>
+	</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

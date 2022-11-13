@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        ôðëúüùúöö½áòá - Yunfile.com - Free File Hosting and Sharing, Permanently Save
+    </title>
+    <meta id="keywords" name="keywords" content="ôðëúüùúöö½áòá"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="http://img.yfdisk.com/templates/yunfile/skyblue/css/skyblue.css?version=151030" rel="stylesheet"/>
+    <script type="text/javascript" src="http://img.yfdisk.com/templates/yunfile/classic/js/jquery.js?version=151030">
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var forumLink = "http://www.yunfile.com/";
+
+        //]]>
+    </script>
+    <script type="text/javascript" src="http://img.yfdisk.com/templates/yunfile/skyblue/js/skyblue.js?version=151030">
+    </script>
+</head>
+<body id="skyblue_body">
+<span id="filename" style="display:none;">
+      ôðëúüùúöö½áòá
+    </span>
+<div id="skyblue_header">
+    <style>
+
+        .third_party_login_div{float:left;background:url(http://img.yfdisk.com/templates/default/images/foreign_login.png?version=151030);height:30px;width:170px;background-repeat:no-repeat;}
+        .login_right{padding-left:22px;margin-left: 164px;}
+
+    </style>
+    <div id="skyblue_dlg">
+    </div>
+    <div id="login_registBox">
+        <div class="dialog_title">
+          <span class="ui_dialog_title">
+            Login
+          </span>
+          <span class="ui_dialog_close" onclick="dialog_Close()" style="font-size: 24px; font-weight: bold">
+            ×
+          </span>
+        </div>
+        <!--登录窗口区域-->        <div id="loginBox">
+        <form id="login_form" action="http://www.yunfile.com/view" method="post" onsubmit="return check_login();">
+            <input type="hidden" name="module" value="member"/>
+            <input type="hidden" name="action" value="validateLogin"/>
+            <!--  keep at this page ,after logined. -->            <input type="hidden" id="returnPath1" name="returnPath" value=""/>
+            <script>
+                //<![CDATA[
+
+                document.getElementById("returnPath1").value = window.location.href;
+
+                //]]>
+            </script>
+            <div class="login_left" id="login_left" style="float:left;margin-left:-16px;_margin-left:0px;height:180px;">
+
+                other login
+
+                <div style="margin-top:20px;">
+                    <a id="third_party_login_facebook" href="">
+                        <div class="third_party_login_div" style="background-position:0 -53px;">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </a>
+                    <a id="third_party_login_yahoo" href="" style="margin-top:20px;">
+                        <div class="third_party_login_div" style="background-position:0 -137px;">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </a>
+                    <a id="third_party_login_twitter" href="" style="margin-top:20px;">
+                        <div class="third_party_login_div" style="background-position:0 -7px;">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </a>
+                    <a id="third_party_login_google" href="" style="margin-top:20px;">
+                        <div class="third_party_login_div" style="background-position:0 -223px;">
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </a>
+                </div>
+                <div style="clear:both">
+                </div>
+            </div>
+            <div class="login_right">
+                <table id="loginBoxTb">
+                    <tbody>
+                    <tr>
+                        <td class="login_username">
+                            <label style="line-height: 25px;">
+                                User Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="LoginText" name="username" id="login_userid" tabindex="10"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="line-height: 25px;">
+                                Password:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" class="LoginText" name="password" id="login_password" tabindex="11"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Question:
+                            </label>
+                        </td>
+                        <td>
+                            <select id="login_que" name="que" class="LoginText" style="width:174px;height:24px;" onchange="changeSel();">
+                                <option value="0" selected="selected">
+                                    Security Question (Ignore if none)
+                                </option>
+                                <option value="1">
+                                    Mother's name
+                                </option>
+                                <option value="2">
+                                    Father's birth city
+                                </option>
+                                <option value="3">
+                                    Your favorite movie
+                                </option>
+                                <option value="4">
+                                    Your favorite song
+                                </option>
+                                <option value="5">
+                                    Your favorite food
+                                </option>
+                                <option value="6">
+                                    Your pet's name
+                                </option>
+                                <option value="7">
+                                    Your lucky number
+                                </option>
+                                <option value="8">
+                                    Last four digits of driver's license
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="login_ans_row" style="display: none;">
+                        <td>
+                            <label>
+                                Answer:
+                            </label>
+                        </td>
+                        <td>
+                            <input name="ans" type="text" class="LoginText" maxlength="20"/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div style="height: 46px;">
+                    <div style="float:left">
+                        <input type="submit" name="LoginButton" id="LoginButton" value="Login"/>
+                    </div>
+                    <div style="float:left;margin:6px 0 0 16px">
+                        <input name="remember" type="checkbox" checked="checked" value="on"/>
+                    </div>
+                    <div style="float:left;margin-top:6px;" class="rememberme">
+                        <label>
+                            remember me
+                        </label>
+                    </div>
+                    <div style="clear:both;">
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','lost','Password','',1,0)">
+                        Forgot password
+                    </a>
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'mem','ber/','ins','ert','',1,0)" style="margin-left:12px;">
+                        Registration
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var returnPath = document.getElementById("login_returnPath");
+        var LoginHref = "http://www.yunfile.com/socialauth/login.html";
+        document.getElementById("third_party_login_facebook").href=LoginHref+"?return_url="+window.location.href+"&id=facebook";
+        document.getElementById("third_party_login_twitter").href=LoginHref+"?return_url="+window.location.href+"&id=twitter";
+        document.getElementById("third_party_login_yahoo").href=LoginHref+"?return_url="+window.location.href+"&id=yahoo";
+        document.getElementById("third_party_login_google").href=LoginHref+"?return_url="+window.location.href+"&id=google";
+
+        document.getElementById("third_party_login_twitter").style.display="none";
+        document.getElementById("third_party_login_google").style.display="none";
+        function check_login(){
+            var userName =document.getElementById("login_userid");
+            var passWord =document.getElementById("login_password");
+            if(userName.value ==""){
+                alert("Please, fill the User field");
+                userName.focus();
+                return false ;
+            }
+
+            if(passWord.value ==""){
+                alert("Please, fill the Password field");
+                passWord.focus();
+                return false;
+            }
+            return true;
+        }
+        function changeSel(){
+            if(document.getElementById('login_que').value > 0) {
+                document.getElementById('login_ans_row').style.display='';
+                document.getElementById('login_registBox').style.height='305px';
+                document.getElementById('login_left').style.height='222px';
+            } else {
+                document.getElementById('login_ans_row').style.display='none';
+                document.getElementById('login_registBox').style.height='270px';
+                document.getElementById('login_left').style.height='180px';
+            }
+        }
+
+        //]]>
+    </script>
+    <style>
+
+        .third_party_login_div2{float:left;background:url(http://img.yfdisk.com/templates/default/images/login_icon.png?version=151030);height: 25px;width: 25px;background-repeat: no-repeat;}
+        .upgradeButton{border-radius: 2px; border:2px solid #0076c3; background-color:#0076c3;color: #ffffff; font-size:16px;width:160px;height:35px;cursor:pointer; font-weight: bold}
+
+    </style>
+    <div id="skyblue_dlg2">
+    </div>
+    <div id="login_registBox2" style="height:300px;width:520px;height:325px;">
+        <div class="dialog_title" style="width:515px;">
+          <span class="ui_dialog_title">
+            Login
+          </span>
+          <span class="ui_dialog_close" onclick="dialog_Close2()" style="font-size: 24px; font-weight: bold">
+            ×
+          </span>
+        </div>
+        <!--登录窗口区域-->        <div id="loginBox" style="margin-top:25px;">
+        <form id="login_form" action="http://www.yunfile.com/view" method="post" onsubmit="return check_login2();">
+            <input type="hidden" name="module" value="member"/>
+            <input type="hidden" name="action" value="validateLogin"/>
+            <!--  keep at this page ,after logined. -->            <input type="hidden" id="returnPath2" name="returnPath" value=""/>
+            <script>
+                //<![CDATA[
+
+                document.getElementById("returnPath2").value = window.location.href;
+
+                //]]>
+            </script>
+            <div class="login_left" id="login_down_left" style="float:left;margin-left:-16px;_margin-left:0px;margin-top:7px;height:205px;height:240px;">
+
+                還沒有Yunfile.com高級會員？
+
+                <div style="margin-top:30px;">
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','common/','6b6651ef',1,1)">
+                        <input type="button" class="upgradeButton" style="" value="升級高級會員"/>
+                    </a>
+                </div>
+                <div style="clear:both">
+                </div>
+            </div>
+            <div class="login_right">
+                <table id="loginBoxTb">
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <label style="line-height: 25px;">
+                                已有Yunfile.com高級會員，請您在此處登錄，享
+                                <br/>
+                                受高速無限制下載
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="login_username">
+                            <label style="line-height: 25px;">
+                                User Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" class="LoginText" name="username" id="login_userid2" tabindex="10"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="line-height: 25px;">
+                                Password:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" class="LoginText" name="password" id="login_password2" tabindex="11"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Question:
+                            </label>
+                        </td>
+                        <td>
+                            <select id="login_down_que" name="que" class="LoginText" style="width:174px;height:24px;" onchange="down_changeSel();">
+                                <option value="0" selected="selected">
+                                    Security Question (Ignore if none)
+                                </option>
+                                <option value="1">
+                                    Mother's name
+                                </option>
+                                <option value="2">
+                                    Father's birth city
+                                </option>
+                                <option value="3">
+                                    Your favorite movie
+                                </option>
+                                <option value="4">
+                                    Your favorite song
+                                </option>
+                                <option value="5">
+                                    Your favorite food
+                                </option>
+                                <option value="6">
+                                    Your pet's name
+                                </option>
+                                <option value="7">
+                                    Your lucky number
+                                </option>
+                                <option value="8">
+                                    Last four digits of driver's license
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="login_down_ans_row" style="display: none;">
+                        <td>
+                            <label>
+                                Answer:
+                            </label>
+                        </td>
+                        <td>
+                            <input name="ans" type="text" class="LoginText" maxlength="20"/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div style="height: 46px;">
+                    <div style="float:left">
+                        <input style="background-color:#6581A1;border:2px solid #6581A1;" type="submit" name="LoginButton" id="LoginButton" value="Login"/>
+                    </div>
+                    <div style="float:left;margin:13px 0 0 16px">
+
+                        other login : 
+
+                    </div>
+                    <div style="clear:both;">
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','lost','Password','',1,0)">
+                        Forgot password
+                    </a>
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'mem','ber/','ins','ert','',1,0)" style="margin-left:12px;">
+                        Registration
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var returnPath = document.getElementById("login_returnPath");
+        var LoginHref = "http://www.yunfile.com/socialauth/login.html";
+        document.getElementById("third_party_login_facebook2").href=LoginHref+"?return_url="+window.location.href+"&id=facebook";
+        document.getElementById("third_party_login_yahoo2").href=LoginHref+"?return_url="+window.location.href+"&id=yahoo";
+
+        function check_login2(){
+            var userName =document.getElementById("login_userid2");
+            var passWord =document.getElementById("login_password2");
+            if(userName.value ==""){
+                alert("Please, fill the User field");
+                userName.focus();
+                return false ;
+            }
+
+            if(passWord.value ==""){
+                alert("Please, fill the Password field");
+                passWord.focus();
+                return false;
+            }
+            return true;
+        }
+        function down_changeSel(){
+            if(document.getElementById('login_down_que').value > 0) {
+                document.getElementById('login_down_ans_row').style.display='';
+                document.getElementById('login_registBox2').style.height='360px';
+                document.getElementById('login_down_left').style.height='280px';
+            } else {
+                document.getElementById('login_down_ans_row').style.display='none';
+                document.getElementById('login_registBox2').style.height='325px';
+                document.getElementById('login_down_left').style.height='240px';
+            }
+        }
+
+        //]]>
+    </script>
+    <div id="membersDiv">
+        <div id="LoGoDiv" style="background: url('http://img.yfdisk.com/images/logo2.png');" onclick="location.href='http://www.yunfile.com/';">
+        </div>
+        <div id="LoginDiv" class="logindiv">
+            <a href="javascript:void(0)" onclick="redirectToReg('http://www.yunfile.com/')" style="font-size: 18px; cursor:pointer">
+
+                Sign up
+            </a>
+             
+            or 
+
+            <a onclick="dialog_Open();" style="font-size: 14px; cursor:pointer">
+
+                Log in
+            </a>
+        </div>
+        <div class="menu" id="submenu">
+            <div>
+                <div class="lang" id="lang" onmouseover="showhlist('lang_list')" onmouseout="hidelist('lang_list')">
+                    <img id="language_img" onclick="language_img_onclick();" alt="" class="lngen" src="http://img.yfdisk.com/templates/yunfile/skyblue/images/blank.gif"/>
+                    <div id="lang_list">
+                        <p onclick="change_language(true, 'en_us')" class="lngen">
+                        </p>
+                        <p onclick="change_language(true, 'zh_cn')" class="lngcn">
+                        </p>
+                        <p onclick="change_language(true, 'zh_tw')" class="lngtw">
+                        </p>
+                        <p onclick="change_language(true, 'ja_jp')" class="lngjp">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //<![CDATA[
+
+            function showhlist(id){
+                document.getElementById(id).style.display ='block';
+            }
+            function hidelist(id){
+                document.getElementById(id).style.display ='none';
+            }
+            var pos ="0";
+            document.getElementById("language_img").style.backgroundPosition="0px -" + pos + "px";
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+
+
+            function change_language(refresh, lang){
+                var lang_idx = langlist[lang];
+                if(!lang_idx) {
+                    lang_idx = 1;
+                    lang = "en_us";
+                }
+                var pos = (lang_idx-1)*21+1;
+                document.getElementById("language_img").style.backgroundPosition="0px -" + pos + "px";
+                if(refresh){
+                    setCookie("language", lang);
+                    window.location.reload();
+                }
+            }
+
+            function language_img_onclick (){
+                var lang = document.getElementById('lang');
+                if (lang.className!="lang"){
+                    lang.className = "lang";
+                }
+                else{
+                    lang.className += " show_lang";
+                }
+                document.onmouseup = function (e){
+                    var lang = document.getElementById('lang');
+                    lang.className = "lang";
+                }
+            }
+
+            function setCookie(name, value, times){
+                var Days = 30*24*60*60*1000;
+                var exp  = new Date();
+                if(!times) times = Days;
+                exp.setTime(exp.getTime() + times);
+                document.cookie = name + "="+ escape (value) + ";path=/;domain=.dfpan.com;expires=" + exp.toGMTString();
+            }
+
+            function getCookie(name){
+                var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+                if(arr != null) return unescape(arr[2]); return null;
+            }
+
+            function delCookie(name){
+                var exp = new Date();
+                var Days = 90;
+                exp.setTime(exp.getTime() - Days*24*60*60*1000);
+                var cval=getCookie(name);
+                if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+            }
+
+            var langlist = {"en_us": 1, "zh_cn": 2, "zh_tw": 3, "ja_jp": 4};
+
+            function loadUserLanguage(){
+                var language =  "en_us";
+                change_language(false, language);
+            }
+
+            loadUserLanguage();
+
+            function lang_hover(obj, num){
+                if(obj){
+                    var pxSize = (parseInt(num) ==1 ?  "0" : "-1")+"px";
+                    obj.style.marginTop = pxSize;
+                }
+            }
+
+            //]]>
+        </script>
+    </div>
+    <style>
+
+        .menudiv .msgTips {margin-left: 20px;}
+        .menudiv .msgTips {margin-left: 75px\0;}
+        #yunweibo{float:right;margin-top:14px;}
+
+    </style>
+    <div id="MenuDiv">
+        <div id="MenuDiv_">
+            <div class="menudiv" id="menudiv1">
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'','','','','',0,1)">
+                    Upload
+                </a>
+            </div>
+            <div class="menudiv">
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'mem','ber/','ins','ert','',1,1)">
+                    Registration
+                </a>
+            </div>
+            <div class="menudiv">
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','premium','Membership','',1,1)">
+                    Premium
+                </a>
+            </div>
+            <div class="menudiv">
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','for','Partners','',1,1)">
+                    Earn
+                </a>
+            </div>
+            <div class="menudiv">
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'las','ted/','fi','les/','all',1,1)">
+                    New Files
+                </a>
+            </div>
+            <div id="SkypeDiv">
+                <a target="_blank" href="skype:yunfile.com?chat">
+                    <img style="" src="http://img.yfdisk.com/templates/default/images/social_skype2.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="skyblue_content">
+    <div style="width:1060px;display:block;margin:0px auto;position:relative;">
+    </div>
+    <div class="downpage">
+        <div>
+        </div>
+        <div>
+            <h2 class="file_title">
+                 Downloading:  
+            <span id="file_show_filename">
+              ôðëúüùúöö½áòá
+            </span>
+                - 538.77 MB
+            </h2>
+            <div style="margin-top:20px;">
+                <style>
+
+                    a{text-decoration:none;color:#6387C4;}
+
+                </style>
+                <div class="operation" style="font-size:12px;">
+              <span style="font-weight:bold;">
+                  
+                <a href="http://page2.yunfile.com/ls/520o/" target="_blank">
+                    [ All shared files ]
+                </a>
+              </span>
+
+                          
+	 
+              <span style="font-weight:bold;">
+                  
+		
+                <a href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','520o/','68b8633c',1,1)">
+
+                    [ Save to my space
+                    (Premium Used Only!)
+                     ]
+
+                </a>
+              </span>
+                    <br/>
+                </div>
+            </div>
+            <div>
+                <hr class="descr_hr" style="margin-top:30px;"/>
+                <div style="margin-top: 34px;">
+                    <div style="float:left;width:721px;">
+                        <table class="intro_text" style="border-collapse: collapse; table-layout: fixed;text-align: left;border:1px solid #e2e2e2;">
+                            <tbody>
+                            <tr>
+                                <td colspan="3" style="background: #F7F7F7; font-weight: bold;border:1px solid #E2E2E2;height:30px;" align="center">
+                                    <div id="premium_div" style="display: ;">
+
+                                        No wait, no advertisement and unlimit download,
+                                        <a href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','520o/','68b8633c',1,1)">
+                                            click here
+                                        </a>
+                                    </div>
+                                    <div id="wait_div" style="display: none;">
+                          <span class="red_text">
+                            Please wait 
+                            <span id="wait_span" style="font-size: 28px; color: #000802;">
+                              30
+                            </span>
+                             seconds
+                          </span>
+                                        or
+
+                                        <a href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','520o/','68b8633c',1,1)">
+                                            click here
+                                        </a>
+                                        to get a high speed instant download!
+
+
+
+                                    </div>
+                                    <div id="interval_div" style="display: none;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <th class="first_td" style="padding-left:10px;">
+                                    Download type:
+                                </th>
+                                <th id="vcode_th" style="display:none;" colspan="2">
+                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="text-align:center;">
+                                                <div>
+                                                    <img id="cvimg2" style="margin: -8px 15px -8px 4px;"/>
+                                                     
+
+                                                    <input name="vcode" id="vcode" type="text" maxlength="10" size="8" style="height:20px;margin-top:2px;width:85px;" onkeypress="return keyPress(event)"/>
+                                                    <input id="slow_button" class="slow_button" type="button" value="Get The DownList" style="height: 32px;width:160px;margin-left: 20px; " onclick="return validate(); "/>
+                                                    <a target="_self" id="downpage_link" style="display: none;color:#0000ed;">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </th>
+                                <th class="second_td" id="slow_th" style="display:''">
+                                    <div id="inputDownWait">
+                                        <input class="slow_button" style="+margin-left:25px;_margin-left:25px;" type="button" value="Slow Download" onclick="show_vcode();"/>
+                                    </div>
+                                </th>
+                                <th class="third_td" id="vip_th" style="display:''">
+                                    <div id="vip_download">
+                                        <input type="button" style="+margin-left:25px;_margin-left:25px;" value="High Speed Download" id="vip_button" onclick="redirectPremiumLink();"/>
+                                        <a id="premium_link" href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','520o/','68b8633c',1,1)">
+                                        </a>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Download speed
+                                </td>
+                                <td class="second_td">
+                                    Limited
+                                </td>
+                                <td class="third_td">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Maximum parallel downloads
+                                </td>
+                                <td class="second_td">
+                                    1
+                                </td>
+                                <td class="third_td">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Download restriction
+                                </td>
+                                <td class="second_td">
+                                    1 file per 10 minutes
+                                </td>
+                                <td class="third_td">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Wait Times
+                                </td>
+                                <td class="second_td">
+                                    30 seconds
+                                </td>
+                                <td class="third_td">
+                                    No Wait
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Downloads start instantly
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Fast download when servers are busy
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Multi-line downloads
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Support for resuming downloads
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Support for download accelerators
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first_td">
+                                    Advertisement
+                                </td>
+                                <td class="second_td">
+                                    <img src="http://img.yfdisk.com/images/no_icon.gif"/>
+                                </td>
+                                <td class="third_td">
+                                    <img src="http://img.yfdisk.com/images/yes_icon.gif"/>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="float:left;">
+                        <div id="right_prem" class="right_prem">
+                            <style>
+
+                                .purchase, .bold_text {font-size: 14px; font-weight: bold;}
+                                .purchase {background: #FFFDEE; color: black;}
+                                .purchase td {padding-left: 10px; }
+                                .purchase span {font-size: 12px; font-weight: normal;}
+                                .purchase button {background: url("http://img.yfdisk.com/templates/default/images/redbutton.jpg"); width: 90px; height: 25px; border: 0px solid red; color: white;cursor:pointer;}
+                                #right_prem{background: rgb(246, 246, 246) none repeat scroll 0% 0%; width: 315px; padding-top: 10px; margin-left: 20px;height: 380px;}
+
+                            </style>
+                            <div style="margin-bottom: 15px; margin-left: 8px; margin-right: 8px; background: #FFFDEE; ">
+                                <br/>
+                                <b>
+                                      
+                                    <label value="pincode" for="r_choose_membership">
+                                        Get unlimited downloads with a Premium Account
+                                        <br/>
+                                    </label>
+                                </b>
+                                <br/>
+                                <table border="0" class="purchase" style="width: 97%;">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+
+                                            1 Days 
+                                            <br/>
+                            <span class="text4">
+                              (Try it!)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            3.31 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            30 Days 
+
+                                            <br/>
+                            <span class="text4">
+                              (0.36
+                              <sup>
+                                  $
+                              </sup>
+                              /day)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            10.92 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" style="width: 90px; height: 25px;" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            90 Days 
+
+                                            <br/>
+                            <span class="text4">
+                              (0.26
+                              <sup>
+                                  $
+                              </sup>
+                              /day)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            23.82 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" style="width: 90px; height: 25px;" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            180 Days 
+
+                                            <br/>
+                            <span class="text4">
+                              (0.19
+                              <sup>
+                                  $
+                              </sup>
+                              /day)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            33.74 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" style="width: 90px; height: 25px;" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            365 Days 
+
+                                            <br/>
+                            <span class="text4">
+                              (0.13
+                              <sup>
+                                  $
+                              </sup>
+                              /day)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            48.63 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" style="width: 90px; height: 25px;" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            Lifetime 
+
+                                            <br/>
+                            <span class="text4">
+                              (0.01
+                              <sup>
+                                  $
+                              </sup>
+                              /day)
+                            </span>
+                                        </td>
+                                        <td valign="top">
+
+                                            397 $
+
+                                        </td>
+                                        <td>
+                                            <button type="button" style="width: 90px; height: 25px;" onclick="redirectPremium();">
+                                                Purchase
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div style="padding:10px 0;">
+
+                                     
+                                    <img style="cursor:pointer;" onclick="redirectPremium();" src="http://img.yfdisk.com/templates/yunfile/skyblue/images/pay_way03.jpg"/>
+                                </div>
+                            </div>
+                            <script>
+                                //<![CDATA[
+
+                                function isFF5(){
+                                    var ua = navigator.userAgent;
+                                    if(ua)
+                                        return ua.indexOf("Firefox/5")>0;
+                                    return false;
+                                }
+                                function redirectPremium() {
+                                    var premium_link = document.getElementById('premium_link');
+                                    if(premium_link.click){
+                                        premium_link.click();
+                                        if(isFF5())
+                                            window.location = premium_link.href;
+                                    }
+                                    else
+                                        window.location = premium_link.href;
+                                }
+                                function redirectPremiumLink() {
+                                    var premium_link = document.getElementById('premium_link');
+                                    if(premium_link.click)
+                                        premium_link.click();
+                                    else
+                                        window.location = premium_link.href;
+                                }
+
+                                //]]>
+                            </script>
+                        </div>
+                        <div style="margin-top: 8px; margin-left: 10px;">
+                        </div>
+                    </div>
+                    <div style="clear:both">
+                    </div>
+                </div>
+                <div style="margin-top:30px;">
+                    <style>
+
+                        .MemberMoney_NT {margin-top:5px;padding-bottom:5px;}
+                        .BuyNowDiv{padding-bottom:8px;}
+                        #MemberPay1,#MemberPay2,#MemberPay3,#MemberPay4,#MemberPay5,#MemberPay6{height:295px;}
+
+                    </style>
+                    <script>
+                        //<![CDATA[
+
+                        $(function(){
+                            $(".MemberPay").hover(function(){
+                                        $(this).css({"background-color":"#e6e8f3"});
+                                    } ,function(){
+                                        $(this).css({"background-color":"#f2f2f2"});
+                                    }
+                            );
+                        });
+                        function isFF5(){
+                            var ua = navigator.userAgent;
+                            if(ua)
+                                return ua.indexOf("Firefox/5")>0;
+                            return false;
+                        }
+                        function redirectPremium() {
+                            var premium_link = document.getElementById('premium_link');
+                            if(premium_link.click){
+                                premium_link.click();
+                                if(isFF5())
+                                    window.location = premium_link.href;
+                            }
+                            else
+                                window.location = premium_link.href;
+                        }
+                        function redirectPremiumLink() {
+                            var premium_link = document.getElementById('premium_link');
+                            if(premium_link.click)
+                                premium_link.click();
+                            else
+                                window.location = premium_link.href;
+                        }
+
+                        //]]>
+                    </script>
+                    <div id="MemberPayfor">
+                        <a id="premium_link" href="javascript:void(0)" onclick="openAddress(this,1,'user/','premium','Membership/','520o/','68b8633c',1,1)">
+                        </a>
+                        <div id="MemberChoose">
+                            Choose your method of payment deadlines and Senior Member
+                        </div>
+                        <!---------------1 tian chong zhi------------------>                <div id="MemberPay1" class="MemberPay">
+                        <div class="MemberTime">
+                            1 Day
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            3.31 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            100 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                        <!-------------------1 ge yue chong zhi----------------------->                <div id="MemberPay2" class="MemberPay">
+                        <div class="MemberTime">
+                            30 Days
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            10.92 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            330 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                        <!----------------3 ge yue chong zhi-------------------->                <div id="MemberPay3" class="MemberPay">
+                        <div class="MemberTime">
+                            90 Days
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            23.82 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            720 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                        <!-------------6 ge yue chong zhi---------------->                <div id="MemberPay4" class="MemberPay">
+                        <div class="MemberTime">
+                            180 Days
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            33.74 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            1020 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                        <!--------12 ge yue chong zhi-------->                <div id="MemberPay5" class="MemberPay">
+                        <div class="MemberTime">
+                            365 Days
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            48.63 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            1470 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                        <!----------yong jiu chong zhi------------->                <div id="MemberPay6" class="MemberPay">
+                        <div class="MemberTime">
+                            Lifetime
+                        </div>
+                        <div class="SeniorMember">
+                            Premium
+                        </div>
+                        <div class="MemberMoney">
+                            397 $
+                        </div>
+                        <div class="MemberMoney_NT">
+                            12000 NT$
+                        </div>
+                        <div class="BuyNowDiv">
+                            <button class="BuyNow" type="button" onclick="redirectPremium();">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="VisaDiv">
+                        </div>
+                        <div class="MasterCard">
+                        </div>
+                        <div class="MemberIntroduce">
+                            100% Safe &amp; Anonymous
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div style="font-size:12px;margin-top:20px;line-height:20px;">
+
+                    This source is uploaded by 520o.
+	
+              <span style="font-weight:bold;">
+                  	
+	
+                <a href="http://page2.yunfile.com/ls/520o/" target="_blank">
+                    [ All shared files ]
+                </a>
+              </span>
+                    <br/>
+
+                    Abuse complaint, please:
+                    <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','copy','right','',1,1)">
+                        Report
+                    </a>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <style>
+
+            #MemberPayfor{
+                margin-top:40px;
+            }
+
+        </style>
+        <script type="text/javascript">
+            //<![CDATA[
+
+            var timer1;
+            var timer2;
+            function redirectDownPage() {
+                var downpage_link = document.getElementById('downpage_link');
+                var url = "/file/down/520o/68b8633c.html";
+                if (document.getElementById('vcode').value==""){
+                    alert("Please enter the valid result!");
+                    return false ;
+                }
+                url = url.replace(".html","/"+document.getElementById('vcode').value+".html");
+                downpage_link.setAttribute("href",url);
+                if(downpage_link.click){
+                    downpage_link.click();
+                    if(isFF5())
+                        window.location = url;
+                }
+                else{
+                    window.location = url;
+                }
+            }
+            function updateTime(){
+                if(document.getElementById('wait_span').innerHTML>0){
+                    document.getElementById('wait_span').innerHTML = document.getElementById('wait_span').innerHTML-1;
+                }
+                else{
+                    clearInterval(timer1);
+                    redirectDownPage();
+                }
+            }
+            function show_vcode(){
+                if(document.body.clientWidth>100){
+                    var cvimgvip2 = document.getElementById("cvimg2");
+                    cvimgvip2.setAttribute("src","/verifyimg/getPcv"+""+".html");
+                }
+                document.getElementById('slow_th').style.display = "none";
+                document.getElementById('vip_th').style.display = "none";
+                document.getElementById('vcode_th').style.display = "";
+            }
+            function startWait(){
+                document.getElementById('premium_div').style.display = "none";
+                if(document.getElementById('interval_div').style.display=="none") {
+                    document.getElementById('slow_button').disabled = true;
+                    timer1 = window.setInterval('updateTime()', 1000);
+                    document.getElementById('wait_div').style.display = "";
+                    document.getElementById('inputDownWait').style.display = "none";
+                }
+            }
+
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+
+            var inEdit = document.getElementById("vcode");
+            function validate(f){
+                s = inEdit.value;
+                if (s=="")
+                {
+                    inEdit.focus();
+                    inEdit.select();
+                    alert("Please enter the valid result!");
+                    return false
+                }
+                startWait();
+            }
+            function keyPress(e)
+            {
+                var keyCode=0;
+                if(window.event) // IE
+                {
+                    keyCode = e.keyCode
+                }
+                else if(e.which) // Netscape/Firefox/Opera
+                {
+                    keyCode = e.which
+                }
+                if(keyCode==13)
+                    document.getElementById("slow_button").click();
+            }
+
+            //]]>
+        </script>
+        <script id="counter_js">
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+
+            function counter(){
+                document.getElementById('counter_js').src = "http://www.yunfile.com/counter.jsp?userId=520o&fileId=68b8633c&dr=";
+            }
+            counter();
+
+            //]]>
+        </script>
+    </div>
+    <div id="skyblue_bottom">
+        <span style="float:left;" class="copy">
+          Copyright © 2010-2016 YunFile.com.
+        </span>
+        <span class="copy" id="bottomspan">
+          <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','ter','ms','',1,1)">
+              Terms &amp; Conditions
+          </a>
+            
+				
+          <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','pri','vacy','',1,1)">
+              Privacy Policy
+          </a>
+            
+				
+          <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','copy','right','',1,1)">
+              Copyright
+          </a>
+            
+				
+          <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','fa','q','',1,1)">
+              F&amp;Q
+          </a>
+            
+				
+          <a href="javascript:void(0)" onclick="openAddress(this,1,'us','er/','sup','port','',1,1)">
+              Support
+          </a>
+            
+			
+        </span>
+        <div style="clear:both;">
+        </div>
+        <div class="social" style="float:right;margin-top:10px;">
+            <div style="float:right;">
+                <a href="https://twitter.com/YunFilefree" class="twitter" target="_blank">
+                </a>
+                 
+
+                <a href="https://www.facebook.com/pages/Yunfile%E7%B6%B2%E8%B3%BA%E7%B6%B2%E7%9B%A4/546226775464959" class="fb" target="_blank" style="margin:-14px 0px 0px 5px">
+                </a>
+            </div>
+            <div class="copy" style="float:right;margin-top:10px;">
+                Follow Us: 
+            </div>
+        </div>
+        <div style="clear:both;">
+        </div>
+    </div>
+    <script>
+        //<![CDATA[
+
+        function codeAndEncode(_key,_str){
+            var keyUnicodeSum=0;
+            var codedStr = "";
+            for( j = 0; j<_key.length; j++ ){
+                keyUnicodeSum += _key.charCodeAt( j );
+            }
+            for( i = 0; i<_str.length; i++ )
+            {
+                var _strXOR = _str.charCodeAt(i) ^ keyUnicodeSum;
+                codedStr += String.fromCharCode( _strXOR );
+            }
+            return codedStr;
+        }
+
+        var filename = codeAndEncode("111", "ôðëúüùúöö½áòá");
+        document.title = filename;
+        document.getElementById("keywords").content = filename;
+
+        try{
+            document.getElementById("file_show_filename").innerText = filename;
+        }catch(e){}
+
+        try{
+            document.getElementById("file_down_filename").innerText = filename;
+        }catch(e){}
+
+
+        //]]>
+    </script>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'HelveticaNeueLTStd-BdCn';
+	src: url('fonts/helveticaneueltstdbdcn/helveticaneueltstdbdcn.eot');
+	src: url('fonts/helveticaneueltstdbdcn/helveticaneueltstdbdcn.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/helveticaneueltstdbdcn/helveticaneueltstdbdcn.woff') format('woff'),
+			 url('fonts/helveticaneueltstdbdcn/helveticaneueltstdbdcn.ttf') format('truetype'),
+			 url('fonts/helveticaneueltstdbdcn/helveticaneueltstdbdcn.svg#helveticaneueltstdbdcn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-BoldCond';
+	src: url('fonts/myriadproboldcond/myriadproboldcond.eot');
+	src: url('fonts/myriadproboldcond/myriadproboldcond.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/myriadproboldcond/myriadproboldcond.woff') format('woff'),
+			 url('fonts/myriadproboldcond/myriadproboldcond.ttf') format('truetype'),
+			 url('fonts/myriadproboldcond/myriadproboldcond.svg#myriadproboldcond') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Cond';
+	src: url('fonts/myriadprocond/myriadprocond.eot');
+	src: url('fonts/myriadprocond/myriadprocond.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/myriadprocond/myriadprocond.woff') format('woff'),
+			 url('fonts/myriadprocond/myriadprocond.ttf') format('truetype'),
+			 url('fonts/myriadprocond/myriadprocond.svg#myriadprocond') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('fonts/myriadproregular/myriadproregular.eot');
+	src: url('fonts/myriadproregular/myriadproregular.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/myriadproregular/myriadproregular.woff') format('woff'),
+			 url('fonts/myriadproregular/myriadproregular.ttf') format('truetype'),
+			 url('fonts/myriadproregular/myriadproregular.svg#myriadproregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

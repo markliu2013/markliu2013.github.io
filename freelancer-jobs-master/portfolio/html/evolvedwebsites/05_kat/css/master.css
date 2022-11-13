@@ -1,0 +1,284 @@
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+/* General */
+body {
+	margin: 0;
+	font-family: "Roboto Light", arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #898989;
+}
+
+a {
+	color: #898989;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: 0
+}
+h1, h2, h3, h4 {
+	font-family: "Roboto Light", sans-serif;
+	font-weight: normal;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 15.5px;
+}
+
+h4 {
+	font-size: 13.75px;
+}
+
+p {
+	margin-bottom: 14px;
+	font-size: 14px;
+	color: #636363;
+}
+blockquote {
+	margin: 0;
+	padding: 1em 2em;
+}
+
+.shadow {
+	box-shadow: 7px 7px 7px #b5b5b5;
+	-moz-box-shadow: 7px 7px 7px #b5b5b5;
+	-webkit-box-shadow: 7px 7px 7px #b5b5b5;
+}
+
+/* Layout */
+.page {
+	margin: 0 auto;
+	width: 1028px;
+}
+
+/* header */
+#header-wrap {	
+	width: 100%;
+	height: 147px;
+	background: #ffffff;
+}
+#header {
+	padding-top: 45px;
+}
+#header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#header a.logo {
+	display: block;
+	float: left;
+	margin-top: 33px;
+}
+#header ul.nav {
+	float: left;
+	margin: 0 0 0 169px;
+}
+#header ul.nav li {
+	overflow: hidden;
+}
+#header ul.nav li a {
+	font-size: 18px;
+	color: #000000;
+}
+#header ul.nav li.active a {
+	color: #77b800;
+}
+
+#header .info {
+	float: right;
+	margin-right: 105px;
+	width: 310px;
+}
+#header .info ul {
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+#header .info ul li {
+	float: left;
+	margin-right: 11px;
+}
+#header .info .time {
+	color: #636363;
+}
+#header .info p {
+	margin: 0;
+	padding: 0;
+	color: #a6a8ab;
+}
+/* banner */
+#banner {
+	position: relative;
+}
+#banner a.arrow {
+	display: none;
+	position: absolute;
+	top: 173px;
+	width: 37px;
+	height: 73px;
+	background: rgba(0,0,0,0.3);
+	z-index: 99;
+}
+#banner a.arrow img {
+	display: block;
+	margin: 21px auto 0;
+}
+#banner a.left-arrow {
+	left: 0;
+}
+#banner a.right-arrow {
+	right: 0;
+}
+
+/* slider */
+#slideshow .slide_img {
+	position: relative;
+    display: inline-block;
+}
+#slideshow .slide_img::before {
+	content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0  7px 7px -7px #000000;
+}
+#slideshow .info {
+	display: none;
+}
+#slide-info-holder {
+	position: absolute;
+	top: 173px;
+	left: 47px;
+	padding: 0 16px 0 16px;
+	width: 349px;
+	height: 360px;
+	background: rgba(0,0,0,0.3);
+	z-index: 99;
+}
+#slide-info-holder .slide-info {
+	height: 323px;
+	overflow: hidden;
+}
+#slide-info-holder .slide-info h2 {
+	margin-top: 6px;
+	font-family: "Roboto Medium";
+	color: #ffffff;
+}
+#slide-info-holder .slide-info p {
+	font-size: 20px;
+	color: #ffffff;
+}
+#slide-info-holder .slide-info .separate-line {
+	margin-top: 4px;
+	width: 36px;
+	height: 4px;
+	background: #ffffff;
+}
+#slide-nav a {
+	display: block;
+	float: left;
+	margin-right: 13px;
+	width: 9px;
+	height: 9px;
+	border: 1px solid #ffffff;
+	border-radius: 50% 50% 50% 50%;
+}
+#slide-nav a.activeSlide {
+	background: #ffffff;
+}
+
+/* news */
+#news {
+	margin-top: 34px;
+}
+h2.news {
+	margin: 0 0 6px 5px;
+	font-size: 20px;
+	color: #636363;
+}
+ul.news {
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#news ul.news {
+	float: left;
+}
+ul.news li {
+	float: left;
+	margin-right: 20px;
+	width: 242px;
+}
+ul.news li.last_col {
+	margin-right: 0;
+}
+ul.news li span.time {
+	display: block;
+	margin: 15px 0 0 4px;
+	color: #636363;
+}
+ul.news li p {
+	margin: 0 0 0 4px;
+	padding: 0;
+	color: #898989;
+}
+#news .photo {
+	position: relative;
+	float: right;
+	margin-right: 7px;
+	padding: 12px 12px 0;
+	width: 211px;
+	height: 285px;
+	background: url(../images/photo_bg.jpg);
+}
+#news .photo .instagram {
+	position: absolute;
+	top: -27px;
+	left: 3px;
+}
+#news .photo span.time {
+	display: block;
+	margin-top: 18px;
+	color: #636363;
+}
+#news .photo p {
+	margin: 0;
+	padding: 0;
+	color: #898989;
+}
+/* footer */
+#footer {
+	margin-top: 96px;
+	height: 138px;
+	border-top: 1px solid #898989;
+}
+#footer .remark {
+	margin: 20px 0 37px 5px;
+	
+	font-si

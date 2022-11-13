@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Project Container Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script>
+var typeNumber = 2;
+var positions = [];
+positions[0] = [new google.maps.LatLng(-32.3456, 145.4346), new google.maps.LatLng(-35.3456, 145.4346)];
+positions[1] = [new google.maps.LatLng(-30.3456, 140.4346)];
+
+var icons = [];
+icons[0] = 'http://google-maps-icons.googlecode.com/files/factory.png';
+icons[1] = 'http://google-maps-icons.googlecode.com/files/school.png';
+
+var markers = [];
+window.onload = function() {
+
+var map = new google.maps.Map(document.getElementById('map'), {  
+  zoom: 4,
+  center: new google.maps.LatLng(-32.3456, 141.4346),
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+});
+
+for (var i = 0; i < typeNumber; i++) {
+	markers[i] = [];
+	for (var j = 0; j < positions[i].length; j++) {
+		markers[i][j] = new google.maps.Marker({
+			position: positions[i][j], 
+			map: map,
+			icon: icons[i]
+		});
+	}
+}
+
+document.getElementById('selectbox').onchange = function() {
+	var visible;
+	for (var i = 0; i < typeNumber; i++) {
+		if (i == parseInt(document.getElementById('selectbox').value)) {
+			visible = true;
+		} else {
+			visible = false;
+		}
+		for (var j = 0; j < markers[i].length; j++) {
+			markers[i][j].setVisible(visible);
+		}
+	}
+}
+}
+
+</script>
+<style>
+#map {
+	width:910px;
+	height:500px;
+}
+
+</style>
+</head>
+<body id="project-container">
+	<div id="header" class="page">
+		<a href="#"><img src="images/logo.png" width="520" height="55" alt="" /></a>
+		<h2>no job too big, too hard or too far</h2>
+	</div><!-- end header -->
+	<div id="nav" class="page">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">about us</a></li>
+			<li><a href="#">projects</a></li>
+			<li><a href="#">responsibility</a></li>
+			<li><a href="#">employment</a></li>
+			<li><a href="#">news/media</a></li>
+			<li class="last"><a href="#">contact us</a></li>
+		</ul>
+		<div class="horizontal-shadow"></div>
+	</div><!-- end nav -->
+	<div id="content">
+		<h2>project <strong>map</strong></h2>
+
+		<div id="map">
+		</div>
+		
+		<select id="selectbox" size="5">
+			<option value="0">Factory</option>
+			<option value="1">School</option>
+		</select>		
+		
+		
+	</div><!-- end content -->
+	
+	<div id="site-link" class="page">
+		<div class="horizontal-shadow"></div>
+		<ul>
+			<li class="first">
+				<h3>home</h3>
+				<ul>
+					<li><a href="#">Focus Project</a></li>
+					<li><a href="#">What’s New?</a></li>
+					<li><a href="#">Current Projects</a></li>
+					<li><a href="#">News/Media</a></li>
+					<li><a href="#">Employment</a></li>
+				</ul>
+			</li>	
+			<li>
+				<h3>about us</h3>
+				<ul>
+					<li><a href="#">History</a></li>
+					<li><a href="#">What makes us different</a></li>
+				</ul>
+				<h3>Meet the team</h3>
+				<ul>
+					<li><a href="#">Awards &amp; Recognition</a></li>
+					<li><a href="#">Community</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>projects</h3>
+				<ul>
+					<li><a href="#">Location map</a></li>
+					<li><a href="#">Current &amp; ongoing</a></li>
+					<li><a href="#">Airport Redevelopment</a></li>
+					<li><a href="#">Infrastructure</a></li>
+					<li><a href="#">Slope Stabilisation</a></li>
+					<li><a href="#">Roads</a></li>
+					<li><a href="#">Bridges</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>sustainability</h3>
+				<ul>
+					<li><a href="#">Quality</a></li>
+					<li><a href="#">Health &amp; Safety</a></li>
+					<li><a href="#">Environment</a></li>
+				</ul>
+			</li>
+			<li>
+				<h3>employment</h3>
+				<ul>
+					<li><a href="#">Training &amp; Development</a></li>
+					<li><a href="#">Industrial Relations</a></li>
+					<li><a href="#">Environment</a></li>
+				</ul>
+			</li>
+			<li class="last">
+				<h3>contacts</h3>
+				<ul>
+					<li><a href="#">general enquiries</a></li>
+					<li><a href="#">Subcontractors</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- end site-link -->
+	<div id="footer" class="clearfix">
+		<div class="left">
+			<a class="linked-in" href="#"><img src="images/linkedin.png" width="96" height="25" alt="" /></a>
+			<p>
+				&copy; Copyright 2012 CivilTeam Engineering | <a href="#">Privacy Policy</a> | designed by <a href="#">dogwhistle creative</a>  |  developed by <a href="#">Evolved Websites</a>
+			</p>
+		</div>
+		<div class="right">
+			<ul>
+				<li><a href="#"><img src="images/iso.png" width="46" height="25" alt="ISO" /></a></li>
+				<li><a href="#"><img src="images/9001.png" width="46" height="25" alt="ISO" /></a></li>
+				<li><a href="#"><img src="images/4801.png" width="45" height="25" alt="4801" /></a></li>
+				<li class="sec-last"><a href="#"><img src="images/s1.png" width="35" height="38" alt="JAS" /></a></li>
+				<li class="last"><a href="#"><img src="images/eco.png" width="38" height="39" alt="ECO" /></a></li>
+			</ul>
+		</div>
+	</div><!-- end footer -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

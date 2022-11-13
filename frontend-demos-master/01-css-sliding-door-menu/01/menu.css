@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menu {
+	height:24px;
+	width:820px;
+	border-bottom:2px solid #f27b04;
+	line-height:24px;
+	padding:0 5px;
+	margin:20px auto 0 auto;
+
+}
+#menu ul {
+	list-style:none;
+	position:relative;
+	width:820px;
+	height:24px;
+	/* ul 默认会有padding */
+	margin:0;
+	padding:0;
+}
+#menu ul img {
+	position:absolute;
+	top:-10px;
+	left:610px;
+}
+#menu ul li {
+	float:left;
+	margin-right:2px;
+}
+#menu ul li a {
+	display:block;
+	width:auto;
+	padding-right:15px;
+	text-decoration:none;
+}
+#menu ul li a span {
+	display:block;
+	width:auto;
+	padding-left:15px;
+	color:#d84600;
+	font-weight:bold;
+}
+#menu ul li a:hover {
+	background:url(menu.gif) right -24px no-repeat;
+}
+#menu ul li a:hover span {
+	background:url(menu.gif) left -24px no-repeat;
+}
+#menu ul li.current a {
+	padding-right:15px;
+	background:url(menu.gif) right 0 no-repeat;
+}
+#menu ul li.current a span {
+	background:url(menu.gif) left 0 no-repeat;
+	color:#fff;
+}
+/** 为了兼容ie6*/
+#menu ul li.current a:hover {
+	background:url(menu.gif) right 0 no-repeat;
+}
+#menu ul li.current a:hover span {
+	background:url(menu.gif) left 0 no-repeat;
+	color:#fff;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	$('#slidershow').cycle({
+  		fx: 'fade',
+  		timeout:  5000,
+  		speed:  2500,
+		pager: '#slider-nav',
+		pagerAnchorBuilder: function(idx, slide) {return '<a href="#"></a>';},
+		before: function(currSlideElement, nextSlideElement, options, forwardFlag) {
+			var slideIndex = $(nextSlideElement).index()+1;
+			$("#slider-preview ul li").removeClass("active");
+			$("#slider-preview ul li:nth-child("+slideIndex+")").addClass("active");
+			var newLeftWidth = 87+(slideIndex-1)*158;
+			$("#slider-preview .position-flag").css("left", newLeftWidth+"px");
+		}
+  	});
+
+	$("#slider-preview ul li img").click(function(e) {
+		var index=$(this).parent().index();
+		$("#slidershow").cycle(index);
+		return false;
+	});
+	
+})
+
+</script>
+
+
+</head>
+<body>
+	<div id="sliders">
+		<div id="slidershow">
+			<div id="slide1" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/avengers.png" width="256" height="122" alt="" />
+					<h3>"The Best Touch-Screen Brawler released this year" - <img src="images/dummy/ign.png" width="67" height="20" alt="" /></h3>
+					<p>Download the first installment of Marvel's biggest cross‐over mobile gaming event... Level up, gear up, and fight as Hulk in the first adventure of an episodic series built exclusively for touch screen devices. Track down and defeat some of the world's most notorious villains like Wendigo, Abomination, The Kronan, and The Skrulls, and help THE AVENGERS pull the world back from the brink of catastrophe. Marvel’s Avengers Initiative, an episodic mobile gaming event unlike any other.</p>
+					<blockquote><p>«It was the first time we needed a high-end 3D game for mobile - and with a very limited budget. Fryza exceeded expectations»<strong>- John Harriet MARVEL</strong></p></blockquote>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage01.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+			
+			<div id="slide2" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/disneyStore.png" width="331" height="86" alt="" />
+					<p class="top"><strong>Be Our Guest, Everywhere.</strong>Put magic in the palm of your hand as the Disney Store app makes it possible to find, scan, save, share and buy unique Disney merchandise wherever you are.</p>
+					<p class="ul-title">Key Features:</p>
+					<ul>
+						<li>Browse – Discover new arrivals and the largest selection of exclusive, authentic Disney merchandise anywhere online, with full product descriptions, user reviews and more.</li>
+						<li>Scan – When visiting your Disney Store, scan the barcode for any product to see detailed product information, reviews, video demonstrations and more.</li>
+						<li>Search – It’s easy to find the toys, clothes, décor, collectibles and more that you’re looking for. You can even search by character.</li>
+					</ul>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage02.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+			<div id="slide3" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/target.png" width="314" height="67" alt="" />
+					<p class="top">If you love Target, the newest version of the Target App for iPad gives you even more to love. Stay organized with TargetLists. Save money with Daily Deals. Find stores near you and much more. Now shopping at Target is as easy as tap, tap, done.</p>
+					<p>Not only can you browse and purchase your favorite items right on your iPad, you can also create and organize your shopping list, get special offers, check prices and more. You can even drag items to your TargetLists right from our Weekly Ad. Looking for something specific? Our new map view makes it easy to see at a glance which Target stores have it in stock.</p>
+					<blockquote><p>«It was the first time we needed a high-end 3D game for mobile - and with a very limited budget. Fryza exceeded expectations»<strong>- John Harriet MARVEL</strong></p></blockquote>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage03.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+			<div id="slide4" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/ortega.png" width="307" height="106" alt="" />
+					<p>The Ortega Mexican Recipe App - A must have for the cook-at-home, Mexican food lover! Whether it's breakfast or brunch, lunch or dinner, appetizers or side dishes, the Ortega Mexican Recipe App for your iPhone® or iPad® is your kitchen companion for South-of-the-Border culinary inspiration. Mexican meals are made easy with the Ortega Mexican Recipe App.</p>
+					<ul>
+						<li>100ʼs of great tasting Mexican food recipes</li>
+						<li>Grocery shopping list tool</li>
+						<li>Save favorite recipes</li>
+						<li>Easy to share with a friend</li>
+						<li>Includes valuable coupon offer</li>
+					</ul>
+					<blockquote><p>«It was the first time we needed a high-end 3D game for mobile - and with a very limited budget. Fryza exceeded expectations»<strong>- John Harriet MARVEL</strong></p></blockquote>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage04.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+			<div id="slide5" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/pizzaHut.png" width="155" height="153" alt="" />
+					<p class="top">All your favorites at Pizza Hut are now available on iPad! We’ve taken the coolest in iPad functionality and raised it to a tasty new level.</p>
+					<p>Use the new Pizza Hut iPad app to “finger paint” your own pizza masterpieces as you place your order by tapping, tweaking, twisting, and flipping your way to all your favorites. With a deliciously sleek design and limitless mobility and connectivity, it’s a fun, easy and tasty way to place an order. Check out just some of the features and you’ll see how we’ve made our newest app the most advanced one ever!</p>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage05.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+			<div id="slide6" class="slide">
+				<div class="slide-text">
+					<img src="images/dummy/hamrun.png" width="308" height="77" alt="" />
+					<p class="top">Meet Ham - a pig who loves to run! Use one touch controls to avoid hazards, collect powerups and grab tickets. Spin the wheel to win prizes and use them to compete on the leaderboards.</p>
+					<p class="ul-title">Features:</p>
+					<ul>
+						<li>Use crazy powerups for more distance</li>
+						<li>Game Center Leaderboards</li>
+						<li>Upgrade powerups and buy next run boosts in the store</li>
+						<li>Simple one touch controls</li>
+						<li>Complete over 150 challenging missions</li>
+						<li>In game friend score markers</li>
+						<li>"Just one more try" gameplay for endless fun</li>
+						<li>More chickens than you can count</li>
+					</ul>
+					<blockquote><p>«It was the first time we needed a high-end 3D game for mobile - and with a very limited budget. Fryza exceeded expectations»<strong>- John Harriet MARVEL</strong></p></blockquote>
+				</div>
+				<div class="slide-img"><img src="images/dummy/sliderImage06.jpg" width="1100" height="689" alt="" /></div>
+			</div>
+		</div>
+		<div id="slider-preview-wrap">
+			<div id="slider-preview">
+				<div id="slider-nav"></div>
+				<h3>App Spotlight</h3>
+				<img class="position-flag" src="images/triangle.png" width="14" height="12" alt="" />
+				<ul>
+					<li class="active"><img src="images/dummy/sliderPreview01.jpg" width="145" height="88" alt="" /></li>
+					<li><img src="images/dummy/sliderPreview02.jpg" width="145" height="88" alt="" /></li>
+					<li><img src="images/dummy/sliderPreview03.jpg" width="145" height="88" alt="" /></li>
+					<li><img src="images/dummy/sliderPreview04.jpg" width="145" height="88" alt="" /></li>
+					<li><img src="images/dummy/sliderPreview05.jpg" width="145" height="88" alt="" /></li>
+					<li class="last"><img src="images/dummy/sliderPreview06.jpg" width="145" height="88" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

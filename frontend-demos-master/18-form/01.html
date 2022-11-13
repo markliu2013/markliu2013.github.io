@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Python Classification</title>
+    <style>
+        /* General */
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            color: #000;
+        }
+        fieldset {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        input {
+            border: 1px solid #999;
+        }
+        .form-group {
+            margin: 5px 0;
+        }
+        #page {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 960px;
+        }
+        .classification-form {
+            padding: 20px;
+        }
+        .classification-form .about-yourself label {
+            display: inline-block;
+            width: 200px;
+        }
+        .classification-form .form-group-comments textarea {
+            display: block;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="page">
+    <div class="classification-form">
+        <form action="#">
+            <h2>Python Classification</h2>
+            <p>Please fill out this forms to perform classification</p>
+            <fieldset class="about-yourself">
+                <p>Tell us about yourself</p>
+                <div class="form-group">
+                    <label for="classification-input-first-name">Your first name:</label>
+                    <input id="classification-input-first-name" type="text" placeholder="" />
+                </div>
+                <div class="form-group">
+                    <label for="classification-input-last-name">Your last name:</label>
+                    <input id="classification-input-last-name" type="text" placeholder="" />
+                </div>
+                <div class="form-group">
+                    <label for="classification-input-email-address">Your E-mail Address:</label>
+                    <input id="classification-input-email-address" type="email" placeholder="" />
+                </div>
+                <div class="form-group">
+                    <label for="classification-input-email-address-retype">Retype Your E-mail Address:</label>
+                    <input id="classification-input-email-address-retype" type="email" placeholder="" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Choose estimators you want to use</h3>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="1" id="classification-estimators-k-nearest" />
+                    <label for="classification-estimators-k-nearest">K nearest neighbor Classifier</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="2" id="classification-estimators-svc" />
+                    <label for="classification-estimators-svc">Support Vector Classifier</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="3" id="classification-estimators-gnb" />
+                    <label for="classification-estimators-gnb">Gaussian Naive Bayes</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="3" id="classification-estimators-dtc" />
+                    <label for="classification-estimators-dtc">Decision Tree Classifier</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="4" id="classification-estimators-mpc" />
+                    <label for="classification-estimators-mpc">Multi-Layer Perceptron Classifier</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="classification-estimators" value="5" id="classification-estimators-sgdc" />
+                    <label for="classification-estimators-sgdc">stochastic gradient descent Classifier</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>How do you load your dataset?</h3>
+                <div class="form-group">
+                    <input type="radio" name="classification-dataset-radio" />
+                    <label for="classification-select-dataset-system">Choose data sets from system</label>
+                    <select name="classification-dataset-system" id="classification-select-dataset-system">
+                        <option value="fetch_california_housing" selected>fetch_california_housing</option>
+                        <option value="fetch_kddcup99">fetch_kddcup99</option>
+                        <option value="fetch_lfw_people">fetch_lfw_people</option>
+                        <option value="fetch_20newsgroups">fetch_20newsgroups</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="classification-dataset-radio" />
+                    <label for="classification-input-dataset-system">Load my own dataset</label>
+                    <input type="text" name="classification-dataset-system" id="classification-input-dataset-system" />
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="classification-select-k-for-kfold">Select K for kFold cross validation</label>
+                <select name="classification-k-for-kfold" id="classification-select-k-for-kfold">
+                    <option value="15">15</option>
+                    <option value="14">14</option>
+                    <option value="13">13</option>
+                    <option value="12">12</option>
+                    <option value="11">11</option>
+                    <option value="10" selected>10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group form-group-comments">
+                <label for="classification-textarea-comments">Any comments</label>
+                <textarea id="classification-textarea-comments" placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" /> <input type="reset" value="Clear" />
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

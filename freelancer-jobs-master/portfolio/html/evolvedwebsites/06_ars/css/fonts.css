@@ -1,0 +1,50 @@
+/* @license
+ * MyFonts Webfont Build ID 2337407, 2012-08-01T16:42:42-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Eurostile Ext Black by URW++
+ * URL: http://www.myfonts.com/fonts/urw/eurostile/t-black-extended/
+ * Copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2337407
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+@font-face {
+	font-family: 'EurostileExt-Bla';
+	src: url('../fonts/EurostileExt-Bla/23AA7F_0_0.eot');
+	src: url('../fonts/EurostileExt-Bla/23AA7F_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/EurostileExt-Bla/23AA7F_0_0.woff') format('woff'),
+		 url('../fonts/EurostileExt-Bla/23AA7F_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'futura-pt';
+    src: url('../fonts/futura-pt/futura_bk_bt_book-webfont.eot');
+    src: url('../fonts/futura-pt/futura_bk_bt_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futura-pt/futura_bk_bt_book-webfont.woff') format('woff'),
+         url('../fonts/futura-pt/futura_bk_bt_book-webfont.ttf') format('truetype'),
+         url('../fonts/futura-pt/futura_bk_bt_book-webfont.svg#futura_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'OfficinaSerif BookItalic';
+    src: url('../fonts/OfficinaSerif/officinaseritc-bookitalos-webfont.eot');
+    src: url('../fonts/OfficinaSerif/officinaseritc-bookitalos-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OfficinaSerif/officinaseritc-bookitalos-webfont.woff') format('woff'),
+         url('../fonts/OfficinaSerif/officinaseritc-bookitalos-webfont.ttf') format('truetype'),
+         url('../fonts/OfficinaSerif/officinaseritc-bookitalos-webfontt.svg#officina_serif_itc_book_osIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

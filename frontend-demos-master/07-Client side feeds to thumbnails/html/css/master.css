@@ -1,0 +1,121 @@
+
+/* General */
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: "", arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #000;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: none;
+}
+
+#feed {
+	margin: 0 auto;
+	width: 800px;
+}
+
+#feed ul {
+	list-style: none;
+}
+
+#feed ul li {
+	float: left;
+	margin: 10px;
+}
+
+#feed ul li a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
+#feed ul li a .roll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	opacity: 0;
+	cursor: pointer;
+}
+#feed ul li a.gallery .roll {
+	background-image: url(../images/magOverlay.gif);
+}
+#feed ul li a.video .roll {
+	background-image: url(../images/movieoverlay.gif);
+}
+#feed ul li a .wider {
+	height: 100px;
+}
+#feed ul li a .taller {
+	width: 100px;
+}
+#feed ul li .desc {
+	display: none;
+}
+
+#fancybox-title h3 {
+	margin: 0 0 20px 0;
+	font-size: 15px;
+}
+#fancybox-title p {
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+}
+#fancybox-left {
+	left: -60px !important;
+	width: 60px !important;
+}
+#fancybox-right {
+	right: -60px !important;
+	width: 60px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

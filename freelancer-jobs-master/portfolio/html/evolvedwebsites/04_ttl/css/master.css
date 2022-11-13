@@ -1,0 +1,906 @@
+/* @override
+	http://nrf.evolved-websites.com/1/css/master.css
+*/
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* General */
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/body_bg.jpg) repeat;
+	font-family:  "Source Sans Pro", arial, sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Yesteryear', serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+h4 {
+	font-size: 13px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 23px;
+	font-family: "Source Sans Pro";
+	color: #000000;
+}
+
+blockquote {
+	margin: 0;
+	padding: 1em 2em;
+}
+
+.radius {
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+}
+.shadow {
+	-webkit-box-shadow: 5px 5px 5px #bbbbbb;
+	-moz-box-shadow: 5px 5px 5px #bbbbbb;
+	box-shadow: 5px 5px 5px #bbbbbb;
+}
+.buy .price {
+	font-weight: bold;
+}
+.buy input {
+	margin: 0 11px;
+	width: 35px;
+	height: 25px;
+	border: none;
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	text-align: center;
+}
+a.buy-button {
+	display: inline-block;
+	width: 42px;
+	height: 27px;
+	background: #e16e69;
+	line-height: 27px;
+	text-align: center;
+	font-family: "Yesteryear";
+	font-size: 17px;
+	color: #ffffff;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+/* Layout */
+.page {
+	width: 901px;
+	margin: 0 auto;
+	background: url(../images/bg.jpg) repeat-y;
+}
+#header {
+	position: relative;
+	width: 958px;
+	margin: 48px auto 0;
+	padding: 0 0 17px 43px;
+	background: url(../images/bg.jpg) repeat-y;
+	z-index: 99;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+
+#header a.logo {
+	float: left;
+	margin-top: 29px;
+}
+#header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#header ul.nav {
+	float: left;
+	margin: 82px 0 0 35px;
+}
+#header ul.nav li {
+	position: relative;
+	float: left;
+	display: inline;
+	margin-right: 14px;
+	text-transform: uppercase;
+}
+#header ul.nav li.highlighted {
+	font-weight: bold;
+}
+#header ul.nav li ul {
+	display: none;
+	position: absolute;
+	top: 18px;
+	left: -21px;
+	padding-top: 16px;
+	z-index: 99;
+}
+#header ul.nav li ul li {
+	display: block;
+	float: none;
+	background: #e5edf6;
+	height: 45px;
+}
+#header ul.nav li ul li div {
+	margin-left: 11px;
+	padding-right: 10px;
+	background: #e5edf6;
+	height: 45px;
+	
+	white-space: nowrap;
+	padding-left: 9px;
+}
+#header ul.nav li ul li:hover div {
+	background: #f7f8fb;
+}
+#header ul.nav li ul li span.top {
+	display: block;
+	padding: 3px 0 2px 0;
+	font-weight: 550;
+}
+#header ul.nav li ul li span.bottom {
+	display: block;
+	font-family: "Yesteryear";
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: none;
+}
+#header ul.nav li ul li.last:hover {
+	background: #344b7e;
+}
+#header ul.nav li ul li.last div {
+	border-top: 1px dashed #474547;
+}
+#header ul.nav li ul li.last span {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#header ul.nav li ul li.high-chai:hover {
+	background: #bbb594;
+}
+#header ul.nav li ul li.summer-bird:hover {
+	background: #e0c18d;
+}
+#header ul.nav li ul li.green-tea:hover {
+	background: #a1a57d;
+}
+#header ul.nav li ul li.rosy-tea:hover {
+	background: #b27f90;
+}
+#header ul.nav li ul li.nocturne:hover {
+	background: #8199a9;
+}
+#header ul.nav li ul li.lighthouse-mint:hover {
+	background: #9c9ab7;
+}
+#header ul.nav li ul li.liquorice-star:hover {
+	background: #96918c;
+}
+#header ul.nav li ul li.emerald-zing:hover {
+	background: #a4ba8c;
+}
+#header ul.nav li ul li.rooibos-high:hover {
+	background: #c88f7f;
+}
+#header ul.nav li ul li.ginger-bird:hover {
+	background: #cda072;
+}
+#header ul.nav li ul li.earl-grey:hover {
+	background: #52606d;
+}
+#header ul.nav li ul li.english-breakfast:hover {
+	background: #5e7e98;
+}
+#header ul.nav li:hover ul {
+	display: block;
+}
+/* cart */
+#header .cart {
+	position: absolute;
+	top: -48px;
+	right: 3px;
+	z-index: 99;
+}
+#header .cart .header {
+	width: 175px;
+	height: 37px;
+	line-height: 37px;
+	background: url(../images/cart_title_bg.png) no-repeat;
+	font-family: "Yesteryear";
+	text-align: center;
+	font-size: 21px;
+	color: #96b7ea;
+	cursor: pointer;
+}
+#header .cart .header span {
+	color: #ffffff;
+}
+#header .cart .info_wrap {
+	display: none;
+	padding: 0 11px 9px 11px;
+	background: #085689;
+}
+#header .cart .info {
+	padding: 9px 0 0 0;
+	width: 152px;
+	background: #ffffff;
+	text-align: center;
+	font-size: 13px;
+}
+#header .cart .info div.title {
+	margin-bottom: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #085689;
+}
+#header .cart .info p {
+	padding-bottom: 11px;
+	line-height: 17.29px;
+	font-size: 13px;
+	color: #666666;
+}
+#header .cart .info ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#header .cart .info ul li {
+	position: relative;
+	padding-bottom: 14px;
+}
+#header .cart .info ul li span.item {
+	float: left;
+	margin-left: 6px;
+	width: 75px;
+	line-height: 17.29px;
+	text-align: left;
+	font-size: 14px;
+	color: #000000;
+}
+#header .cart .info ul li span.item a {
+	color: #000000;
+}
+#header .cart .info ul li span.price {
+	position: absolute;
+	bottom: 14px;
+	right: 7px;
+	width: 46px;
+}
+#header .cart .info ul li.total {
+	padding-bottom: 11px;
+	font-weight: bold;
+}
+#header .cart .info ul li.total span.item {
+	text-transform: uppercase;
+}
+#header .cart .footer {
+	display: none;
+	width: 175px;
+	height: 37px;
+	line-height: 37px;
+	background: url(../images/cart_title_bg.png) 0 0 no-repeat;
+}
+#header .cart .footer a {
+	display: block;
+	margin: 0 auto;
+	width: 152px;
+	height: 27px;
+	line-height: 27px;
+	background: #b9cce4;
+	font-family: "Yesteryear";
+	text-align: center;
+	font-size: 17px;
+	color: #000000;
+}
+#header img.lady {
+	position: absolute;
+	top: -26px;
+	right: 17px;
+	z-index: 98;
+}
+
+/* banner */
+#banner {
+	position: relative;
+	padding: 0 50px;
+
+}
+#banner img.l {
+	position: absolute;
+	top: -7px;
+	left: 43px;
+	z-index: 97;
+}
+#banner img.r {
+	position: absolute;
+	top: -7px;
+	right: 43px;
+	z-index: 97;
+}
+
+/* thumb */
+#thumb {
+	padding: 0 50px 13px;
+	position: relative;
+}
+#thumb-inner {
+	overflow: hidden;
+	position: relative;
+	width: 901px;
+	height: 256px;
+}
+#thumb-nav-prev {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	font-size: 50px;
+	font-weight: 900;
+}
+#thumb-nav-prev:hover {
+	text-decoration: none;
+}
+#thumb-nav-next {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	font-size: 50px;
+	font-weight: 900
+}
+#thumb-nav-next:hover {
+	text-decoration: none;
+}
+#thumb ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#thumb ul li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 8px 7px 0 0;
+	width: 144px;
+	height: 120px;
+}
+#thumb ul li div.cover {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 144px;
+	height: 120px;
+	text-align: center;
+}
+#thumb ul li:hover div.cover {
+	display: table;
+	*display: block;
+}
+#thumb ul li div.cover div {
+	display: table-cell;
+	position: static;
+
+	vertical-align: middle;
+	padding: 0 6px;
+}
+
+#thumb ul li .cover h3 {
+	margin-bottom: 3px;
+}
+#thumb ul li .cover h3 a {
+	font-family: "Century Gothic";
+	font-size: 17.49px;
+	line-height: 18.52px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+#thumb ul li .cover h3 a:hover {
+	text-decoration: underline;
+}
+#thumb ul li .cover span {
+	font-family: "Yesteryear";
+	font-size: 19.55px;
+	line-height: 18.52px;
+	color: #ffffff;
+}
+#thumb ul li.last {
+	margin-right: 0;
+}
+#thumb ul li.high-chai div.cover {
+	background: rgba(190,179,143,0.8);
+}
+#thumb ul li.summer-bird div.cover {
+	background: rgba(224,191,134,0.8);
+}
+#thumb ul li.green-tea div.cover {
+	background: rgba(158,166,127,0.8);
+}
+#thumb ul li.rosy-tea div.cover {
+	background: rgba(162,124,136,0.8);
+}
+#thumb ul li.nocturne div.cover {
+	background: rgba(126,148,168,0.8);
+}
+#thumb ul li.lighthouse-mint div.cover {
+	background: rgba(151,147,181,0.8);
+}
+#thumb ul li.liquorice-star div.cover {
+	background: rgba(136,135,133,0.8);
+}
+#thumb ul li.emerald-zing div.cover {
+	background: rgba(160,186,138,0.8);
+}
+#thumb ul li.rooibos-chai div.cover {
+	background: rgba(188,130,130,0.8);
+}
+#thumb ul li.ginger-bird div.cover {
+	background: rgba(224,174,134,0.8);
+}
+#thumb ul li.earl-grey div.cover {
+	background: rgba(105,139,166,0.8);
+}
+#thumb ul li.english-breakfast div.cover {
+	background: rgba(109,156,192,0.8);
+}
+
+
+
+/* home content */
+#home #content {
+	padding: 0 50px 6px;
+}
+#home #content h1 {
+	margin: 3px 0 25px 0;
+	width: 548px;
+	text-align: center;
+	line-height: 47.29px;
+	color: #e16e69;
+}
+#home #main {
+	float: left;
+	padding: 0 0 10px 0;
+	width: 540px;
+}
+#home #main p {
+	margin-bottom: 25px;
+}
+#home #main p img {
+	float: left;
+	margin: 7px 14px 0 0;
+}
+#home #sidebar {
+	float: right;
+	width: 357px;
+}
+#home #sidebar img.product {
+	margin: -5px 0 21px 0;
+}
+#home #sidebar p {
+	margin-left: 60px;
+	width: 294px;
+	font-size: 17px;
+	font-family: "Yesteryear";
+}
+#home #sidebar a {
+	display: block;
+	margin: 3px 0 0 178px;
+	width: 66px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+#home #sidebar img.underline {
+	display: block;
+	margin: 12px 0 0 51px;
+}
+
+
+/* internal */
+#internal #content, #internal2 #content {
+	position: relative;
+	padding: 0 50px 50px;
+
+}
+#internal #content h2 {
+	font-weight: 600;
+}
+#internal #content .l, #internal2 #content .l {
+	position: absolute;
+	top: -9px;
+	left: 41px;
+	z-index: 97;
+}
+#internal #content .r, #internal2 #content .r {
+	position: absolute;
+	top: -9px;
+	right: 41px;
+	z-index: 97;
+}
+/* content top */
+#internal #content .top {
+	background: #f3f6fd;
+}
+#internal #content .top .img-holder {
+	position: relative;
+	float: left;
+	width: 305px;
+}
+#internal #content .top .img-holder div {
+	position: absolute;
+	top: 211px;
+	left: 0;
+	padding: 23px 40px 0 23px;
+	width: 217px;
+	height: 78px;
+	background: url(../images/slider_text_holder.png) no-repeat;
+}
+#internal #content .top .img-holder div p {
+	font-family: "Yesteryear";
+	line-height: 23.29px;
+	font-size: 23px;
+	line-height: 23.29px;
+	color: #ffffff;
+}
+#internal #content .top .sidebar {
+	float: right;
+	margin-right: 24px;
+	width: 519px;
+}
+#internal #content .top .sidebar h1 {
+	margin-top: 36px;
+	font-family: "Century Gothic";
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+#internal #content .top .sidebar h2 {
+	font-size: 22px;
+	font-weight: 200;
+}
+#internal #content .top .sidebar .ingredients {
+	margin-top: 7px;
+}
+#internal #content .top .sidebar .ingredients strong {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#internal #content .top .sidebar .footer {
+	margin-bottom: 25px;
+	font-size: 11px;
+}
+#internal #content .top .sidebar ul {
+	overflow: hidden;
+	list-style: none;
+	margin: 21px 0;
+	padding: 0;
+}
+#internal #content .top .sidebar ul li {
+	float: left;
+	width: 154px;
+	padding: 0 13px 0 13px;
+	border-right: 1px dashed #939397;
+}
+#internal #content .top .sidebar ul li.first {
+	padding-left: 0px;
+}
+#internal #content .top .sidebar ul li.last {
+	padding-right: 0px;
+	border-right: none;
+}
+#internal #content .top .sidebar ul li .product {
+	height: 95px;
+}
+#internal #content .top .sidebar ul li .product img {
+	float: left;
+	margin-right: 7px;
+}
+#internal #content .top .sidebar ul li .product h2 {
+	margin-top: 9px;
+	font-size: 27px;
+	font-weight: normal;
+}
+#internal #content .top .sidebar ul li .product span {
+	display: block;
+}
+
+/* content mid */
+#internal #content .mid {
+	background: #f3f6fd;
+}
+#internal #content .mid-inner {
+	margin: 0 25px 0 21px;
+	border-bottom: 1px solid #231f20;
+}
+#internal #content p a {
+	color: #35548a;
+	text-decoration: underline;
+}
+#internal #content .mid .tip {
+	float: left;
+	width: 285px;
+}
+#internal #content .mid  h2 {
+	margin: 13px 0 24px 0;
+}
+#internal #content .mid p {
+	padding-bottom: 22px;
+}
+#internal #content .mid .about {
+	float: right;
+	width: 525px;
+}
+
+
+#internal #content .bottom {
+	padding: 22px 25px 25px 21px;
+	background: #f3f6fd;
+}
+#internal #content .description {
+	float: left;
+	width: 155px;
+}
+#internal #content .description h2 {
+	margin-bottom: 17px;
+}
+#internal #content .imgs {
+	float: right;
+}
+#internal #content .imgs img {
+	margin: 0 0 0 4px;
+}
+
+
+#internal #content .sample, #internal2 #content .sample {
+	padding: 0 25px 0 21px;
+	background: #f3f6fd;
+}
+
+
+/* internal2 */
+
+#internal2 #content #main {
+	padding: 0 25px 0 21px;
+	background: #f3f6fd;
+
+}
+#internal2 #content #main h1 {
+	padding: 38px 0;
+	font-family: "Century Gothic";
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#internal2 #content #main img {
+	display: block;
+	margin: 0 auto;
+}
+#internal2 #content #main .row {
+	margin: 22px 0;
+}
+#internal2 #content #main .row.first {
+	margin-top: 0;
+}
+#internal2 #content #main .row.last {
+	margin-bottom: 0;
+}
+#internal2 #content #main .row .col1 {
+	float: left;
+	width: 425px;
+	border-right: 1px dashed #777679;
+}
+#internal2 #content #main .row .left {
+	float: left;
+	width: 160px;
+}
+#internal2 #content #main .row .left .buy {
+	margin: 17px 0 0 5px;
+}
+#internal2 #content #main .row .right {
+	float: right;
+	margin-right: 26px;
+	width: 215px;
+}
+#internal2 #content #main .row .right h2 {
+	margin-bottom: 5px;
+	font-family: "Century Gothic";
+	font-size: 18px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+#internal2 #content #main .row .right p {
+	padding-bottom: 25px;
+}
+#internal2 #content #main .row .right p.desc {
+	padding: 0;
+	font-style: italic;
+}
+#internal2 #content #main .row .col2 {
+	float: right;
+	width: 405px;
+}
+#internal2 #content #main .row .col2 .right {
+	margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+#footer {
+	position: relative;
+	overflow: auto;
+	height: 196px;
+	padding: 37px 50px 25px 50px;
+	background: url(../images/foot_bg.jpg) no-repeat;
+}
+#footer h3 {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-family: "Century Gothic";
+	font-size: 15px;
+	color: #35548a;
+}
+#footer input {
+	display: block;
+}
+#footer .text {
+	margin-bottom: 6px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	border: 1px solid #d9d9d9;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	color: #000000;
+}
+#footer .submit {
+	width: 58px;
+	height: 27px;
+	line-height: 27px;
+	border: none;
+	cursor: pointer;
+	background: #4a73b1;
+	font-family: Yesteryear;
+	font-size: 17px;
+	color: #ffffff;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+}
+
+#footer .col1 {
+	float: left;
+	width: 273px;
+}
+#footer .col1 ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+#footer .col1 ul li span.item {
+	float: left;
+	font-family: "Yesteryear";
+	font-size: 17px;
+}
+#footer .col1 ul li span.value {
+	float: right;
+	width: 213px;
+	font-size: 15px;
+}
+#footer .col2 {
+	float: left;
+	margin-left: 30px;
+	width: 310px;
+}
+#footer .col2 p {
+	padding: 0 0 14px 0;
+	font-family: "Yesteryear";
+	font-size: 17px;
+	line-height: 21px;
+}
+#footer .col2 form {
+	margin: 0;
+}
+#footer .col2 input.text {
+	width: 225px;
+}
+#footer .col3 {
+	float: right;
+	margin-right: 47px;
+	width: 140px;
+}
+#footer .col3 input.text {
+	width: 108px;
+}
+#footer img.flower_l {
+	position: absolute;
+	bottom: 29px;
+	left: 50px;
+}
+#footer img.flower_r {
+	position: absolute;
+	bottom: 29px;
+	right: 50px;
+}
+#siteinfo {
+	text-align: center;
+}
+#siteinfo p {
+	padding-top: 6px;
+	font-family: "Century Gothic";
+	font-size: 11px;
+	line-height: 31.29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Member Lismore Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="../core/css/evolved_core.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+
+<script src="http://promo.wotif.com/widgets/js/lib/jquery-1.7.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="http://promo.wotif.com/widgets/plugins/1.0/hotel-deals/css/hotel-deals.css">
+<script src="http://promo.wotif.com/widgets/api/wotif_api_1.1.min.js"></script>
+<script src="http://promo.wotif.com/widgets/js/widgets/common_1.1.js"></script>
+</head>
+<body id="member">
+	<div id="header-wrap">
+		<div id="header" class="page">
+			<div id="top" class="clearfix">
+				<a href="#"><img src="images/logo.png" width="274" height="83" alt="Logo" /></a>
+				<ul class="clearfix">
+					<li><a href="#"><img src="images/top_twitter.png" width="12" height="15" alt="Twitter" /></a></li>
+					<li><img src="images/top_div_01.png" width="4" height="36" alt="" /></li>
+					<li><a href="#"><img src="images/top_facebook.png" width="9" height="18" alt="Facebook" /></a></li>
+					<li><img src="images/top_div_02.png" width="8" height="32" alt="" /></li>
+					<li><a href="#"><img src="images/top_youtube.png" width="20" height="21" alt="Youtube" /></a></li>
+					<li><img src="images/top_div_03.png" width="8" height="32" alt="" /></li>
+					<li><a href="#"><img src="images/top_pinterest.png" width="16" height="20" alt="Pinterest" /></a></li>
+					<li><img src="images/top_div_04.png" width="8" height="46" alt="" /></li>
+					<li><a href="#"><img src="images/top_rss.png" width="18" height="19" alt="Rss" /></a></li>
+					<li><img src="images/top_div_05.png" width="4" height="35" alt="" /></li>
+					<li><a href="#"><img src="images/top_weather.png" width="28" height="28" alt="Weather" /></a></li>
+					<li><img src="images/top_div_06.png" width="8" height="32" alt="" /></li>
+					<li><a href="#"><img src="images/top_linkin.png" width="18" height="23" alt="Linkin" /></a></li>
+				</ul>
+			</div><!-- end top -->
+		</div><!-- end header -->
+	</div><!-- end header-wrap -->
+	
+	<div id="mid-wrap">
+		<div id="mid" class="page">
+			<div id="menu" class="clearfix">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">stay</a></li>
+					<li><a href="#">see &amp; do</a></li>
+					<li><a href="#">eat &amp; enjoy</a></li>
+					<li><a href="#">natural wonders</a></li>
+					<li><a href="#">the villages</a></li>
+				</ul>
+				<input class="search" type="text" name="" placeholder="search" />
+			</div><!-- end menu -->
+			
+			<div id="content" class="clearfix">
+<div>
+  <div class="wtfHdr">
+    <div class="wtfTitle" style='max-width:887px;'></div>
+    <a href="http://www.wotif.com/?" target='_self'><img src="http://images.wotif.com/staticassets3/images/core/logo-wotif.png"/></a>
+  </div>
+  <div id="wtfWidget" class="wtfWidget"></div>
+</div>  
+
+<script>
+var checkinDate = new Date();
+
+if (typeof wtfQuery == "undefined") wtfQuery = null;
+
+$(function() {
+    
+    if (wtfQuery) {
+        wtfQuery.abort();
+        wtfQuery = null;
+    }    
+    
+    var previousTarget = null,
+        today = new Date(),
+        startDate = new Date(),
+        gridLength = 7,
+        endDate = offsetDate(startDate, gridLength),
+        stepLength = Math.ceil(gridLength / 2);
+    
+    wtfInclusions = {};
+    
+    var doSearch = function(startDate, endDate) {
+        var criteria = wotif_api.searchCriteria();
+ 
+        criteria.setStartDate(startDate);
+        criteria.setEndDate(endDate);
+        
+		criteria.setRegions(["2341"]);
+        criteria.setPropTypes(["Hotel", "B&B/Guest House"]);
+
+        wtfQuery = criteria.search().done(function(result) {
+            
+            if (!result) {
+                return;
+            }
+            
+            var results = document.getElementById("wtfWidget"),                
+                nextStartDate = offsetDate(startDate, stepLength),
+                nextExtraStart = offsetDate(startDate, gridLength),
+                nextEndDate = offsetDate(startDate, gridLength + stepLength),
+                prevStartDate = offsetDate(startDate, -stepLength),
+                prevExtraEnd = offsetDate(startDate, -1),
+                prevEndDate = null;
+
+            if (prevStartDate < today) {
+                prevStartDate = today;    
+            }   
+            
+            prevEndDate = offsetDate(prevStartDate, gridLength);
+            
+            result['startDate'] = startDate;
+            result['gridLength'] = gridLength;
+            result['regionName'] = "";
+            result['widgetTitle'] = "";
+            result['maxPrice'] = 0;
+            result['target'] = "_self";
+            result['nextDateRange'] = dateMonthFormat(nextExtraStart) + " - " +  dateMonthFormat(nextEndDate);
+            result['prevDateRange'] = prevStartDate.getTime() < startDate.getTime()?dateMonthFormat(prevStartDate) + " - " +  dateMonthFormat(prevExtraEnd):null;
+            
+            results.innerHTML = tmpl("hotel_deals_widget_template", result);
+            
+            var popup = $('div#wtfPopUp');
+            popup.css('opacity', 0.9);
+            
+            $(results).delegate(".wtfInclusions", "mouseenter mouseleave", wtfInclusions, function (event) {
+                popup.html(event.data[event.currentTarget.id]);
+                if (event.type == 'mouseenter') {                	
+                    popup.show().css('top', event.pageY + 15)
+                    .css('left', event.pageX + 5)
+                    .appendTo('body');
+                } else {
+                    popup.hide();
+                }
+                
+            });
+            previousTarget = $(results).find(".wtfHotel")[0];
+            
+            $(results).delegate(".wtfHotel", "mouseenter", [], function (event) {
+                $(previousTarget).children(".wtfBody").addClass("wtfHidden");
+                $(previousTarget).children(".wtfHdr").addClass("wtfCollapsed");
+                $(previousTarget).removeClass("wtfSelected");    
+                $(event.currentTarget).children(".wtfBody").removeClass("wtfHidden");
+                $(event.currentTarget).children(".wtfHdr").removeClass("wtfCollapsed");
+                $(event.currentTarget).addClass("wtf_selected");
+                previousTarget = event.currentTarget;
+            });
+            
+            $(results).undelegate(".wtfRatePlan", "click");
+            $(results).delegate(".wtfRatePlan", "click", [], function (event) {            
+                window.open(hotelDetailsUrl("W3394", startDate), "_self");
+            });
+    
+            $("#wtfNextBtn").click( function (event) {
+                doSearch(nextStartDate, nextEndDate);
+            });
+            
+            $("#wtfPrevBtn").click( function (event) {
+                doSearch(prevStartDate, prevEndDate);
+            });
+            
+        });
+      
+    }
+    
+    doSearch(startDate, endDate);
+});    
+
+function hotelDetailsUrl(hotelId, startDate) {
+    return "http://www.wotif.com/hotel/View?hotel=" + hotelId + "&startDay=" + dateFormatYMD(startDate) + "";
+}
+
+function wotifUrl() {
+    return "http://www.wotif.com/?";
+}
+
+</script>
+
+<div style='display: none'><textarea id='hotel_deals_widget_template'><table class="wtfTable" >
+    <tr class="date-navigation">
+      <td  class="wtfNav">
+      </td>
+      <td colspan="<%=gridLength%>" class="wtfNav">
+        <div>
+        <% if (prevDateRange) { %>        
+              <div class="wtfPrev" id="wtfPrevBtn">
+                  <% if (gridLength > 6) { %><span>Show earlier dates</span> <%=prevDateRange%><% } %>
+              </div>
+        <% } %>      
+              <div class="wtfNext" id="wtfNextBtn">
+                  <% if (gridLength > 6) { %><span>Show later dates</span> <%=nextDateRange%><% } %>
+              </div>
+        </div>  
+      </td>
+    </tr>
+
+
+    <tr class="wtfHdrRow">
+      <td class="wtfPropName"><% if (hotels.length == 0) { %>No deals available for these dates<%}%></td>           
+      
+      <% 
+         var dateKeys = createDateKeyArray(startDate, gridLength);
+       
+         for ( var d = 0; d < dateKeys.length; d++ ) { %>
+          <th class="wtfDate wtf<%=dayFormat(dateKeys[d])%>"><%=shortDateFormat(dateKeys[d])%></th>
+      <% } %> 
+    </tr>
+   <%
+      if (hotels.length > 0) {
+		for (var h = 0; h < hotels.length; h++) {
+        var hotel = hotels[h]; 
+        for (var rp = 0; rp < hotel.rateplans.length; rp++) { 
+          var rates = createRatesForDatesArray(dateKeys, hotel.rateplans[rp].rates);   
+   %>
+    <tr class="wtfRatePlan wtfRow<%=rp%2%>">
+        <td class="wtfPropName">
+          <span><%= hotel.rateplans[rp].name%></span>
+		  <span><%= hotel.star_rating.value%></span>
+		  <span><%= hotel.location.address%>, <%= hotel.location.city%> </span>
+          <div class="wtfBookBtn"></div>
+        </td>
+      <% for (var d = 0; d < rates.length; d++) { 
+      
+           if (rates[d]) {
+             wtfInclusions["wtf_"  + rp + "_" + d] = rates[d].inclusions; %> 
+             <td id="<%="wtf_" + rp + "_" + d%>" class="wtfPrice wtfInclusions wtf<%=dayFormat(dateKeys[d])%>2"><%=rates[d].price%></td>
+        <% } else { %>
+             <td class="wtfPrice wtfSold">SOLD</td>
+        <% }
+           
+         } %>
+    </tr>
+    <% 
+       } 
+	   }
+     } %>
+</table>
+    
+<div id="wtfPopUp" class="wtfTooltipContainer" style="display: none;position: absolute;"></div>
+</textarea></div><img src="//dt.wotif.com/42/1/10032/" style="display:none"/>
+			</div><!-- end content -->
+			
+
+
+			
+			
+			
+			
+		</div><!-- end mid -->
+	</div><!-- end mid-wrap -->
+	
+	
+	<div id="footer-wrap">
+		<div id="footer" class="page">
+			<div id="site-link" class="clearfix">
+				<div class="left">
+					<div>
+						<a href="#"><img src="images/footer_logo_1.png" width="194" height="93" alt="" /></a>
+						<p>
+							The sould of aquarius and the home of Australia’s alternative lifestyle movement
+						</p>
+					</div>
+					<img src="images/footer_div.png" width="199" height="4" alt="" />
+					<div>
+						<a href="#"><img src="images/footer_logo_2.png" width="204" height="64" alt="" /></a>
+						<p>
+							explore Lismore’s vibrant City Centre...<br />the heart of the heart
+						</p>
+					</div>
+				</div><!-- end left -->
+				<div class="right">
+					<div class="col col1">
+						<p class="links-title">about us</p>
+						<p class="links"><a href="#">Lismore is the heart of the williamsburg, 3 wolf moon high life skateboard</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">accommodation</p>
+						<p class="links"><a href="#">B&amp;Bs &amp; guesthouses</a></p>
+						<p class="links"><a href="#">chalets, villas &amp; cottages</a></p>
+						<p class="links"><a href="#">self contained</a></p>
+						<p class="links"><a href="#">budget &amp; backpackers</a></p>
+						<p class="links"><a href="#">hotels, motels &amp; resorts</a></p>
+						<p class="links"><a href="#">caravan &amp; camping</a></p>
+						<p class="links"><a href="#">retreats</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">things to do</p>
+						<p class="links"><a href="#">the top ten</a></p>
+						<p class="links"><a href="#">museums & galleries</a></p>
+						<p class="links"><a href="#">theatre & cinema</a></p>
+						<p class="links"><a href="#">events</a></p>
+						<p class="links"><a href="#">cafe culture</a></p>
+						
+						
+						<p class="links-title">dining &amp; entertainment</p>
+						<p class="links"><a href="#">restaurants &amp; cafes</a></p>
+						<p class="links"><a href="#">pubs &amp; clubs</a></p>
+						<p class="links"><a href="#">live music</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">getting here</p>
+						<p class="links"><a href="#">by air</a></p>
+						<p class="links"><a href="#">by road</a></p>
+						<p class="links"><a href="#">by rail</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">natural wonders</p>
+						<p class="links"><a href="#">parks, national parks &amp; reserves</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">what’s on</p>
+						<p class="links"><a href="#">events calendar</a></p>
+						<p class="links"><a href="#">markets</a></p>
+						<p class="links"><a href="#">festivals</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">the shop</p>
+						<p class="links"><a href="#">gifts from the heart</a></p>
+						
+						<p class="links-title">shopping &amp; fashion</p>
+						<p class="links"><a href="#">city centre retail</a></p>
+						<p class="links"><a href="#">markets</a></p>
+						<p class="links"><a href="#">shopping centres</a></p>
+						<p class="links"><a href="#">the retro trail</a></p>
+						<p class="links"><a href="#">designers</a></p>
+						<p class="links"><a href="#">hidden treasures</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">history & heritage</p>
+						<p class="links"><a href="#">Lismore is the heart of the williamsburg, 3 wolf moon high life skateboard</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">health & wellbeing</p>
+						<p class="links"><a href="#">Lismore is the heart of the williamsburg, 3 wolf moon high life skateboard</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">arts &amp; culture</p>
+						<p class="links"><a href="#">art in the heart</a></p>
+						<p class="links"><a href="#">museums &amp; galleries</a></p>
+						<p class="links"><a href="#">street art</a></p>
+						<p class="links"><a href="#">arts trail</a></p>
+						
+						<p class="links-title">maps &amp; brochure</p>
+						<p class="links"><a href="#">visitor guide</a></p>
+						<p class="links"><a href="#">arts trail</a></p>
+						<p class="links"><a href="#">dining guide</a></p>
+						<p class="links"><a href="#">market guide</a></p>
+						<p class="links"><a href="#">nimbin brochure</a></p>
+						<p class="links"><a href="#">bird watching</a></p>
+						<p class="links"><a href="#">retro trail</a></p>
+						<p class="links"><a href="#">fact sheets</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">visitor information</p>
+						<p class="links"><a href="#">Lismore is the heart of the williamsburg, 3 wolf moon high life skateboard</a></p>
+						<img src="images/site_link_div.png" width="170" height="3" alt="" />
+						<p class="links-title">business</p>
+						<p class="links"><a href="#">business directory</a></p>
+						<p class="links"><a href="#">membership</a></p>
+						<p class="links"><a href="#">image gallery</a></p>
+						<p class="links"><a href="#">media</a></p>
+						<p class="links"><a href="#">advertise</a></p>
+						
+						
+					</div><!-- end col1 -->
+					
+					<div class="col col2">
+						
+					</div>
+					<div class="col col3">
+						
+					</div>
+					<div class="col col4">
+						
+					</div>
+				</div><!-- end right -->
+			</div><!-- end site-link -->
+			<div id="site-info">
+				<p>
+					&copy; Copyright 2012 Lismore + Nimbin Tourism&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;designed by <a href="#">Dogwhistle Creative</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML/ CSS by <a href="#">Evolved Websites</a>
+				</p>
+			</div><!-- end site-info -->
+		</div><!-- end footer -->
+	</div><!-- end footer-wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

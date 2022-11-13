@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' version='2.0'>
+  <channel>
+    <description></description>
+    <atom:id>http://gdata.youtube.com/feeds/base/users/1059AcademyFM/uploads</atom:id>
+    <lastBuildDate>Wed, 13 Mar 2013 09:51:58 +0000</lastBuildDate>
+    <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+    <title>Uploads by 1059AcademyFM</title>
+    <image>
+      <url>http://www.youtube.com/img/pic_youtubelogo_123x63.gif</url>
+      <title>Uploads by 1059AcademyFM</title>
+      <link>http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA/videos</link>
+    </image>
+    <link>http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA/videos</link>
+    <atom:link rel='self' href='http://gdata.youtube.com/feeds/base/users/1059AcademyFM/uploads?alt=rss&amp;start-index=1&amp;max-results=25'/>
+    <managingEditor>1059AcademyFM</managingEditor>
+    <generator>YouTube data API</generator>
+    <openSearch:totalResults>224</openSearch:totalResults>
+    <openSearch:startIndex>1</openSearch:startIndex>
+    <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/LRVbAB60Tf0</guid>
+      <pubDate>Fri, 08 Mar 2013 17:13:08 +0000</pubDate>
+      <atom:updated>2013-03-08T17:16:09.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Sarah from The Good Natured</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=LRVbAB60Tf0&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/LRVbAB60Tf0/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=LRVbAB60Tf0&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Sarah from The Good Natured&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Friday&amp;#39;s Drive Show Ben Pearce spoke to Sarah from The Good Natured.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        2&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;0
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;04:03&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=LRVbAB60Tf0&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/x2Mp-ACeL3M</guid>
+      <pubDate>Tue, 26 Feb 2013 11:30:27 +0000</pubDate>
+      <atom:updated>2013-02-27T21:39:36.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce interviews Craig Sheridan</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=x2Mp-ACeL3M&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/x2Mp-ACeL3M/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=x2Mp-ACeL3M&amp;amp;feature=youtube_gdata"&gt;Ben Pearce interviews Craig Sheridan&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Saturday morning Ben Pearce was joined in the studio by Craig Sheridan who played some live tracks.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        55&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;3
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;21:02&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=x2Mp-ACeL3M&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/yW1F_uJylH0</guid>
+      <pubDate>Mon, 04 Feb 2013 14:56:46 +0000</pubDate>
+      <atom:updated>2013-02-25T11:17:05.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Sarah Carre interviews Ed Balls</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=yW1F_uJylH0&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/yW1F_uJylH0/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=yW1F_uJylH0&amp;amp;feature=youtube_gdata"&gt;Sarah Carre interviews Ed Balls&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;The Shadow Chancellor Ed Balls visited Kent last week to meet with small businesses and discuss the problems they are facing in the current economic climate, Sarah Carre spoke with the Shadow Chancellor about Labour plans to cut VAT and increase consumer spending, and what can be done to help struggling high streets.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        3&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;0
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;04:09&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=yW1F_uJylH0&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/bgUBrxnBSig</guid>
+      <pubDate>Mon, 04 Feb 2013 14:25:54 +0000</pubDate>
+      <atom:updated>2013-02-04T14:25:54.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce interviews Booty Luv</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=bgUBrxnBSig&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/bgUBrxnBSig/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=bgUBrxnBSig&amp;amp;feature=youtube_gdata"&gt;Ben Pearce interviews Booty Luv&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Friday&amp;#39;s Drive Show Ben Pearce interviewed Booty Luv&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        17&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;0
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;07:00&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=bgUBrxnBSig&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/utGVvk5TFU8</guid>
+      <pubDate>Tue, 29 Jan 2013 11:45:42 +0000</pubDate>
+      <atom:updated>2013-01-29T11:45:42.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce interviews Charlie from The Risk</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=utGVvk5TFU8&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/utGVvk5TFU8/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=utGVvk5TFU8&amp;amp;feature=youtube_gdata"&gt;Ben Pearce interviews Charlie from The Risk&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Fridays Drive Show Ben Pearce was joined on the phone by Charlie from The Risk.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        18&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_empty_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;0
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;08:09&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=utGVvk5TFU8&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/KauZvk-NMDk</guid>
+      <pubDate>Fri, 25 Jan 2013 17:57:04 +0000</pubDate>
+      <atom:updated>2013-01-27T15:04:26.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Jack Bowden</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=KauZvk-NMDk&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/KauZvk-NMDk/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=KauZvk-NMDk&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Jack Bowden&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;Ben Pearce was joined on Saturdays morning show by Jack Bowden&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        55&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;4
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;10:41&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=KauZvk-NMDk&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/bbB9Yq8GFfo</guid>
+      <pubDate>Tue, 22 Jan 2013 12:31:06 +0000</pubDate>
+      <atom:updated>2013-02-24T11:54:25.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce interviews Concept</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=bbB9Yq8GFfo&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/bbB9Yq8GFfo/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=bbB9Yq8GFfo&amp;amp;feature=youtube_gdata"&gt;Ben Pearce interviews Concept&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Monday&amp;#39;s Drive Show. Ben Pearce was joined in the studio by the boyband Concept.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        279&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;13
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;17:25&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=bbB9Yq8GFfo&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/XUcKI3n7KHU</guid>
+      <pubDate>Mon, 21 Jan 2013 11:20:51 +0000</pubDate>
+      <atom:updated>2013-01-22T13:16:46.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce chats to Marcus Bentley</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=XUcKI3n7KHU&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/XUcKI3n7KHU/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=XUcKI3n7KHU&amp;amp;feature=youtube_gdata"&gt;Ben Pearce chats to Marcus Bentley&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Friday&amp;#39;s Drive Show Ben Pearce was joined in the phone by Actor and Voice of Big Brother, Marcus Bentley.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        21&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;2
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;11:21&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=XUcKI3n7KHU&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/BEzxDf27wPo</guid>
+      <pubDate>Fri, 18 Jan 2013 18:20:29 +0000</pubDate>
+      <atom:updated>2013-01-22T13:16:55.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Dave from My Forever</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=BEzxDf27wPo&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/BEzxDf27wPo/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=BEzxDf27wPo&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Dave from My Forever&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Fridays Drive Show Ben Pearce spoke with Dave from My Forever&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        16&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;04:47&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=BEzxDf27wPo&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/Q2uywqP3D1Q</guid>
+      <pubDate>Tue, 15 Jan 2013 15:37:26 +0000</pubDate>
+      <atom:updated>2013-01-24T23:24:27.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Donaeo</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=Q2uywqP3D1Q&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/Q2uywqP3D1Q/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=Q2uywqP3D1Q&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Donaeo&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Monday&amp;#39;s Drive Show Ben Pearce spoke on the phone to Donaeo.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        54&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;3
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;04:43&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=Q2uywqP3D1Q&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/ugFtciR8LZg</guid>
+      <pubDate>Tue, 15 Jan 2013 13:39:20 +0000</pubDate>
+      <atom:updated>2013-01-22T13:17:12.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce meets Sam Gray</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=ugFtciR8LZg&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/ugFtciR8LZg/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=ugFtciR8LZg&amp;amp;feature=youtube_gdata"&gt;Ben Pearce meets Sam Gray&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Monday&amp;#39;s Drive Show Ben Pearce was joined in the studio by Sam Gray ahead of his show that evening supporting Peter Andre at the Leas Cliff Hall.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        17&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;13:55&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=ugFtciR8LZg&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/dYH6v7KNjqc</guid>
+      <pubDate>Mon, 14 Jan 2013 10:48:37 +0000</pubDate>
+      <atom:updated>2013-01-22T13:17:19.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Fugative</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=dYH6v7KNjqc&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/dYH6v7KNjqc/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=dYH6v7KNjqc&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Fugative&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Fridays Drive Show Ben Pearce was joined on the phone by Fugative.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        28&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;2
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;07:03&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=dYH6v7KNjqc&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/RQIHSsc0b24</guid>
+      <pubDate>Mon, 07 Jan 2013 14:33:03 +0000</pubDate>
+      <atom:updated>2013-01-22T13:17:38.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Wayne - Snow White and the Seven Dwarfs</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=RQIHSsc0b24&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/RQIHSsc0b24/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=RQIHSsc0b24&amp;amp;feature=youtube_gdata"&gt;Wayne - Snow White and the Seven Dwarfs&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;Monday morning presenter Wayne Conyers joined the stars of the Snow White and the Seven dwarfs Pantomime backstage at the Leas Cliff Hall, the show is on until the 12th January.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        18&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;05:55&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=RQIHSsc0b24&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/Fsyk2oPLGU0</guid>
+      <pubDate>Mon, 07 Jan 2013 11:10:00 +0000</pubDate>
+      <atom:updated>2013-01-22T13:19:49.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce meets The Drifters</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=Fsyk2oPLGU0&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/Fsyk2oPLGU0/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=Fsyk2oPLGU0&amp;amp;feature=youtube_gdata"&gt;Ben Pearce meets The Drifters&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;Ben Pearce met The Drifters at the Leas Cliff Hall ahead of their show.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        18&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;07:15&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=Fsyk2oPLGU0&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/sA9yHDhn9ug</guid>
+      <pubDate>Fri, 21 Dec 2012 11:38:43 +0000</pubDate>
+      <atom:updated>2013-02-12T19:21:26.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Beatboxer Jackapella on the Breakfast Show</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=sA9yHDhn9ug&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/sA9yHDhn9ug/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=sA9yHDhn9ug&amp;amp;feature=youtube_gdata"&gt;Beatboxer Jackapella on the Breakfast Show&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Fridays Breakfast Show Craig, Wayne and Sarah were joined in the studio by local beatboxer Jackapella.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        26&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;3
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;14:25&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=sA9yHDhn9ug&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/hR8_f21SCJg</guid>
+      <pubDate>Thu, 20 Dec 2012 11:49:44 +0000</pubDate>
+      <atom:updated>2013-01-22T13:20:06.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to Kano</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=hR8_f21SCJg&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/hR8_f21SCJg/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=hR8_f21SCJg&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to Kano&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Friday&amp;#39;s Drive Show Ben Pearce was joined on the phone by Kano.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        19&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;07:55&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=hR8_f21SCJg&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/bqGR0kRQVM0</guid>
+      <pubDate>Mon, 17 Dec 2012 17:37:15 +0000</pubDate>
+      <atom:updated>2013-02-13T11:34:58.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Campbell - Pilots</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=bqGR0kRQVM0&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/bqGR0kRQVM0/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=bqGR0kRQVM0&amp;amp;feature=youtube_gdata"&gt;Campbell - Pilots&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        116&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;2
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;18:41&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=bqGR0kRQVM0&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/MdanXEQQF5o</guid>
+      <pubDate>Mon, 17 Dec 2012 17:26:33 +0000</pubDate>
+      <atom:updated>2013-02-12T14:41:30.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Tommy - Hypnotism</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=MdanXEQQF5o&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/MdanXEQQF5o/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=MdanXEQQF5o&amp;amp;feature=youtube_gdata"&gt;Tommy - Hypnotism&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        75&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;09:37&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=MdanXEQQF5o&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/akCzvclKcfk</guid>
+      <pubDate>Mon, 17 Dec 2012 17:21:21 +0000</pubDate>
+      <atom:updated>2013-02-12T14:41:22.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Sophie - Space</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=akCzvclKcfk&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/akCzvclKcfk/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=akCzvclKcfk&amp;amp;feature=youtube_gdata"&gt;Sophie - Space&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        98&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;11:31&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=akCzvclKcfk&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/riubChlsdBk</guid>
+      <pubDate>Mon, 17 Dec 2012 17:14:07 +0000</pubDate>
+      <atom:updated>2013-02-13T11:48:38.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ross and Ileah - Forensics</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=riubChlsdBk&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/riubChlsdBk/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=riubChlsdBk&amp;amp;feature=youtube_gdata"&gt;Ross and Ileah - Forensics&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        115&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;09:53&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=riubChlsdBk&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/flSvO0SNhOY</guid>
+      <pubDate>Mon, 17 Dec 2012 17:09:28 +0000</pubDate>
+      <atom:updated>2013-02-12T14:41:13.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Josh - Illusions</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=flSvO0SNhOY&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/flSvO0SNhOY/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=flSvO0SNhOY&amp;amp;feature=youtube_gdata"&gt;Josh - Illusions&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        104&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;15:41&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=flSvO0SNhOY&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/stPmF3oes1g</guid>
+      <pubDate>Mon, 17 Dec 2012 17:01:27 +0000</pubDate>
+      <atom:updated>2013-02-12T14:41:06.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Kaiya - Tigers</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=stPmF3oes1g&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/stPmF3oes1g/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=stPmF3oes1g&amp;amp;feature=youtube_gdata"&gt;Kaiya - Tigers&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        122&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;19:19&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=stPmF3oes1g&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/J2qGIPIL1Zk</guid>
+      <pubDate>Tue, 11 Dec 2012 13:26:50 +0000</pubDate>
+      <atom:updated>2013-02-15T20:26:37.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce chats with Ebony Day</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=J2qGIPIL1Zk&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/J2qGIPIL1Zk/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=J2qGIPIL1Zk&amp;amp;feature=youtube_gdata"&gt;Ben Pearce chats with Ebony Day&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Monday&amp;#39;s Drive Show Ben Pearce spoke with Ebony Day.
+        
+        www.academyfmfolkestone.com&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        673&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;17
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;04:19&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=J2qGIPIL1Zk&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/m4E6BPhJ1g8</guid>
+      <pubDate>Tue, 11 Dec 2012 12:30:41 +0000</pubDate>
+      <atom:updated>2013-01-22T13:20:37.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben talks to Yannis from the Creative Quarter</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=m4E6BPhJ1g8&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/m4E6BPhJ1g8/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=m4E6BPhJ1g8&amp;amp;feature=youtube_gdata"&gt;Ben talks to Yannis from the Creative Quarter&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Monday&amp;#39;s Drive show Ben Pearce was joined in the studio by Yannis from the Creative Quarter.&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        14&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;1
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;07:09&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=m4E6BPhJ1g8&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+    <item>
+      <guid isPermaLink='false'>http://gdata.youtube.com/feeds/base/videos/Y3o0E7tCJy0</guid>
+      <pubDate>Mon, 10 Dec 2012 15:28:39 +0000</pubDate>
+      <atom:updated>2013-01-22T13:20:43.000Z</atom:updated>
+      <category domain='http://schemas.google.com/g/2005#kind'>http://gdata.youtube.com/schemas/2007#video</category>
+      <title>Ben Pearce talks to James Vince</title>
+      <description>&lt;div style="color: #000000;font-family: Arial, Helvetica, sans-serif;     font-size:12px; font-size: 12px; width: 555px;"&gt;
+        &lt;table cellspacing="0" cellpadding="0" border="0"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td width="140" valign="top" rowspan="2"&gt;&lt;div style="border: 1px solid #999999; margin: 0px 10px 5px 0px;"&gt;&lt;a href="http://www.youtube.com/watch?v=Y3o0E7tCJy0&amp;amp;feature=youtube_gdata"&gt;&lt;img alt="" src="http://i.ytimg.com/vi/Y3o0E7tCJy0/0.jpg"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td width="256" valign="top"&gt;&lt;div style="font-size: 12px; font-weight: bold;"&gt;&lt;a style="font-size: 15px; font-weight: bold;                  font-decoration: none;" href="http://www.youtube.com/watch?v=Y3o0E7tCJy0&amp;amp;feature=youtube_gdata"&gt;Ben Pearce talks to James Vince&lt;/a&gt;
+        &lt;br&gt;&lt;/div&gt;
+        &lt;div style="font-size: 12px; margin: 3px 0px;"&gt;&lt;span&gt;On Friday&amp;#39;s Drive Show Ben Pearce was joined in the studio by James Vince&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; line-height: 1.4em; padding-left: 20px;             padding-top: 1px;" width="146" valign="top"&gt;&lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;From:&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/channel/UCaSGR5_TSa143OiZFSXs-gA"&gt;1059AcademyFM&lt;/a&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Views:&lt;/span&gt;
+        45&lt;/div&gt;
+        &lt;div style="white-space: nowrap;text-align: left"&gt;&lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt; &lt;img style="border: 0px none; margin: 0px; padding: 0px;                    vertical-align: middle; font-size: 11px;" align="top" alt="" src="http://gdata.youtube.com/static/images/icn_star_full_11x11.gif"&gt;&lt;/div&gt;
+        &lt;div style="font-size: 11px;"&gt;2
+        &lt;span style="color: #666666; font-size: 11px;"&gt;ratings&lt;/span&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;Time:&lt;/span&gt;
+        &lt;span style="color: #000000; font-size: 11px; font-weight: bold;"&gt;09:25&lt;/span&gt;&lt;/td&gt;
+        &lt;td style="font-size: 11px; padding-left: 20px;"&gt;&lt;span style="color: #666666; font-size: 11px;"&gt;More in&lt;/span&gt;
+        &lt;a href="http://www.youtube.com/videos?c=24"&gt;Entertainment&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</description>
+      <link>http://www.youtube.com/watch?v=Y3o0E7tCJy0&amp;feature=youtube_gdata</link>
+      <author>1059AcademyFM</author>
+    </item>
+  </channel>
+</rss>

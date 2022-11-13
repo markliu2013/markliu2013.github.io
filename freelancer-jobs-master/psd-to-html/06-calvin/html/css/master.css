@@ -1,0 +1,190 @@
+/* fonts */
+@font-face {
+	font-family: "ProximaNova Semibold";
+	src: url(fonts/ProximaNovaExCn-Semibold.otf);
+}
+
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/* General */
+body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: 'Myriad Pro', 'PT Sans', arial, helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #666666;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: none;
+}
+h1, h2, h3, h4 {
+	font-style: normal;
+	font-weight: 700;
+}
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h4 {
+	font-size: 13px;
+}
+blockquote {
+	margin: 0;
+	padding: 1em 2em;
+}
+#photo-grid {
+	margin: 0 auto;
+	overflow: hidden;
+}
+#photo-grid img {
+	display: block;
+	float: left;
+}
+body {
+	position: relative;
+}
+#landing-box {
+	position: fixed;
+	padding: 102px 0 0 0;
+	width: 590px;
+	height: 488px;
+	background: url(../images/bg01.png) no-repeat;
+}
+#landing-box .logo {
+	position: relative;
+	margin: 0 auto 33px auto;
+	width: 257px;
+}
+#landing-box .logo span {
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 26px;
+	font-size: 19px;
+	color: #fff;
+}
+#landing-box .text {
+	margin: 0 auto 33px auto;
+	width: 386px;
+	text-align: center;
+}
+#landing-box .text p {
+	margin: 0 0 13px 0;
+	font-size: 19px;
+	line-height: 22px;
+	color: #fff;
+}
+#landing-box .text p.last {
+	margin-bottom: 0;
+}
+#landing-box form {
+	margin: 0 auto;
+	width: 426px;
+}
+#landing-box form .input-wrap {
+	position: relative;
+}
+#landing-box form .input-wrap.first-name {
+	float: left;
+}
+#landing-box form .input-wrap.email {
+	float: right;
+}
+#landing-box form .input-wrap label {
+	position: absolute;
+	top: 7px;
+	font-family: "ProximaNova Semibold";
+	font-size: 19px;
+	color: #545454;
+	text-transform: uppercase;
+}
+#landing-box form .input-wrap.first-name label {
+	left: 45px;
+}
+#landing-box form .input-wrap.email label {
+	left: 73px;
+}
+#landing-box form .input-wrap input {
+	padding: 0 10px;
+	width: 178px;
+	height: 32px;
+	line-height: 32px;
+	border: none;
+	background: url(../images/input-bg.png) no-repeat;
+}
+#landing-box form .input-wrap.error input {
+	border: 1px solid #f00;
+}
+#landing-box form .input-wrap.error label {
+	left: 7px;
+	color: #f00;
+	text-transform: none;
+}
+#landing-box form input.submit {
+	display: block;
+	margin: 15px auto 0 auto;
+	width: 98px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	background: url(../images/submit-bg.png) no-repeat;
+	border: none;
+	font-family: "ProximaNova Semibold";
+	font-size: 19px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

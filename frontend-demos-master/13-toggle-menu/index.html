@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+
+	<link rel="stylesheet" href="sidetogglemenu.css"/>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script src="sidetogglemenu.js">
+
+		/*
+		 * Responsive Side Toggle Menu(c) Dynamic Drive (www.dynamicdrive.com)
+		 * Last updated: May 28th, 13'
+		 * Visit http://www.dynamicdrive.com/ for this script and 100s more.
+		 */
+
+	</script>
+
+
+	<script>
+
+		jQuery(function () { // on DOM load
+			menu1 = new sidetogglemenu({  // initialize first menu example
+				id: 'togglemenu1',
+				marginoffset: 10,
+				position: 'right',
+				pushcontent: true
+			});
+
+			jQuery(".sideviewtoggle").bind("click", function(e) {
+				action();
+				menu1.toggle();
+				e.stopPropagation();
+			})
+
+		})
+
+		function action() {
+			if (document.getElementById("ImageButton1").src == 'http://dummyimage.com/200x200/000000/fff.gif&text=Image+1') {
+				document.getElementById("ImageButton1").src = 'http://ymls.me/360link.png';
+			}
+			else {
+				document.getElementById("ImageButton1").src = 'http://dummyimage.com/200x200/000000/fff.gif&text=Image+1';
+			}
+		}
+
+
+
+	</script>
+	<style type="text/css">
+		.sideviewtoggle {
+			display: block;
+			float: right;
+			margin: 0;
+			padding: 0;
+			border: none;
+			border-image-width: 0;
+			background: #fff;
+		}
+		.sideviewtoggle img {
+			display: block;
+			margin: 0;
+			padding: 0;
+			border: none;
+			border-image-width: 0;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<button class="sideviewtoggle">
+	<img src="http://dummyimage.com/200x200/000000/fff.gif&text=Image+1" width="150px" id="ImageButton1" />
+</button>
+
+
+<div id="togglemenu1" class="sidetogglemenu">
+
+	<ul>
+		<li><a href="#">Photos</a></li>
+		<li><a href="#">Virtual Tour</a></li>
+		<li><a href="#">Video</a></li>
+		<li><a href="#">Specs</a></li>
+		<li><a href="#">Links</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+
+	<p style="padding:10px">
+		<font color="#595959">Instructions can go here.</font>
+	</p>
+
+</div>
+
+<h1>Only opens menu if you click the grey border around the image. How can we make the image both open/close menu AND change image source on toggle??</h1>
+
+</body>
+</html>

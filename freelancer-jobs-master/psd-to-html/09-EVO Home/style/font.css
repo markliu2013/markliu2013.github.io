@@ -1,0 +1,13 @@
+/* Font */
+@font-face {
+	font-family: 'Futura Book';
+	src: url('../fonts/Futura Book.TTF') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Bold';
+	src: url('../fonts/Futura Bold.TTF') format('truetype');
+}
+@font-face {
+	font-family: 'Futura Light';
+	src: url('../fonts/Futura Light.TTF') format('truetype');
+}

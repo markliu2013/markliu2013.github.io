@@ -1,0 +1,188 @@
+#header-wrap {
+	background: #00aeef;
+}
+#member #header-wrap {
+	background: #00aeef;
+	height: 200px;
+}
+#top > a {
+	margin-top: 28px;
+}
+#top > ul {
+	margin-top: 130px;
+}
+#footer-wrap {
+	background: #00aeef;
+}
+#site-link .left > div p {
+	margin: 5px 0 0 6px;
+	width: 155px;
+	font-family: "HelveticaNeueCE-Roman";
+	font-size: 16.67px;
+	color: #333;
+}
+#site-link .right .col p.links-title {
+    color: #333;
+}
+#site-link .right .col p.links a {
+    color: #333;
+}
+#site-info p {
+	color: #333;
+}
+#site-info p a {
+	color: #333;
+}
+
+/* member page */
+#member #menu ul {
+	padding-top: 29px;
+}
+#member #menu > input {
+	margin-top: 29px;
+}
+#member #main {
+	width: 752px;
+}
+#member #main .images .left {
+	width:613px;
+}
+#member #main .images .right {
+	width:134px;
+}
+#member #main .text .right {
+	width: 508px;
+}
+#member #main .title {
+	margin: 12px 0 15px 0;
+}
+#member #main .title h1 {
+	float: left;
+	margin: 0;
+}
+#member #main .title .nav {
+	float: right;
+	margin: 18px 15px 0 0;
+}
+#member #main .title .nav a {
+	margin-left: 26px;
+	font-family: 'HelveticaNeueCE-Thin';
+	font-size: 14.58px;
+	color: #333;
+}
+#member #main .view {
+	margin-bottom: 28px;
+}
+#member #main .view .view-by {
+	float: left;
+	margin: 5px 0 0 3px;
+}
+#member #main .view .view-by a,
+#member #main .view .view-by span {
+	display: block;
+	float: left;
+	margin-right: 26px;
+	font-family: 'HelveticaNeueCE-Thin';
+	font-size: 16.67px;
+	color: #333;
+}
+#member #main .view .view-by a.current {
+	color: #ff3333;
+}
+#member #main .view > input {
+	float: right;
+	padding: 0 50px 0 11px;
+	width: 164px;
+	background: url(../images/search_bg_02.png);
+}
+#member #main .text {
+	margin-bottom: 36px;
+}
+#member #main .images .right a {
+	margin-bottom: 5px;
+}
+#member #main .links {
+	height: 40px;
+	line-height: 40px;
+}
+#member #main .links ul {
+	float: left;
+	width: 600px;
+}
+#member #main .links .nav {
+	float: right;
+	margin-right: 17px;
+}
+#member #main .links .nav a {
+	margin-left: 16px;
+	font-family: 'HelveticaNeueCE-Thin';
+	font-size: 14.58px;
+	color: #333;
+}
+#member #sidebar .member-profile {
+	margin-top: 8px;
+	padding: 0 16px;
+	width: 164px;
+	border: 1px solid #f4b9b5;
+	background: #05b0ff;
+}
+#member #sidebar .member-profile h3 {
+	padding: 20px 0 16px 0;
+	font-family: 'HelveticaNeueLT-Light';
+	/*font-size: 25px;*/
+	font-size: 23px;
+	line-height: 37.5px;
+	color: #fff;
+}
+#member #sidebar .member-profile p {
+	margin: 22px 0 25px 0;
+	font-family: 'HelveticaNeueLT-Light';
+	/*font-size: 54.17px;*/
+	font-size: 43px;
+	line-height: 38px;
+	color: #fff;
+}
+
+/* directory page */
+#member #main .directory-list h3 {
+	margin-bottom: 12px;
+	font-family: 'HelveticaNeueLT-Light';
+	font-size: 20.83px;
+	color: #f00;
+}
+#member #main .directory-list ul li span.name {
+	float: left;
+}
+#member #main .directory-list ul li span.phone {
+	float: right;
+	padding-right: 22px;
+}
+#member #main .pages-print {
+	margin-top: 60px;
+}
+#member #main .pages-print a {
+	font-family: 'HelveticaNeueCE-Thin';
+	font-size: 18.75px;
+	color: #333;
+}
+#member #main .pages-print .pages {
+	float: right;
+}
+#member #main .pages-print .pages a {
+	display: block;
+	float: left;
+	margin: 0 11px;
+}
+#member #main .pages-print .pages a.current {
+	color: #ff3333;
+}
+#member #main .pages-print .print {
+	float: right;
+	margin: 0 20px 0 55px;
+}
+
+
+
+
+
+

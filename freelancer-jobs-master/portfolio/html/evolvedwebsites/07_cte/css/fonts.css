@@ -1,0 +1,9 @@
+/* Font */
+@font-face {
+	font-family: 'Helvetica Light';
+	src: url('fonts/Adobe - HelveticaLTStd-Light.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Helvetica Bold';
+	src: url('fonts/Helvetica LT Bold.ttf') format('truetype');
+}

@@ -1,0 +1,31 @@
+#top-login form h3 {
+	white-space: nowrap;
+}
+#top-login form p {
+	white-space: nowrap;
+}
+#top-login {
+	z-index: 100;
+}
+#select-product-dropdown {
+	z-index: 100;
+}
+#top-login form a {
+	white-space: nowrap;
+}
+#top-login form input.submit {
+	margin: 0 0 0 30px;
+}
+#page-title {
+	z-index: 99;
+}
+#search-input {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#contact-form {
+	width: 250px;
+}
+#contact #contact-form {
+	width: 528px;
+}

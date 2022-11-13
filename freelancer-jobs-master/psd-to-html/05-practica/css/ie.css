@@ -1,0 +1,42 @@
+.clearfix {
+	zoom: 1;
+}
+#menu {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+#menu ul {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+#menu ul li {
+	z-index: 10;
+}
+#menu ul li .submenu {
+	behavior: url(PIE-1.0.0/PIE.php);
+	-pie-poll: false;
+}
+#menu ul li .submenu ul {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+.quicklinks .quicklink-inner {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+.quicklinks .quicklink {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+#footer {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+#footer-inner {
+	behavior: url(PIE-1.0.0/PIE.php);
+}
+#menu ul li ul li {
+	*display: inline;
+	*zoom: 1;
+}
+hr.sep {
+	*border-top: 6px solid #fff;
+}
+
+
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Navigation Mobile</title>
+<style type="text/css">
+body {
+	background: #ccc;
+}
+.step-nav {
+	overflow: hidden;/* clear floats, you can change to your site style */
+	font-family: Arial, Helvetica, sans-serif;
+	width: 105px; /* should base on your step size */
+	margin: 0 auto;
+}
+.step-nav .link-wrap,
+.step-nav .link-wrap:hover {
+	text-decoration: none;
+}
+.step-nav .step {
+	position: relative;
+	margin-top: -18px;
+	padding: 23px 13px 0 13px;
+	width: 79px;
+	height: 84px;
+	background: url(images/step-bg-01.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.step-nav .step:hover,
+.step-nav .step.active {
+	background: url(images/step-bg-02.png) 0 0 no-repeat;
+}
+
+.step-nav .step .num {
+	margin: 0 auto;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	background: #e88424;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+}
+.step-nav .step:hover .num,
+.step-nav .step.active .num {
+	background: #243672;
+}
+.step-nav .step .text {
+	font-size: 11px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+.step-nav .step1 {
+	margin-top: 0;
+	padding-top: 18px;
+	height: 89px;
+	z-index: 5;
+}
+.step-nav .step2 {
+	z-index: 4;
+}
+.step-nav .step3 {
+	z-index: 3;
+}
+.step-nav .step4 {
+	z-index: 2;
+}
+.step-nav .step5 {
+	z-index: 1;
+}
+.link-wrap {
+	display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="step-nav">
+
+
+	<a href="#" class="link-wrap">
+		<div class="step step1">
+			<div class="num">1</div>
+			<div class="text">Engage senior leaders</div>
+		</div>
+	</a>
+	
+	<a href="#" class="link-wrap">
+	<div class="step step2 active">
+		<div class="num">2</div>
+		<div class="text">Understand future needs</div>
+	</div>
+	</a>
+	
+	<a href="#" class="link-wrap">
+	<div class="step step3">
+		<div class="num">3</div>
+		<div class="text">Develop future needs</div>
+	</div>
+	</a>
+	
+	<a href="#" class="link-wrap">
+	<div class="step step4">
+		<div class="num">4</div>
+		<div class="text">Hire leaders externally as needed</div>
+	</div>
+	</a>
+	
+	<a href="#" class="link-wrap">
+	<div class="step step5">
+		<div class="num">5</div>
+		<div class="text">Monitor and improve practices</div>
+	</div>
+	</a>
+	
+	<a href="#" class="link-wrap">
+	<div class="step step6">
+		<div class="num">6</div>
+		<div class="text">Monitor and improve practices</div>
+	</div>
+	</a>
+</div>
+
+</body>
+</html>

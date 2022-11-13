@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery UI Droppable</title>
+<link href="css/jquery.ui.core.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="js/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="js/jquery.ui.droppable.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#draggable").draggable();
+		$("#droppables .droppable").droppable({
+			hoverClass: "ui-state-active",
+			tolerance: "touch"
+		});
+	})
+</script>
+<style type="text/css">
+	body {
+		margin: 0;
+	}
+	p {
+		margin: 0;
+	}
+	#wrap {
+		margin: 0 auto;
+		padding-top: 200px;
+		width: 900px;
+	}
+	#draggable {
+		float: right;
+		width: 300px;
+		height: 300px;
+	}
+	#droppables {
+		float: left;
+		width: 100px;
+		height: 30px;
+	}
+	#droppables .droppable {
+		margin-bottom: 5px;
+	}
+	#droppables .ui-state-active {
+		border: 1px solid #f00;
+	}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="draggable" class="ui-widget-content"><p>Drag me to my target</p></div>
+	<div id="droppables">
+		<div class="droppable ui-widget-header"><p>Drop here</p></div>
+		<div class="droppable ui-widget-header"><p>Drop here</p></div>
+		<div class="droppable ui-widget-header"><p>Drop here</p></div>
+		<div class="droppable ui-widget-header"><p>Drop here</p></div>
+		<div class="droppable ui-widget-header"><p>Drop here</p></div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../jquery.min.js"></script>
+<title>Slider Arrow</title>
+<style type="text/css">
+	#wrap {
+		position: relative;
+		margin: 20px auto 0;
+		width: 1028px;
+	}
+	#wrap a.arrow {
+		display: none;
+		position: absolute;
+		top: 173px;
+		width: 37px;
+		height: 73px;
+		background: rgba(0,0,0,0.8);
+		z-index: 99;
+	}
+	#wrap a.arrow img {
+		display: block;
+		margin: 21px auto 0;
+		border: none;
+	}
+	#wrap a.left-arrow {
+		left: 0;
+	}
+	#wrap a.right-arrow {
+		right: 0;
+	}
+</style>
+
+<script type="text/javascript">
+	$(function() {
+		$(".slide-img").mousemove(function(e) {
+			var srcWidth = $(this).width();
+			var Xcoordinate;
+			if(e.offsetX) {
+				Xcoordinate = e.offsetX;
+			} else if(e.layerX) {
+				Xcoordinate = e.layerX;
+			} else {
+				return;
+			}
+			
+		if(Xcoordinate < srcWidth/2) {//left
+			if($("#wrap a.left-arrow").is(":visible")) {
+				return;
+			}
+			$("#wrap a.right-arrow").hide();
+			$("#wrap a.left-arrow").fadeIn(200);
+		} else {//right
+			if($("#wrap a.right-arrow").is(":visible")) {
+				return;
+			}
+			
+			$("#wrap a.left-arrow").hide();
+			$("#wrap a.right-arrow").fadeIn(200);
+		}
+    	});
+		$("#wrap").mouseleave(function(e) {
+			$("#wrap a.right-arrow").hide();
+			$("#wrap a.left-arrow").hide();
+		});
+	})
+	
+</script>
+</head>
+
+<body>
+	
+	<div id="wrap">
+		<a href="#" id="prev-slider" class="arrow left-arrow"><img src="../left_arrow.png" width="19" height="36" alt="To Left" /></a>
+	    <a href="#" id="next-slider" class="arrow right-arrow"><img src="../right_arrow.png" width="19" height="36" alt="To Right" /></a>
+		<div id="slider">
+			<div class="slide">
+				<div class="slide-img">
+					<img src="../slidershow_01.jpg" width="1028" height="534" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

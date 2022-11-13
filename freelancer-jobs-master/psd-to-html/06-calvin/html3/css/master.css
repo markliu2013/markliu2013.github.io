@@ -1,0 +1,393 @@
+/* fonts */
+@font-face {
+    font-family: 'proxima_nova_alt_rgbold';
+    src: url('fonts/proxima_nova_alt_bold-webfont.eot');
+    src: url('fonts/proxima_nova_alt_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proxima_nova_alt_bold-webfont.woff') format('woff'),
+         url('fonts/proxima_nova_alt_bold-webfont.ttf') format('truetype'),
+         url('fonts/proxima_nova_alt_bold-webfont.svg#proxima_nova_alt_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_altlight';
+    src: url('fonts/proxima_nova_alt_light-webfont.eot');
+    src: url('fonts/proxima_nova_alt_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proxima_nova_alt_light-webfont.woff') format('woff'),
+         url('fonts/proxima_nova_alt_light-webfont.ttf') format('truetype'),
+         url('fonts/proxima_nova_alt_light-webfont.svg#proxima_nova_altlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_alt_rgregular';
+    src: url('fonts/proxima_nova_alt_reg-webfont.eot');
+    src: url('fonts/proxima_nova_alt_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proxima_nova_alt_reg-webfont.woff') format('woff'),
+         url('fonts/proxima_nova_alt_reg-webfont.ttf') format('truetype'),
+         url('fonts/proxima_nova_alt_reg-webfont.svg#proxima_nova_alt_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/*-----------------------------
+    RESET STYLES
+-----------------------------*/
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust:none;
+}
+ul, li, ol, dl, dd, dt {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a {
+	text-decoration:none;
+}
+/*-----------------------------
+    BASIC PAGE STYLING
+-----------------------------*/
+body {
+	background: #f3f3f3;
+	font-family: 'proxima_nova_alt_rgregular', Helvetica;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	color: #e7e7e7;
+}
+img, table {
+	max-width: 320px;
+}
+#page-wrapper {
+	width: 320px;
+}
+/* install */
+#install {
+	position: relative;
+	height: 74px;
+	background: url(../images/bg01.jpg) 0 0 repeat-x;
+}
+#install-close {
+	top: 3px;
+	left: 3px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/close.png) 0 0 no-repeat;
+}
+#install .icon {
+	position: absolute;
+	top: 9px;
+	left: 29px;
+}
+#install .install-button {
+	position: absolute;
+	top: 24px;
+	right: 5px;
+	padding: 0 11px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #c1c1c1;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #5c5c5c;
+	border-radius: 3px;
+}
+#install .app-name {
+	position: absolute;
+	top: 23px;
+	left: 98px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #747474;
+}
+#install .app-name span {
+	display: block;
+	font-size: 12px;
+}
+#install .app-name .row2 {
+	font-size: 9px;
+	text-transform: uppercase;
+}
+#hero {
+	position: relative;
+	height: 147px;
+}
+#hero img {
+	display: block;
+}
+#hero p {
+	position: absolute;
+	top: 105px;
+	left: 56px;
+	font-family: 'proxima_nova_alt_rgbold', Helvetica;
+	font-size: 20.54px;
+	color: #fff;
+}
+#invitees-map-wrap {
+	padding: 8px 0 14px 0;
+	background: #e7e7e7;
+	border-bottom: 1px solid #dfdfdf;
+}
+#invitees-map-wrap .box {
+	width: 150px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+#invitees-map-wrap .box .top {
+	height: 58px;
+	border-bottom: 1px solid #d7d5d4;
+	border-radius: 5px 5px 0 0;
+}
+#invitees-map-wrap .box .bottom {
+	padding: 0 0 0 26px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #fff;
+	background-position: 7px 6px;
+	background-repeat: no-repeat;
+	font-family: 'proxima_nova_alt_rgbold', Helvetica;
+	font-size: 12px;
+	color: #747474;
+	border-radius: 0 0 5px 5px;
+}
+#invitees {
+	float: left;
+	margin-left: 6px;
+}
+#invitees .top {
+	padding: 5px 0 0 20px;
+	height: 53px !important;
+	background: url(../images/invitees-bg.jpg) 0 0 no-repeat;
+}
+#invitees .top p {
+	margin: 0 0 4px 0;
+	padding-left: 4px;
+	font-family: 'proxima_nova_alt_rgbold', Helvetica;
+	font-size: 10px;
+	color: #fff;
+}
+#invitees .top ul li {
+	float: left;
+	margin-right: 5px;
+}
+#invitees .bottom {
+	background-image: url(../images/icon01.png);
+}
+#address-map {
+	float: right;
+	margin-right: 6px;
+}
+#address-map .top img {
+	border-radius: 5px 5px 0 0;
+}
+#address-map .bottom {
+	background-image: url(../images/icon02.png);
+}
+
+/* invitee-items */
+#invitee-items {
+	margin-bottom: 25px;
+	padding: 23px 5px 0 5px;
+}
+#invitee-items .box {
+	margin-bottom: 40px;
+}
+#invitee-items .box.last {
+	margin-bottom: 0;
+}
+#invitee-items .date {
+	margin-bottom: 6px;
+	padding-left: 19px;
+	background: url(../images/icon03.png) 0 0 no-repeat;
+	font-size: 11.52px;
+	color: #a0a0a0;
+}
+#invitee-items .item {
+	margin-bottom: 30px;
+}
+#invitee-items .item.last {
+	margin-bottom: 0;
+}
+#invitee-items .time {
+	margin-bottom: 6px;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(0,0,0.5);
+}
+#invitee-items .time span {
+	display: block;
+	float: left;
+	height: 52px;
+}
+#invitee-items .time .text {
+	padding-left: 11px;
+	width: 189px;
+	border-left: none;
+	line-height: 52px;
+	font-family: 'proxima_nova_alt_rgbold', Helvetica;
+	font-size: 16.53px;
+	color: #494949;
+}
+#invitee-items .time .text small {
+	font-family: 'proxima_nova_alt_rgregular', Helvetica;
+	font-size: 11.02px;
+}
+#invitee-items .time .icon {
+	width: 52px;
+	border-left: 1px solid #efefef;
+	cursor: pointer;
+}
+#invitee-items .time .bright-on {
+	background: url(../images/icon04.png) 50% 50% no-repeat;
+}
+#invitee-items .time .gray-off {
+	background: url(../images/icon05.png) 50% 50% no-repeat;
+}
+#invitee-items .time .gray-on {
+	background: url(../images/icon06.png) 50% 50% no-repeat;
+}
+#invitee-items .time .bright-off {
+	background: url(../images/icon07.png) 50% 50% no-repeat;
+}
+#invitee-items ul li {
+	position: relative;
+	float: left;
+	margin-right: 4px;
+}
+#invitee-items ul li div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 14px;
+	height: 14px;
+}
+#invitee-items ul li.on div {
+	background: url(../images/icon08.png) right bottom no-repeat;
+}
+#invitee-items ul li.off div {
+	background: url(../images/icon09.png) right bottom no-repeat;
+}
+
+/* control-btn */
+#control-btn-wrap {
+	margin-bottom: 21px;
+	padding: 0 5px;
+}
+#control-btn {
+	background: #fff;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+#control-btn a {
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	font-family: 'proxima_nova_alt_rgbold', Helvetica;
+	font-size: 15.45px;
+	color: #4b4b4b;
+	text-align: center;
+}
+#control-btn a.new-time {
+	border-bottom: 1px solid #ebebeb;
+}
+/* chat-list */
+#chat-list {
+	border-top: 1px solid #d2d2d2;
+}
+#chat-list .chat {
+	padding: 9px 5px 6px 5px;
+	border-bottom: 1px solid #f7f7f7;
+}
+#chat-list .write {
+	border-bottom: 1px solid #d2d2d2;
+	background: #fff;
+}
+#chat-list .write input {
+	display: block;
+	float: left;
+	width: 250px;
+	height: 40px;
+	border: none;
+}
+#chat-list .chat .head {
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+#chat-list .chat.confirm .head {
+	margin-left: 18px;
+}
+
+#chat-list .chat .content {
+	float: left;
+	width: 245px;
+	font-size: 12px;
+	color: #4d4d4d;
+}
+#chat-list .chat .content .time {
+	font-size: 8px;
+	color: #9a9a9a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

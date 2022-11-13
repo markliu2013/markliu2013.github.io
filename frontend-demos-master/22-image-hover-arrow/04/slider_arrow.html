@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../jquery.min.js"></script>
+<title>Slider Arrow</title>
+<style type="text/css">
+#wrap {
+	position: relative;
+	margin: 20px auto 0;
+	width: 1028px;
+}
+#wrap a.arrow {
+	display: none;
+	position: absolute;
+	top: 173px;
+	width: 37px;
+	height: 73px;
+	background: rgba(0,0,0,0.8);
+	z-index: 99;
+}
+#wrap a.arrow img {
+	display: block;
+	margin: 21px auto 0;
+	border: none;
+}
+#wrap a.left-arrow {
+	left: 0;
+}
+#wrap a.right-arrow {
+	right: 0;
+}
+#mouseOverLeft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 514px;
+	height: 534px;
+	z-index: 99;
+	background: #FFF;
+	opacity:0;
+	filter: alpha(opacity = 0);
+}
+#mouseOverRight {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 514px;
+	height: 534px;
+	z-index: 99;
+	background: #FFF;
+	opacity:0;
+	filter: alpha(opacity = 0);
+}
+</style>
+
+<script type="text/ecmascript">
+	$(function() {
+		
+		//If mouse is on arrow area
+		var mouseIsOnLeftArrow = false;
+		var mouseIsOnRightArrow = false;
+		
+		$("#wrap a.left-arrow").hover(
+			function() {
+				mouseIsOnLeftArrow = true;
+			},
+			function() {
+				mouseIsOnLeftArrow = false;
+			}
+		);
+		$("#wrap a.right-arrow").hover(
+			function() {
+				mouseIsOnRightArrow = true;
+			},
+			function() {
+				mouseIsOnRightArrow = false;
+			}
+		);
+		$("#mouseOverLeft").hover(
+			function() {
+				$("#wrap a.left-arrow").fadeIn(200);
+				$("#wrap a.left-arrow").css("z-index", 100);
+			},
+			function() {
+				setTimeout(function() {//delay to wait a.left-arrow mousehouver
+						if(!mouseIsOnLeftArrow) {
+						$("#wrap a.left-arrow").css("z-index", 98);
+						$("#wrap a.left-arrow").hide();
+				}},10)
+			}
+		);
+		
+		$("#mouseOverRight").hover(
+			function() {
+				$("#wrap a.right-arrow").fadeIn(200);
+				$("#wrap a.right-arrow").css("z-index", 100);
+			},
+			function() {
+				setTimeout(function() {
+						if(!mouseIsOnRightArrow) {
+							$("#wrap a.right-arrow").css("z-index", 98);
+							$("#wrap a.right-arrow").hide();
+				}},10)
+			}
+		);
+	})
+	
+</script>
+
+
+</head>
+
+<body>
+<div id="wrap"> <a href="#" id="prev-slider" class="arrow left-arrow"><img src="../left_arrow.png" width="19" height="36" alt="To Left" /></a> <a href="#" id="next-slider" class="arrow right-arrow"><img src="../right_arrow.png" width="19" height="36" alt="To Right" /></a>
+	<div id="mouseOverLeft"></div>
+	<div id="mouseOverRight"></div>
+	<div id="slider">
+		<div class="slide">
+			<div class="slide-img"> <img src="../slidershow_01.jpg" width="1028" height="534" alt="" /> </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

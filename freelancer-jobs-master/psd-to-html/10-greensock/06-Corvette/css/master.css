@@ -1,0 +1,1416 @@
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/* General */
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: 'NeutraText Book', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #3a3935;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	line-height: 19px;
+}
+strong {
+	font-weight: 700;
+}
+img {
+	border: none;
+}
+h1, h2, h3, h4 {
+	font-family: 'NeutraText Book', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h4 {
+	font-size: 13px;
+}
+.animation,
+.dash {
+	position: absolute;
+	z-index: 80;
+}
+#page {
+	margin: 0 auto;
+	width: 970px;
+}
+/* header */
+#header {
+	position: relative;
+	height: 410px;
+	background: url(../images/bg01.jpg) repeat;
+}
+#header .animation {
+	left: 45px;
+}
+#header .tagline {
+	top: 37px;
+	font-family: 'bodoni_bk_btbook_italic', Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 46px;
+	color: #fff;
+}
+#header .the-chevy {
+	top: 97px;
+}
+#header .corvette {
+	top: 219px;
+}
+#header .car {
+	bottom: -45px;
+	left: auto;
+	right: 0;
+}
+/* intro */
+#intro {
+	position: relative;
+	padding: 98px 45px 59px 45px;
+	background: #fff url(../images/bg02.jpg) 0 0 repeat-x;
+}
+#intro .row1 {
+	float: left;
+	margin-bottom: 93px;
+	width: 635px;
+}
+#intro .row2 {
+	float: right;
+	width: 650px;
+}
+#intro .map {
+	top: 70px;
+	right: 22px;
+}
+#intro .portrait {
+	bottom: 35px;
+	left: 55px;
+}
+#intro .name {
+	bottom: 27px;
+	left: 35px;
+	z-index: 81px;
+}
+/* the-c1-generation */
+#the-c1-generation {
+	position: relative;
+	padding: 37px 45px 39px 45px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+strong.blue {
+	color: #0a4d7a;
+}
+#the-c1-generation .row1 {
+	float: left;
+	margin-bottom: 141px;
+	width: 460px;
+}
+#the-c1-generation .row2 {
+	float: right;
+	margin-bottom: 175px;
+	width: 565px;
+}
+#the-c1-generation .row3 {
+	float: left;
+	margin-bottom: 45px;
+	width: 715px;
+}
+#the-c1-generation .wrap {
+	float: left;
+}
+#the-c1-generation .wrap .left {
+	overflow: visible;
+	float: left;
+	padding-top: 213px;
+	width: 440px;
+}
+#the-c1-generation .wrap .right {
+	float: right;
+	width: 440px;
+}
+#the-c1-generation .wrap .left .left-row1 {
+	margin-bottom: 320px;
+	width: 410px;
+}
+#the-c1-generation .wrap .left .left-row2 {
+	width: 458px;
+}
+#the-c1-generation .wrap .right .right-row1 {
+	float: right;
+	margin-bottom: 25px;
+	width: 375px;
+}
+#the-c1-generation .wrap .right .right-row1 p {
+	padding-top: 95px;
+}
+#the-c1-generation .wrap .right .right-row1 .brand {
+	position: relative;
+	float: left;
+	margin: 0 25px 0 0;
+	width: 188px;
+	height: 197px;
+}
+#the-c1-generation .wrap .right .right-row1 .brand .logo-small-block {
+	top: 0;
+	left 0;
+}
+#the-c1-generation .wrap .right .right-row1 .brand .brand-small-block {
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c1-generation .wrap .right .right-row2,
+#the-c1-generation .wrap .right .right-row3 {
+	float: right;
+	width: 283px;
+}
+#the-c1-generation .wrap .right .right-row2 {
+	margin-bottom: 30px;
+}
+#the-c1-generation .wrap .right .right-row3 {
+	margin-bottom: 135px;
+}
+#the-c1-generation .wrap .right .right-row4 {
+	float: right;
+	width: 380px;
+}
+#the-c1-generation .generation-car {
+	position: absolute;
+	top: 10px;
+	right: 33px;
+	width: 404px;
+	height: 253px;
+}
+#the-c1-generation .generation-car .car04 {
+	top: 0;
+	left: 14px;
+	z-index: 80;
+}
+#the-c1-generation .generation-car .brand-the-c1-generation {
+	bottom: 0;
+	left: 0;
+	width: 404px;
+	height: 120px;
+	z-index: auto;
+}
+#the-c1-generation .generation-car .brand-the-c1-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c1-generation .generation-car .brand-the-c1-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c1-generation .dash1 {
+	top: 197px;
+	left: 85px;
+}
+#the-c1-generation .dash2 {
+	top: 397px;
+	left: 85px;
+}
+#the-c1-generation .dash3 {
+	top: 516px;
+	right: 142px;
+}
+#the-c1-generation .dash4 {
+	top: 810px;
+	left: 414px;
+}
+#the-c1-generation .dash5 {
+	top: 929px;
+	left: 377px;
+}
+.year {
+	background-image: url(../images/year-sprite.png);
+}
+#the-c1-generation .year-1953 {
+	top: 315px;
+	left: 46px;
+}
+#the-c1-generation .year-1954 {
+	top: 508px;
+	left: 219px;
+}
+#the-c1-generation .year-1955 {
+	top: 800px;
+	right: 120px;
+}
+#the-c1-generation .year-1956 {
+	top: 785px;
+	left: 295px;
+}
+#the-c1-generation .year-1957 {
+	top: 1100px;
+	left: 531px;
+}
+#the-c1-generation .year-1958 {
+	top: 1185px;
+	left: 531px;
+}
+#the-c1-generation .year-1961 {
+	top: 1330px;
+	left: 531px;
+}
+#the-c1-generation .year-1962 {
+	top: 1397px;
+	left: 400px;
+}
+#the-c1-generation .logo-blue-flame {
+	top: 246px;
+	left: 152px;
+}
+#the-c1-generation .brand-blue-flame {
+	top: 387px;
+	left: 159px;
+	z-index: 81;
+}
+#the-c1-generation .car05 {
+	top: 440px;
+	left: 323px;
+}
+#the-c1-generation .car07 {
+	top: 735px;
+	left: -10px;
+}
+#the-c1-generation .car06 {
+	top: 1235px;
+	left: 75px;
+}
+#the-c1-generation .car02 {
+	top: 1316px;
+	right: 45px;
+}
+/* the-c2-generation */
+#the-c2-generation {
+	position: relative;
+	padding: 205px 45px 55px 45px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+#the-c2-generation .wrap .left {
+	float: left;
+	width: 400px;
+}
+#the-c2-generation .wrap .right {
+	float: right;
+	width: 480px;
+}
+#the-c2-generation .wrap .left .left-row1 {
+	margin-bottom: 82px;
+	width: 305px;
+}
+#the-c2-generation .wrap .left .left-row2 {
+	width: 356px;
+}
+#the-c2-generation .wrap .left .left-row2 p {
+	padding-top: 144px;
+}
+#the-c2-generation .wrap .left .left-row2 .brand {
+	position: relative;
+	float: left;
+	margin: 0 25px 5px 0;
+	width: 188px;
+	height: 197px;
+}
+#the-c2-generation .wrap .left .left-row2 .brand .logo-big-block {
+	top: 0;
+	left 0;
+}
+#the-c2-generation .wrap .left .left-row2 .brand .brand-big-block {
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c2-generation .wrap .right {
+	padding-top: 44px;
+}
+#the-c2-generation .wrap .right .right-row1 {
+	margin-bottom: 222px;
+}
+#the-c2-generation .wrap .right .right-row2 {
+	float: right;
+	width: 430px;
+}
+#the-c2-generation .generation-car {
+	position: absolute;
+	top: -30px;
+	right: 38px;
+	width: 528px;
+	height: 260px;
+}
+#the-c2-generation .generation-car .car09 {
+	top: 0;
+	left: 0;
+	z-index: 80;
+}
+#the-c2-generation .generation-car .brand-the-c2-generation {
+	bottom: 0;
+	left: 35px;
+	width: 403px;
+	height: 119px;
+	z-index: auto;
+}
+#the-c2-generation .generation-car .brand-the-c2-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c2-generation .generation-car .brand-the-c2-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c2-generation .dash6 {
+	top: 74px;
+	left: 331px;
+}
+#the-c2-generation .dash7 {
+	top: 363px;
+	left: 284px;
+}
+#the-c2-generation .dash8 {
+	top: 532px;
+	left: 361px;
+}
+#the-c2-generation .car03 {
+	top: 110px;
+	left: 45px;
+}
+#the-c2-generation .car08 {
+	top: 450px;
+	right: 30px;
+}
+#the-c2-generation .year-1964 {
+	top: 52px;
+	left: 219px;
+}
+#the-c2-generation .year-1965 {
+	top: 505px;
+	left: 248px;
+}
+#the-c2-generation .year-1967 {
+	top: 505px;
+	right: 390px;
+}
+/* the-c3-generation */
+#the-c3-generation {
+	position: relative;
+	height: 992px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+.year-wrap {
+	position: absolute;
+}
+.box {
+	font-size: 16px;
+	line-height: 22px;
+}
+#the-c3-generation .overview {
+	position: absolute;
+	top: 40px;
+	left: 45px;
+	width: 382px;
+}
+#the-c3-generation .box1 {
+	position: absolute;
+	top: 309px;
+	right: 84px;
+	padding: 20px 15px 20px 27px;
+	width: 380px;
+	background: url(../images/box-bg01.jpg) 0 0 repeat-y;
+}
+#the-c3-generation .generation-car {
+	position: absolute;
+	top: -32px;
+	right: 49px;
+	width: 457px;
+	height: 317px;
+}
+#the-c3-generation .generation-car .car10 {
+	top: 0;
+	left: 0;
+	z-index: 80;
+}
+#the-c3-generation .generation-car .brand-the-c3-generation {
+	bottom: 0;
+	left: 8px;
+	width: 404px;
+	height: 136px;
+	z-index: auto;
+}
+#the-c3-generation .generation-car .brand-the-c3-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c3-generation .generation-car .brand-the-c3-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c3-generation .year-1970 {
+	top: 222px;
+	left: 45px;
+	width: 384px;
+}
+#the-c3-generation .year-1970 p {
+	padding-top: 143px;
+}
+#the-c3-generation .year-1970 .year {
+	top: 80px;
+	left: 205px;
+}
+.brand {
+	position: relative;
+	float: left;
+	margin: 0 25px 5px 0;
+	width: 188px;
+	height: 197px;
+}
+#the-c3-generation .year-1970 .brand {
+	margin-right: 35px;
+}
+#the-c3-generation .year-1970 .brand .logo-lt1 {
+	top: 0;
+	left 0;
+}
+#the-c3-generation .year-1970 .brand .brand-lt1 {
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c3-generation .year-1971 {
+	top: 478px;
+	right: 45px;
+	width: 375px;
+}
+#the-c3-generation .year-1971 p {
+	padding-top: 26px;
+}
+#the-c3-generation .year-1971 .year {
+	top: 20px;
+	left: -10px;
+}
+#the-c3-generation .year-1971 .brand {
+	margin-right: 10px;
+	width: 208px;
+	height: 108px;
+}
+#the-c3-generation .year-1971 .brand .logo-government-regulations {
+	right: 0;
+}
+#the-c3-generation .year-1976 {
+	top: 572px;
+	left: 45px;
+	width: 430px;
+}
+#the-c3-generation .year-1976 .car11 {
+	top: 0;
+	left: 70px;
+}
+#the-c3-generation .year-1976 .year {
+	top: 50px;
+	right: -20px;
+}
+#the-c3-generation .year-1976 p {
+	padding-top: 123px;
+}
+#the-c3-generation .year-1977 {
+	bottom: 55px;
+	left: 556px;
+	width: 333px;
+}
+#the-c3-generation .year-1977 p {
+	padding-top: 90px;
+}
+#the-c3-generation .year-1977 .logo-moon-roof {
+	top: 0;
+	left: 108px;
+}
+#the-c3-generation .year-1977 .year {
+	top: 15px;
+	left: -10px;
+}
+#the-c3-generation .box2 {
+	position: absolute;
+	bottom: 43px;
+	left: 59px;
+	padding: 15px 21px 15px 21px;
+	width: 376px;
+	background: url(../images/box-bg02.jpg) 0 0 repeat-y;
+}
+#the-c3-generation .dash9 {
+	top: 198px;
+	left: 298px;
+}
+#the-c3-generation .dash10 {
+	top: 464px;
+	left: 452px;
+}
+/* the-c4-generation */
+#the-c4-generation {
+	position: relative;
+	height: 2434px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+#the-c4-generation .overview {
+	position: absolute;
+	top: 40px;
+	left: 45px;
+	width: 385px;
+}
+#the-c4-generation .generation-car {
+	position: absolute;
+	top: -44px;
+	right: 53px;
+	width: 436px;
+	height: 361px;
+}
+#the-c4-generation .generation-car .car13 {
+	top: 0;
+	right: 0;
+	z-index: 80;
+}
+#the-c4-generation .generation-car .brand-the-c4-generation {
+	bottom: 0;
+	left: 0;
+	width: 402px;
+	height: 137px;
+	z-index: auto;
+}
+#the-c4-generation .generation-car .brand-the-c4-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c4-generation .generation-car .brand-the-c4-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c4-generation .year-1984 {
+	position: absolute;
+	top: 324px;
+	left: 45px;
+	width: 880px;
+}
+#the-c4-generation .year-1984 p {
+	padding-top: 153px;
+}
+#the-c4-generation .year-1984 .dash {
+	top: -98px;
+	left: 42px;
+}
+#the-c4-generation .year-1984 .car12 {
+	top: 0;
+	left: 100px;
+}
+#the-c4-generation .year-1984 .year {
+	top: 85px;
+	left: -10px;
+}
+#the-c4-generation .year-1985 {
+	position: absolute;
+	top: 648px;
+	left: 45px;
+	width: 335px;
+}
+#the-c4-generation .year-1985 p {
+	padding-top: 208px;
+}
+#the-c4-generation .year-1985 .box3 {
+	position: absolute;
+	top: -70px;
+	left: 276px;
+	padding: 16px 30px 16px 30px;
+	width: 546px;
+	background: url(../images/box-bg03.jpg) 0 0 repeat-y;
+}
+#the-c4-generation .year-1985 .dash12 {
+	top: -71px;
+	left: 245px;
+}
+#the-c4-generation .year-1985 .logo-robust {
+	top: 0;
+	left: 9px;
+}
+#the-c4-generation .year-1985 .brand-robust {
+	top: 140px;
+	left: 15px;
+	z-index: 81px;
+}
+#the-c4-generation .year-1985 .year {
+	top: 139px;
+	left: 205px;
+}
+#the-c4-generation .year-1986 {
+	position: absolute;
+	top: 732px;
+	left: 505px;
+	width: 415px;
+}
+#the-c4-generation .year-1986 p {
+	padding-top: 120px;
+}
+#the-c4-generation .year-1986 .dash13 {
+	top: 83px;
+	left: -144px;
+}
+#the-c4-generation .year-1986 .car14 {
+	top: 0;
+	left: 98px;
+}
+#the-c4-generation .year-1986 .year {
+	top: 53px;
+	left: -10px;
+}
+#the-c4-generation .year-1987 {
+	position: absolute;
+	top: 1014px;
+	left: 45px;
+	width: 880px;
+}
+#the-c4-generation .year-1987 p {
+	width: 310px;
+}
+#the-c4-generation .year-1987 .car15 {
+	top: -11px;
+	left: 331px;
+}
+#the-c4-generation .year-1987 .dash14 {
+	top: -69px;
+	left: 675px;
+}
+#the-c4-generation .year-1987 .year {
+	top: 0;
+	left: 575px;
+}
+#the-c4-generation .year-1988 {
+	position: absolute;
+	top: 1193px;
+	width: 100%;
+	height: 196px;
+	background: #4d4d4d url(../images/bg04.jpg) 0 0 no-repeat;
+}
+#the-c4-generation .year-1988 p {
+	position: absolute;
+	top: 108px;
+	left: 72px;
+	width: 455px;
+	color: #fff;
+	text-align: right;
+}
+#the-c4-generation .year-1988 .dash15 {
+	top: -31px;
+	left: 483px;
+}
+#the-c4-generation .year-1988 .car16 {
+	top: 16px;
+	right: 45px;
+}
+#the-c4-generation .year-1988 .year {
+	top: 42px;
+	left: 434px;
+}
+#the-c4-generation .year-1989 {
+	position: absolute;
+	top: 1433px;
+	left: 528px;
+	width: 385px;
+}
+#the-c4-generation .year-1989 p {
+	padding-top: 123px;
+}
+#the-c4-generation .year-1989 .dash {
+	top: -31px;
+	left: -42px;
+}
+#the-c4-generation .year-1989 .year {
+	top: 56px;
+	left: -15px;
+}
+#the-c4-generation .year-1989 .icon01 {
+	top: 0;
+	left: 99px;
+}
+#the-c4-generation .year-1989 .icon02 {
+	top: -8px;
+	left: 227px;
+}
+#the-c4-generation .year-1990 {
+	position: absolute;
+	top: 1531px;
+	left: 45px;
+	width: 408px;
+}
+#the-c4-generation .year-1990 p {
+	padding-top: 123px;
+}
+#the-c4-generation .year-1990 .car17 {
+	top: 0;
+	left: 0;
+}
+#the-c4-generation .year-1990 .year {
+	top: 54px;
+	left: 322px;
+}
+#the-c4-generation .year-1991 {
+	position: absolute;
+	top: 1670px;
+	left: 528px;
+	width: 397px;
+}
+#the-c4-generation .year-1991 p {
+	padding-top: 68px;
+}
+#the-c4-generation .year-1991 .year {
+	top: 0;
+	left: -10px;
+}
+#the-c4-generation .year-1991 .dollar01 {
+	top: 0;
+	left: 93px;
+}
+#the-c4-generation .year-1991 .dollar02 {
+	top: 0;
+	left: 172px;
+}
+#the-c4-generation .year-1991 .dollar03 {
+	top: 0;
+	left: 252px;
+}
+#the-c4-generation .year-1991 .dollar04 {
+	top: 15px;
+	left: 331px;
+}
+#the-c4-generation .year-1993 {
+	position: absolute;
+	top: 1875px;
+	width: 100%;
+	height: 237px;
+	background: #efebdd;
+}
+#the-c4-generation .year-1993 p {
+	position: absolute;
+	top: 110px;
+	left: 44px;
+	width: 435px;
+	text-align: right;
+	z-index: 82;
+}
+#the-c4-generation .year-1993 .car18 {
+	position: absolute;
+	top: 63px;
+	right: 30px;
+}
+#the-c4-generation .year-1993 .year {
+	top: 36px;
+	left: 446px;
+	color: #911d1d;
+}
+#the-c4-generation .year-1993 .icon03 {
+	top: -38px;
+	left: 256px;
+}
+#the-c4-generation .year-1993 .icon03-bg {
+	position: absolute;
+	top: 94px;
+	left: 256px;
+	width: 193px;
+	height: 70px;
+	background: #efebdd;
+	z-index: 81;
+}
+#the-c4-generation .year-1994 {
+	position: absolute;
+	top: 2150px;
+	left: 45px;
+	width: 880px;
+}
+#the-c4-generation .year-1994 p {
+	padding-top: 144px;
+	width: 473px;
+	text-align: right;
+}
+#the-c4-generation .year-1994 .dash17 {
+	top: -28px;
+	left: 440px;
+}
+#the-c4-generation .year-1994 .year {
+	top: 69px;
+	left: 403px;
+}
+#the-c4-generation .year-1994 .car19 {
+	left: 52px;
+}
+#the-c4-generation .year-1994 .box4 {
+	position: absolute;
+	top: 65px;
+	right: -0px;
+	padding: 20px 40px 20px 35px;
+	width: 267px;
+	background: url(../images/box-bg04.jpg) 0 0 repeat-y;
+}
+/* the-c5-generation */
+#the-c5-generation {
+	position: relative;
+	height: 1946px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+#the-c5-generation .generation-car {
+	position: absolute;
+	top: 37px;
+	right: 35px;
+	width: 464px;
+	height: 264px;
+}
+#the-c5-generation .generation-car .car20 {
+	top: 0;
+	right: 0;
+	z-index: 80;
+}
+#the-c5-generation .generation-car .brand-the-c5-generation {
+	bottom: 0;
+	left: 0;
+	width: 402px;
+	height: 134px;
+	z-index: auto;
+}
+#the-c5-generation .generation-car .brand-the-c5-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c5-generation .generation-car .brand-the-c5-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c5-generation .year-1997 {
+	overflow: visible;
+	position: absolute;
+	top: 93px;
+	left: 45px;
+	width: 395px;
+}
+#the-c5-generation .year-1997 .year {
+	top: -70px;
+	left: 270px;
+}
+#the-c5-generation .year-1997 .dash18 {
+	bottom: -60px;
+	left: 249px;
+}
+#the-c5-generation .year-1997 .box5 {
+	position: absolute;
+	bottom: -187px;
+	left: 0px;
+	padding: 28px 36px 28px 30px;
+	width: 814px;
+	background: #d8c780 url(../images/box-bg05.jpg) 0 0 repeat-y;
+}
+#the-c5-generation .year-1998 {
+	position: absolute;
+	top: 488px;
+	width: 100%;
+	height: 238px;
+	background: #efebdd;
+}
+#the-c5-generation .year-1998 .p-wrap {
+	position: absolute;
+	top: 36px;
+	left: 251px;
+	width: 427px;
+}
+#the-c5-generation .year-1998 .p-wrap .placeholder {
+	float: left;
+	width: 110px;
+	height: 50px;
+}
+#the-c5-generation .year-1998 .dash {
+	top: -34px;
+	left: 288px;
+}
+#the-c5-generation .year-1998 .year {
+	top: 25px;
+	left: 246px;
+	color: #941e1e;
+}
+#the-c5-generation .year-1998 .icon04 {
+	top: 23px;
+	left: 40px;
+}
+#the-c5-generation .year-1998 .car21 {
+	top: 40px;
+	right: 25px;
+}
+#the-c5-generation .year-1999 {
+	overflow: visible;
+	position: absolute;
+	top: 756px;
+	left: 45px;
+	width: 395px;
+}
+#the-c5-generation .year-1999 p {
+	padding-top: 127px;
+}
+#the-c5-generation .year-1999 .dash20 {
+	top: -50px;
+	left: 433px;
+}
+#the-c5-generation .year-1999 .car22 {
+	top: 0;
+	left: 0;
+}
+#the-c5-generation .year-1999 .year {
+	top: 53px;
+	left: 317px;
+}
+#the-c5-generation .year-2000 {
+	position: absolute;
+	top: 795px;
+	left: 528px;
+	width: 390px;
+}
+#the-c5-generation .year-2000 p {
+	padding-top: 140px;
+}
+#the-c5-generation .year-2000 .year {
+	top: 63px;
+	left: -10px;
+}
+#the-c5-generation .year-2000 .icon05 {
+	top: 0;
+	left: 96px;
+}
+#the-c5-generation .year-2000 .icon06 {
+	top: 0px;
+	left: 234px;
+}
+#the-c5-generation .year-2001-2002 {
+	position: absolute;
+	top: 1013px;
+	left: 528px;
+	width: 403px;
+}
+#the-c5-generation .year-2001-2002 .p-wrap .placeholder {
+	position: relative;
+	float: left;
+	width: 105px;
+	height: 50px;
+}
+#the-c5-generation .year-2001-2002 .year-2001-p {
+	margin-bottom: 44px;
+}
+#the-c5-generation .year-2001-2002 .year {
+	top: -13px;
+	left: -10px;
+}
+#the-c5-generation .year-2001-2002 .car23 {
+	top: 22px;
+	left: -464px;
+}
+#the-c5-generation .year-2003 {
+	position: absolute;
+	top: 1421px;
+	width: 100%;
+	height: 235px;
+	background: #efebdd;
+}
+#the-c5-generation .year-2003 p {
+	position: absolute;
+	top: 108px;
+	left: 458px;
+	width: 455px;
+}
+#the-c5-generation .year-2003 .dash21 {
+	top: -90px;
+	left: 268px;
+}
+#the-c5-generation .year-2003 .year {
+	top: 38px;
+	left: 448px;
+	color: #941e1e;
+}
+#the-c5-generation .year-2003 .car24 {
+	top: -13px;
+	left: 41px;
+}
+#the-c5-generation .year-2003 .icon07 {
+	top: -3px;
+	left: 548px;
+}
+#the-c5-generation .year-2004 {
+	position: absolute;
+	top: 1703px;
+	left: 45px;
+	width: 880px;
+}
+#the-c5-generation .year-2004 p {
+	position: absolute;
+	top: 69px;
+	left: 414px;
+	width: 455px;
+}
+#the-c5-generation .year-2004 .dash {
+	top: -65px;
+	left: 442px;
+}
+#the-c5-generation .year-2004 .year {
+	top: 0;
+	left: 404px;
+}
+#the-c5-generation .year-2004 .car25 {
+	top: 0;
+	left: 0;
+}
+#the-c5-generation .year-2004 .brand-le-mans {
+	top: 148px;
+	left: 95px;
+}
+/* the-c6-generation */
+#the-c6-generation {
+	position: relative;
+	height: 1687px;
+	background: #fff url(../images/bg03.jpg) 0 0 repeat-x;
+}
+#the-c6-generation .overview {
+	position: absolute;
+	top: 28px;
+	left: 45px;
+	width: 397px;
+}
+#the-c6-generation .generation-car {
+	position: absolute;
+	top: 0;
+	right: 45px;
+	width: 469px;
+	height: 261px;
+}
+#the-c6-generation .generation-car .car26 {
+	top: 0;
+	right: 0;
+	z-index: 80;
+}
+#the-c6-generation .generation-car .brand-the-c6-generation {
+	bottom: 0;
+	left: 0;
+	width: 402px;
+	height: 137px;
+	z-index: auto;
+}
+#the-c6-generation .generation-car .brand-the-c6-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c6-generation .generation-car .brand-the-c6-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c6-generation .box6 {
+	position: absolute;
+	top: 290px;
+	right: 45px;
+	padding: 23px 20px 23px 34px;
+	width: 451px;
+	background: #d8c780 url(../images/box-bg06.jpg) 0 0 repeat-y;
+}
+#the-c6-generation .year-2007 {
+	position: absolute;
+	top: 231px;
+	left: 45px;
+	width: 320px;
+}
+#the-c6-generation .year-2007 p {
+	padding-top: 129px;
+}
+#the-c6-generation .year-2007 .dash23 {
+	top: -23px;
+	left: 274px;
+}
+#the-c6-generation .year-2007 .year {
+	top: 65px;
+	left: 223px;
+}
+#the-c6-generation .year-2007 .icon08 {
+	top: 0;
+	left: 85px;
+}
+#the-c6-generation .year-2008 {
+	position: absolute;
+	top: 464px;
+	left: 474px;
+	width: 413px;
+}
+#the-c6-generation .year-2008 .dash24 {
+	top: -33px;
+	left: -227px;
+}
+#the-c6-generation .year-2008 .year {
+	top: -10px;
+	left: -124px;
+}
+#the-c6-generation .year-2009 {
+	position: absolute;
+	top: 553px;
+	left: 45px;
+	width: 420px;
+}
+#the-c6-generation .year-2009 p {
+	padding-top: 137px;
+}
+#the-c6-generation .year-2009 .dash {
+	top: -23px;
+	left: 347px;
+}
+#the-c6-generation .year-2009 .car27 {
+	top: 0;
+	left: 0;
+}
+#the-c6-generation .year-2009 .year {
+	top: 67px;
+	left: 305px;
+}
+#the-c6-generation .year-2010 {
+	position: absolute;
+	top: 553px;
+	left: 553px;
+	width: 378px;
+}
+#the-c6-generation .year-2010 p {
+	padding-top: 137px;
+}
+#the-c6-generation .year-2010 .dash {
+	top: 95px;
+	left: -88px;
+}
+#the-c6-generation .year-2010 .car28 {
+	top: 0;
+	left: 91px;
+}
+#the-c6-generation .year-2010 .year {
+	top: 64px;
+	left: -10px;
+}
+#the-c6-generation .year-2011 {
+	position: absolute;
+	top: 780px;
+	left: -10px;
+	width: 100%;
+	height: 369px;
+}
+#the-c6-generation .year-2011 p {
+	position: absolute;
+	top: 127px;
+	left: 453px;
+	width: 465px;
+}
+#the-c6-generation .year-2011 .dash {
+	top: 0;
+	left: 543px;
+}
+#the-c6-generation .year-2011 .year {
+	top: 58px;
+	left: 453px;
+}
+#the-c6-generation .year-2011 .icon09 {
+	top: 37px;
+	left: 242px;
+}
+#the-c6-generation .year-2011 .car29 {
+	top: 258px;
+	left: 694px;
+}
+#the-c6-generation .year-2011 .box7 {
+	position: absolute;
+	bottom: 0;
+	left: 132px;
+	padding: 31px 254px 31px 37px;
+	width: 503px;
+	background: #d8c780 url(../images/box-bg07.jpg) 0 0 repeat-y;
+	z-index: 79;
+}
+#the-c6-generation .year-2012 {
+	position: absolute;
+	top: 1195px;
+	left: 0;
+	width: 100%;
+	height: 160px;
+}
+#the-c6-generation .year-2012 .dash {
+	top: -274px;
+	left: 92px;
+}
+#the-c6-generation .year-2012 p {
+	position: absolute;
+	top: 82px;
+	left: 63px;
+	width: 370px;
+}
+#the-c6-generation .year-2012 .car30 {
+	top: 0;
+	left: 453px;
+}
+#the-c6-generation .year-2012 .year {
+	top: 8px;
+	left: 53px;
+}
+#the-c6-generation .year-2013 {
+	position: absolute;
+	top: 1405px;
+	left: 0;
+	width: 100%;
+	height: 282px;
+	background: #1a1a1a url(../images/bg05.jpg) 0 0 repeat-x;
+}
+#the-c6-generation .year-2013 .dash {
+	top: -45px;
+	left: 527px;
+}
+#the-c6-generation .year-2013 .car31 {
+	top: 25px;
+	left: 33px;
+}
+#the-c6-generation .year-2013 .year {
+	top: 60px;
+	left: 494px;
+}
+#the-c6-generation .year-2013 .icon10 {
+	top: 23px;
+	left: 587px;
+}
+#the-c6-generation .year-2013 p {
+	position: absolute;
+	top: 139px;
+	left: 494px;
+	width: 436px;
+	color: #fff;
+}
+/* the-c6-generation */
+#the-c7-generation {
+	position: relative;
+	width: 100%;
+	height: 371px;
+}
+#the-c7-generation .generation-car {
+	position: absolute;
+	top: 47px;
+	right: 38px;
+	width: 493px;
+	height: 284px;
+}
+#the-c7-generation .generation-car .car32 {
+	top: 0;
+	right: 0;
+	z-index: 80;
+}
+#the-c7-generation .generation-car .brand-the-c7-generation {
+	bottom: 0;
+	left: 0;
+	width: 406px;
+	height: 137px;
+	z-index: auto;
+}
+#the-c7-generation .generation-car .brand-the-c7-generation .generation-brand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 81;
+}
+#the-c7-generation .generation-car .brand-the-c7-generation .generation-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 79;
+}
+#the-c7-generation .box8 {
+	position: absolute;
+	top: 61px;
+	left: 44px;
+	padding: 31px 30px 31px 34px;
+	width: 285px;
+	background: #d8c780 url(../images/box-bg08.jpg) 0 0 repeat-y;
+}
+/* sources */
+#sources {
+	padding: 25px 0 38px 43px;
+	background: #e3dcc0;
+}
+#sources h3 {
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+#sources .left {
+	float: left;
+	width: 442px;
+}
+#sources .right {
+	float: left;
+	padding-left: 33px;
+	width: 452px;
+}
+#sources ul li {
+	margin: 8px 0;
+}
+#sources ul li.last {
+	margin-bottom: 0;
+}
+#sources ul li a {
+	font-size: 11px;
+}
+
+
+
+

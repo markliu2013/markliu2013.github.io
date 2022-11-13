@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+	
+	//slider show
+	var slideOnLoadFlag =  0;
+	var $slide_info = $("#slide-info-holder .slide-info");
+	$('#slideshow').cycle({
+  		fx: 'fade',
+  		timeout:  5000,
+  		speed:  3000,
+		before: onBefore,
+		pager: '#slide-nav',
+		pagerAnchorBuilder: function(idx, slide) {return '<a href="#"></a>';},
+		next:   '#next-slider', 
+    	prev:   '#prev-slider'
+  	});
+	//$('#slideshow').cycle('pause');
+	function onBefore(currSlideElement, nextSlideElement, opts, forwardFlag) {
+		if (slideOnLoadFlag == 0) {
+			$slide_info.html($(currSlideElement).find(".info").html())
+			slideOnLoadFlag = 1;
+		} else {
+			var nextHtml = $(nextSlideElement).find(".info").html();
+			$slide_info.fadeOut(1000, function() {
+				    $slide_info.html(nextHtml).fadeIn(1500);
+				}
+			);
+		}
+	}
+	
+	
+	
+	
+	//Slideshow arrows should only show if you hover over the image
+	$(".slide_img").mousemove(function(e) {
+		var srcWidth = $(this).width();
+		var Xcoordinate;
+		if(e.offsetX) {
+			Xcoordinate = e.offsetX;
+		} else if(e.layerX) {
+			Xcoordinate = e.layerX;
+		} else {
+			return;
+		}
+		if(Xcoordinate < srcWidth/2) {//left
+			if($("#banner a.left-arrow").is(":visible")) {
+				return;
+			}
+			
+			$("#banner a.right-arrow").hide();
+			$("#banner a.left-arrow").fadeIn(200);
+		} else {//right
+			if($("#banner a.right-arrow").is(":visible")) {
+				return;
+			}
+			
+			$("#banner a.left-arrow").hide();
+			$("#banner a.right-arrow").fadeIn(200);
+		}
+    });
+	$("#banner").mouseleave(function(e) {
+        $("#banner a.right-arrow").hide();
+		$("#banner a.left-arrow").hide();
+    });
+	
+	
+	
+	//keyboard control slider
+	$(document).keydown(function(e) {
+        if( e.keyCode == 37 ) {//left
+			$('#slideshow').cycle('prev');
+		}
+		else if( e.keyCode == 39 ) {//right
+			$('#slideshow').cycle('next');
+		}
+    });
+	
+	
+	$("#header-wrap").scrollToFixed({zIndex: 100});
+	
+	
+	
+})
+</script>
+
+</head>
+<body id="home">
+	<div id="header-wrap">
+		<div id="header" class="fixed page clearfix">
+			<a class="logo" href="home.html">
+			<img src="images/logo.png" width="138" height="49" alt="Logo" />
+			</a>
+			<ul class="nav">
+				<li>
+					<a href="why_katapult.html">Why Katapult</a>
+				</li>
+				<li>
+					<a href="#">Work</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="info">
+				<ul>
+					<li>
+						<a href="#">
+						<img src="images/twitter.png" width="19" height="12" alt="Twitter" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<img src="images/facebook.png" width="13" height="12" alt="Facebook" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<img src="images/email.png" width="17" height="12" alt="Email" />
+						</a>
+					</li>
+				</ul>
+				<span class="time">March 13th, 2012</span>
+				<p>
+					The Katapult team are working away at some new concepts for a challenging project, details to come soon
+				</p>
+			</div>
+		</div><!-- end header -->
+	</div><!-- end header-wrap -->
+	<div id="banner" class="page">
+		<a href="#" id="prev-slider" class="arrow left-arrow">
+		<img src="images/left_arrow.png" width="19" height="36" alt="To Left" />
+		</a>
+		<a href="#" id="next-slider" class="arrow right-arrow">
+		<img src="images/right_arrow.png" width="19" height="36" alt="To Right" />
+		</a>
+		<div id="slide-info-holder">
+			<div class="slide-info">
+			</div>
+			<div id="slide-nav" class="clearfix">
+			</div>
+		</div>
+		<div id="slideshow">
+			<div class="slide">
+				<div class="slide_img">
+					<img src="images/dummy/slidershow_01.jpg" width="1028" height="534" alt="" />
+				</div>
+				<div class="info">
+					<h2>Re-thinking The Wheelbarrow</h2>
+					<div class="separate-line">
+					</div>
+					<p>
+						Attention he extremity unwilling on otherwise. Conviction up partiality as
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide_img">
+					<img src="images/dummy/slidershow_02.jpg" width="1028" height="534" alt="" />
+				</div>
+				<div class="info">
+					<h2>Heading 2 -2</h2>
+					<div class="separate-line">
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, adis consectetur adipiscing elit.
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide_img">
+					<img src="images/dummy/slidershow_03.jpg" width="1028" height="534" alt="" />
+				</div>
+				<div class="info">
+					<h2>Heading 2 -3</h2>
+					<div class="separate-line">
+					</div>
+					<p>
+						Attention he extremity unwilling on otherwise. Conviction up partiality as
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide_img">
+					<img src="images/dummy/slidershow_04.jpg" width="1028" height="534" alt="" />
+				</div>
+				<div class="info">
+					<h2>Heading 2 -4</h2>
+					<div class="separate-line">
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, adis consectetur adipiscing elit.
+					</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slide_img">
+					<img src="images/dummy/slidershow_05.jpg" width="1028" height="534" alt="" />
+				</div>
+				<div class="info">
+					<h2>Heading 2 -5</h2>
+					<div class="separate-line">
+					</div>
+					<p>
+						Attention he extremity unwilling on otherwise. Conviction up partiality as
+					</p>
+				</div>
+			</div>
+		</div><!-- end slideshow -->
+	</div><!-- end banner -->
+	<div id="news" class="page clearfix">
+		<h2 class="news">News</h2>
+		<ul class="news">
+			<li>
+				<a href="#">
+				<img src="images/dummy/lower_image_01.jpg" width="242" height="196" alt="" />
+				</a>
+				<span class="time">March 9th, 2012</span>
+				<p>
+					The Katapult team are working away at some new concepts
+				</p>
+			</li>
+			<li>
+				<a href="#">
+				<img src="images/dummy/lower_image_02.jpg" width="242" height="196" alt="" />
+				</a>
+				<span class="time">March 9th, 2012</span>
+				<p>
+					The Katapult team are working away at some new concepts
+				</p>
+			</li>
+			<li>
+				<a href="#">
+				<img src="images/dummy/lower_image_03.jpg" width="242" height="196" alt="" />
+				</a>
+				<span class="time">March 9th, 2012</span>
+				<p>
+					The Katapult team are working away at some new concepts
+				</p>
+			</li>
+		</ul>
+		<div class="photo shadow">
+			<img class="instagram" src="images/instagram.png" width="21" height="21" alt="Instagram" />
+			<img src="images/dummy/polaroid.jpg" width="212" height="184" alt="" />
+			<span class="time">March 9th, 2012</span>
+			<p>
+				The Katapult team are working away at some new concepts to
+			</p>
+		</div>
+	</div><!-- end news -->
+	<div id="footer" class="page">
+		<p class="remark">
+			"I'm curious about life, period"
+			<em>Graham Nash</em>
+		</p>
+		<div class="siteinfo clearfix">
+			<p class="copyright">
+				&copy; Copyright 2012
+				<a href="#">Katapult Design</a>. |
+				<a href="#">Privacy Policy</a> |
+				<a href="#">Sitemap</a>. 14 Feb 2011.
+			</p>
+			<p class="powerby">
+				<a href="#">valid HTML</a> | CSS by
+				<a href="#">Evolved Websites</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,522 @@
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/* General */
+body {
+	margin: 0;
+	padding: 190px 0 0 0;
+	background: #eee9e1 url(../images/bg.jpg) repeat;
+	font-family: "museo300",sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #666666;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	border: none;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-family: "museo700",sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h4 {
+	font-size: 13px;
+}
+blockquote {
+	margin: 0;
+	padding: 1em 2em;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+/* header */
+#header {
+	padding: 21px 0 34px 0;
+	background: #fff url(../images/header-bg.png) right bottom no-repeat;
+}
+#header .logo {
+	display: block;
+	float: left;
+	margin-left: 35px;
+}
+#header ul {
+	float: right;
+	margin: 18px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+#header ul li {
+	float: left;
+	padding: 0 15px;
+	color: #cda172;
+}
+#header ul li a {
+	font-family: "museo700", serif;
+	font-size: 17px;
+	color: #cda172;
+}
+
+/* nav */
+#nav {
+	background: url(../images/nav-bg.jpg);
+}
+#nav ul {
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+#nav ul li {
+	position: relative;
+	float: left;
+	list-style: none;
+	padding: 0 35px;
+	height: 69px;
+}
+#nav ul li table {
+	border-collapse: collapse;
+	height: 100%;
+}
+#nav ul li table td {
+	border: none;
+	vertical-align: central;
+	text-align: center;
+}
+#nav ul li a {
+	font-family: "museo700",serif;
+	font-size: 19px;
+	color: #5a5753;
+	text-transform: uppercase;
+}
+#nav ul li.current a {
+	color: #e8941a;
+}
+#nav .submenu {
+	visibility: hidden;
+	position: absolute;
+	top: 69px;
+	left: 0;
+	margin: 0;
+	padding-top: 3px;
+	z-index: 10;
+}
+#nav ul li:hover .submenu {
+	visibility: visible;
+}
+#nav .submenu li {
+	float: none;
+	padding: 0 23px 0 16px;
+	height: 43px;
+	line-height: 43px;
+	border-bottom: 1px solid #fff;
+	background: #eddfd9;
+}
+#nav .submenu li.last {
+	border-bottom: none;
+}
+#nav .submenu li a {
+	white-space: nowrap;
+}
+#nav .submenu li a:hover {
+	color: #e8941a;
+	text-decoration: none;
+}
+/* content */
+#content {
+	padding: 33px 85px 33px 85px;
+	width: 1030px;
+	background: #fff;
+}
+#content ul,
+#content ol {
+	padding-left: 15px;
+}
+#content .hero {
+	padding-top: 22px;
+	height: 412px;
+	background: url(../images/hero-bg.jpg);
+}
+#content .hero .text {
+	float: left;
+	width: 360px;
+	padding: 30px 0 0 30px;
+}
+#content .hero .text h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	line-height: 35px;
+	color: #e8b197;
+}
+#content .hero .text p {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	line-height: 35px;
+}
+#content .hero .image {
+	position: relative;
+	float: right;
+	margin-right: 32px;
+}
+#content .hero .image .border {
+	position: absolute;
+	top: -3px;
+	left: -10px;
+	z-index: 2;
+}
+#content .feature {
+	padding: 32px 0 60px 0;
+}
+#content .feature .welcome {
+	float: left;
+	width: 535px;
+}
+#content .feature .welcome h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	font-weight: 300;
+}
+#content .feature .welcome .view {
+	display: block;
+	font-size: 15px;
+	color: #ab3a00;
+	font-weight: 700;
+}
+#content .feature .jewelry {
+	float: right;
+	width: 336px;
+	padding: 19px 31px 78px 31px;
+	background: #dacac3;
+}
+#content .feature .jewelry h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	font-weight: 300;
+	color: #4d4d4d;
+}
+#content .feature .jewelry p {
+	color: #414242;
+}
+#content .feature .jewelry .view {
+	display: block;
+	font-size: 16px;
+	color: #ab3a00;
+	font-weight: 700;
+}
+#normal #content {
+	padding-left: 56px;
+	padding-right: 56px;
+	width: 1088px;
+}
+#primary {
+	float: left;
+	padding-top: 13px;
+	width: 600px;
+}
+#secondary {
+	float: right;
+	padding: 30px 30px 20px 30px;
+	width: 286px;
+	background: #dacac3;
+}
+#primary h2 {
+	font-weight: 300;
+	font-size: 32px;
+	color: #4d4d4d;
+}
+#primary ul {
+	margin: 0;
+	padding-left: 15px;
+}
+#primary p,
+#primary li {
+	line-height: 17px;
+	margin-bottom: 15px;
+}
+#secondary h2 {
+	font-weight: 300;
+	font-size: 32px;
+	color: #666;
+}
+#secondary .image {
+	position: relative;
+}
+#secondary .image .border {
+	position: absolute;
+	top: -3px;
+	left: -5px;
+	z-index: 2;
+}
+#secondary p {
+	color: #414242;
+	line-height: 17px;
+}
+/* footer */
+#footer {
+	height: 86px;
+	background: #eddfd9;
+}
+#footer p {
+	margin: 0;
+	padding: 0 0 0 100px;
+	line-height: 86px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #3f4040;
+}
+#footer p a {
+	color: #3f4040;
+}
+/* gallery */
+#gallery #content {
+	padding-top: 18px;
+}
+.gallery {
+	
+}
+.gallery h2 {
+	padding-bottom: 10px;
+	padding-left: 70px;
+	font-weight: 300;
+	font-size: 24px;
+	color: #4d4d4d;
+}
+.gallery ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	width: 936px;
+}
+.gallery ul li {
+	float: left;
+	display: inline;
+	margin: 0 15px 35px 15px;
+	width: 204px;
+	height: 199px;
+	background: url(../images/image-border3.png) no-repeat;
+}
+.gallery ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gallery ul li a table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	height: 100%;
+}
+.gallery ul li a table td {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+/* products */
+#shop #content {
+	padding-left: 34px;
+	padding-right: 34px;
+	width: 1132px;
+}
+#product-list ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+#product-list ul li {
+	float: left;
+	margin: 0 5px 32px 5px;
+	padding: 20px 10px 10px 20px;
+	width: 335px;
+	border: 1px solid #f0efef;
+}
+#product-list ul li .product {
+	display: block;
+	margin-bottom: 36px;
+	height: 210px;
+}
+#product-list ul li table {
+	margin-bottom: 48px;
+	border-collapse: collapse;
+	border: none;
+	height: 136px;
+}
+table.product-info td {
+	border: none;
+	padding: 0 0 10px 0;
+	vertical-align: top;
+	font-family: "museo700",serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #4d4d4d;
+}
+table.product-info td.label {
+	padding-left: 15px;
+	padding-right: 18px;
+	width: 108px;
+	text-align: right;
+	color: #c6945e;
+}
+table.product-info td input {
+	margin-left: 0;
+}
+table.product-info td label {
+	margin-right: 5px;
+}
+.add-cart {
+	display: block;
+	width: 165px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #eddfd9;
+	font-family: "museo700",serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: #5a5755;
+}
+
+/* product */
+#product #content {
+	padding-left: 45px;
+	padding-right: 45px;
+	width: 1110px;
+}
+#product-detail .nav {
+	margin-bottom: 22px;
+	color: #d7a174;
+}
+#product-detail .nav a {
+	font-size: 18px;
+	color: #d7a174;
+}
+#product-detail .nav .next {
+	font-weight: 700;
+	color: #b15c11;
+}
+#product-detail .content .image {
+	float: left;
+	width: 497px;
+}
+#product-detail .content .text {
+	float: left;
+	width: 613px;
+}
+#product-detail .content .text table {
+	display: block;
+	width: 340px;
+	margin-bottom: 10px;
+	border: none;
+	border-collapse: collapse;
+	background: #ebeae9;
+	padding: 18px 12px 29px 0;
+}
+#product-detail .content .text .add-cart {
+	margin-bottom: 28px;
+}
+#product-detail .content .text .description h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+#product-detail .content .text .description p {
+	line-height: 22px;
+	margin: 20px 0;
+}
+#product-detail .content .text .description .name {
+	margin-top: 0;
+}
+#product-detail .content .text .description p.strong {
+	margin-bottom: 0;
+	font-weight: 700;
+}
+#product-detail .content .text .description ol {
+	margin-top: 0;
+	padding-left: 20px;
+}
+#product-detail .content .text .description p strong {
+	font-weight: 700;
+}
+#product-detail .content .text .description p a,
+#product-detail .content .text .description p .sep {
+	color: #d7a174;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

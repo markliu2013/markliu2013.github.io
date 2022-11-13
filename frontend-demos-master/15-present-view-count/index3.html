@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>present-view-count</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style>
+		#page {
+			margin: 0 auto;
+			width: 800px;
+		}
+		.present-view-count {
+			width: 100%;
+			white-space: nowrap;
+			overflow: scroll;
+		}
+		.present-view-count .media-wrap {
+			display: inline-block;
+			margin: 20px 0;
+		}
+		.present-view-count .media-wrap img {
+			display: block;
+		}
+		.present-view-count .media-wrap .media-view-count {
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+
+<body>
+
+<div id="page">
+	<div class="present-view-count" id="media-container">
+
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+		<div class="media-wrap">
+			<img src="01.jpg" alt="" />
+			<div class="media-view-count">0</div>
+		</div>
+	</div>
+</div>
+
+	<script>
+		var mediaJson = {
+			isInViewport: false,
+			startTimeInViewport: null, // current millisecond, when media scrolled into viewport, record the startTime
+			count: 0
+		};
+
+		var presentTime = 4000; // 4s, how long to present mean a view count?
+
+		// function to check an element if is in viewport.
+		function isInView(element, container) {
+			var left_of_element = $(element).offsetParent().left;
+			var right_of_element = $(element).offsetParent().left + $(element).outerWidth();
+			var right_of_screen = $(container).scrollLeft() + $(container).innerWidth();
+			var left_of_screen = $(container).scrollLeft();
+
+			if ((right_of_screen > left_of_element) && (left_of_screen < right_of_element)){
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		// interval to run, check the medias
+		function checkViewed() {
+			// this selector '.present-view-count .media-wrap', should be changed to yours.
+			var mediaContainer = document.getElementById('media-container');
+			$('.present-view-count .media-wrap').each(function(index, element) {
+				var preMediaJson = $(element).data('mediaJson');
+				preMediaJson = preMediaJson ? preMediaJson : JSON.parse(JSON.stringify(mediaJson));
+				if (parseInt(preMediaJson.count) > 0) return; // count only once in session, return to improve performance.
+				var newMediaJson = JSON.parse(JSON.stringify(preMediaJson));
+				var isInView = window.isInView(element, mediaContainer);
+				if (isInView) {
+					var curTime = new Date().getTime();
+					if (preMediaJson.isInViewport) {
+						if (preMediaJson.startTimeInViewport && curTime - preMediaJson.startTimeInViewport >= presentTime) {
+							newMediaJson.count = 1;
+						}
+					} else {
+						newMediaJson.startTimeInViewport = curTime;
+					}
+				} else {
+					newMediaJson.startTimeInViewport = null;
+				}
+				newMediaJson.isInViewport = isInView;
+				$(element).find('.media-view-count').text(newMediaJson.count);
+				// should add ajax request here, send media data to back end.
+				// TODO ajax request
+				$(element).data('mediaJson', newMediaJson);
+			});
+		}
+
+		$( document ).ready(function() {
+			// set a timer here, you can change the interval time
+			window.setInterval(checkViewed, 500)
+		});
+
+	</script>
+</body>
+</html>

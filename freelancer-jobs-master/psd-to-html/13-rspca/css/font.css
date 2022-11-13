@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Verdana Regular';
+	src: url('fonts/verdana.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Verdana Bold';
+	src: url('fonts/verdanab.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'KomikaAxis';
+    src: url('fonts/komikax-webfont.eot');
+    src: url('fonts/komikax-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/komikax-webfont.woff') format('woff'),
+         url('fonts/komikax-webfont.ttf') format('truetype'),
+         url('fonts/komikax-webfont.svg#komika_axisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

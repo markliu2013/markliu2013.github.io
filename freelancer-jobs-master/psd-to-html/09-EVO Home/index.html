@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<title>Evolved WebSite Home Page</title>
+<link href="style/font.css" rel="stylesheet" type="text/css" />
+<link href="style/reset.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'scrollLeft',
+		pager: '#page_nav',
+		next:   '#arrow_right', 
+    	prev:   '#arrow_left',
+		timeout: 1000,
+		speed: 500
+	});
+	
+});
+</script>
+</head>
+<body>
+<div id="page">
+  <div id="header" class="clearfix">
+    <a href="#"><img src="images/evolved-logo.png" width="209" height="34" alt="Evolved Websites Logo" /></a>
+  </div><!-- end header -->
+  <div id="menu" class="clearfix">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Case Studies</a></li>
+      <li><a href="#">About US</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div><!-- end menu -->
+  <div id="main">
+    <a class="arrow_left" id="arrow_left" href="#"><img src="images/arrow_left.gif" width="12" height="24" alt="Arrow Left" /></a>
+    <a class="arrow_right" id="arrow_right" href="#"><img src="images/arrow_right.gif" width="12" height="24" alt="Arrow Right" /></a>
+    <div id="slider" class="clearfix">
+      <div class="slideshow">
+        <div class="slider_content clearfix">
+          <div class="description">
+            <h3>Sales increased 300%...</h3>
+            <p>
+              We have tripled our sales...our customers who are generally older have had a real fear of buying online. 
+            </p>
+            <p>
+              With the new easy-to-use website and our great next-day delivery we have won over many new customers and tripled our sales. 
+            </p>
+            <span>Dick Ash<a href="#">www.okanui.com.au</a></span>
+            <div class="detail_link">
+              <a href="#">View Case Study<img src="images/arrow_detail.gif" width="5" height="8" alt="View Case Study" /></a>
+            </div><!-- end detail_link -->
+          </div><!-- end description -->
+          <div class="image">
+            <img src="images/Okanui.jpg" width="745" height="472" alt="Okan Image" />
+          </div><!-- end image -->
+        </div><!-- end slider_content -->
+        <div class="slider_content clearfix">
+          <div class="description">
+            <h3>Slide 2</h3>
+            <p>
+              Donec enim orci, ultricies in, malesuada quis, egestas quis, wisi. Donec ac sapien. Ut orci.
+            </p>
+            <p>
+              Duis ultricies, metus a feugiat porttitor, dolor mauris convallis est, quis mattis lacus ligula eu augue. Sed facilisis. Morbi lorem mi, tristique vitae, sodales eget, hendrerit sed, erat. Vestibulum eget purus vitae eros ornare adipiscing.
+            </p>
+            <span>Brookfarm<a href="#">www.brookfarm.com.au</a></span>
+            <div class="detail_link">
+              <a href="#">View Case Study<img src="images/arrow_detail.gif" width="5" height="8" alt="View Case Study" /></a>
+            </div><!-- end detail_link -->
+          </div><!-- end description -->
+          <div class="image">
+            <img src="images/Okanui.jpg" width="745" height="472" alt="Okan Image" />
+          </div><!-- end image -->
+        </div><!-- end slider_content2 -->
+        <div class="slider_content clearfix">
+          <div class="description">
+            <h3>Slide 3</h3>
+            <p>
+              Duis ultricies, metus a feugiat porttitor, dolor mauris convallis est, quis mattis lacus ligula eu augue. Sed facilisis. Morbi lorem mi, tristique vitae, sodales eget, hendrerit sed, erat. Vestibulum eget purus vitae eros ornare adipiscing.
+            </p>
+            <p>
+              Duis ultricies, metus a feugiat porttitor, dolor mauris convallis est, quis mattis lacus ligula eu augue. Sed facilisis. Morbi lorem mi, tristique vitae, sodales eget, hendrerit sed, erat. Vestibulum eget purus vitae eros ornare adipiscing.
+            </p>
+            <span>Brookfarm<a href="#">www.brookfarm.com.au</a></span>
+            <div class="detail_link">
+              <a href="#">View Case Study<img src="images/arrow_detail.gif" width="5" height="8" alt="View Case Study" /></a>
+            </div><!-- end detail_link -->
+          </div><!-- end description -->
+          <div class="image">
+            <img src="images/Okanui.jpg" width="745" height="472" alt="Okan Image" />
+          </div><!-- end image -->
+        </div><!-- end slider_content3 -->
+      </div><!-- end slideshow -->
+      <div id="page_nav_wrap" class="clearfix">
+        <div id="page_nav" class="clearfix">
+          
+        </div><!-- end page_nav -->
+      </div><!-- end page_nav_wrap -->
+      <div id="bottom_text">
+        <h3>TYPE HERE TITLE TWO</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+          Fusce eget erat eget libero mollis tristique. Quisque mattis nisl acte ligula. 
+          In egestas venenatis urna. Aliquam fringilla vulputate est est. Proin sollicitudin tellus. 
+          Cum quam eusimod sem, sempier ut potenti pellentesque quisque. 
+        </p>
+      </div><!-- end bottom_text -->
+    </div><!-- end slider -->
+  </div><!-- end main -->
+  <div id="footer">
+    <p>&copy; 2010 Evolved Websites  |  <a href="#">Sitemap</a>  |  page updated 01 Jan 2010  </p>
+  </div><!-- end footer -->
+</div><!-- end page -->
+</body>
+</html>

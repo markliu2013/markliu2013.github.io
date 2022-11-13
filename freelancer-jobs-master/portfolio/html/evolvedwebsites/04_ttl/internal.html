@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Product Page</title>
+<meta http-equiv="keywords" content="enter,your,keywords,here" />
+<meta http-equiv="description" content="A short description of this page." />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yesteryear|Source Sans Pro">
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/portfolio/script/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="js/jquery.effects.pulsate.js"></script>
+
+<script type="text/javascript">
+/* cart */
+$(function() {
+	$("#header .cart").hover(
+		  function () {
+			$(this).css("z-index", "99");
+    		$("#header .cart .header").css("background", "#085689");
+			$("#header .cart .info_wrap").css("display", "block");
+			$("#header .cart .footer").css("display", "block");
+  		  },
+		  function() {
+			$(this).css("z-index", "97");
+			$("#header .cart .header").css("background", "url(images/cart_title_bg.png) no-repeat");
+			$("#header .cart .info_wrap").css("display", "none");
+			$("#header .cart .footer").css("display", "none");
+		  }
+	);
+	
+	
+	/* cart fixed top */
+	var $cart = $(".cart");
+	var cartTop = parseInt($cart.css("top").replace("px",""));
+	$(window).scroll(function(e) {
+		var scroH = $(this).scrollTop();
+		var fixedTop = cartTop+scroH
+		//$cart.animate({top: cartTop+scroH+"px"}, 0);
+		$cart.css("top", cartTop+scroH+"px");
+	});
+		
+	
+	
+})
+function cartBuyAffect() {
+	$("#header .cart").effect("pulsate", {times: 3}, 1000, null);
+}
+</script>
+
+<!--[if IE]>
+	<script type="text/javascript">
+		
+		$(function() {
+			$("[placeholder]").focus(function() {
+			  var input = $(this);
+			  input.css("color","#000000");
+			  if (input.val() == input.attr("placeholder")) {
+				input.val("");
+			  }
+			}).blur(function() {
+			  var input = $(this);
+			  if (input.val() == "" || input.val() == input.attr("placeholder")) {
+				input.val(input.attr("placeholder"));
+				input.css("color","#c2c2c2");
+			  }
+			}).blur();
+
+
+			$("[placeholder]").parents("form").submit(function() {
+			  $(this).find("[placeholder]").each(function() {
+				var input = $(this);
+				if (input.val() == input.attr("placeholder")) {
+				  input.val("");
+				}
+			  })
+			});
+		})
+		
+	</script>
+<![endif]-->
+</head>
+<body id="internal">
+  <div id="header" class="clearfix">
+    <a href="#" class="logo"><img src="images/logo.png" width="247" height="70" alt="Logo" /></a>
+    <ul class="nav">
+      <li class="highlighted">
+        <a href="#">Shop</a>
+        <ul>
+          <li class="high-chai">
+            <div><span class="top"><a href="#">High Chai</a></span><span class="bottom">Exotic & Delicious</span></div>
+          </li>
+          <li class="summer-bird">
+            <div><span class="top"><a href="#">Summer Bird</a></span><span class="bottom">Golden lemon to refresh</span></div>
+          </li>
+          <li class="green-tea">
+            <div><span class="top"><a href="#">Green Tea Tonic</a></span><span class="bottom">Sencha leaf with jasmine</span></div>
+          </li>
+          <li class="rosy-tea">
+            <div><span class="top"><a href="#">Rosy Tea</a></span><span class="bottom">Rose and gentle spices</span></div>
+          </li>
+          <li class="nocturne">
+            <div><span class="top"><a href="#">Nocturne</a></span><span class="bottom">Chamomile blend for rest</span></div>
+          </li>
+          <li class="lighthouse-mint">
+            <div><span class="top"><a href="#">Lighthouse Mint</a></span><span class="bottom">Spearmint and lavendar</span></div>
+          </li>
+          <li class="liquorice-star">
+            <div><span class="top"><a href="#">Liquorice Star</a></span><span class="bottom">Roasted dandelion with a twist</span></div>
+          </li>
+          <li class="emerald-zing">
+            <div><span class="top"><a href="#">Emerald Zing</a></span><span class="bottom">Peppermint inspired</span></div>
+          </li>
+          <li class="rooibos-high">
+            <div><span class="top"><a href="#">Rooibos High Chai</a></span><span class="bottom">Caffienne-free classic</span></div>
+          </li>
+          <li class="ginger-bird">
+            <div><span class="top"><a href="#">Ginger Bird</a></span><span class="bottom">Summer Bird with a ginger kick</span></div>
+          </li>
+          <li class="earl-grey">
+            <div><span class="top"><a href="#">Earl Grey</a></span><span class="bottom">Bergamot infused 100% organic</span></div>
+          </li>
+          <li class="english-breakfast">
+            <div><span class="top"><a href="#">English Breakfast</a></span><span class="bottom">Classic favourite 100% organic</span></div>
+          </li>
+          <li class="last">
+            <div><span><a href="#">GIFTS AND TEAWARE</a></span></div>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Health Benefits</a></li>
+      <li><a href="#">Tea Stockists</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Links</a></li>
+    </ul><!-- end nav -->
+    <div class="cart">
+      <div class="header">Cart <span>0</span> items</div>
+      <div class="info_wrap">
+        <div class="info radius">
+          <div class="title">Cart Summary</div>
+          <p>
+            Free freight for orders over $50
+          </p>
+          <ul>
+            <li class="clearfix">
+              <span class="item"><a href="#">GREEN TEA TONIC Tin 100gm</a></span>
+              <span class="price">$18.95</span>
+            </li>
+            <li class="total clearfix">
+              <span class="item">Total</span>
+              <span class="price">$18.95</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer"><a href="#" class="radius">Checkout Now</a></div>
+    </div><!-- end cart -->
+    <img class="lady" src="images/lady.png" width="211" height="200" alt="Lady" />
+  </div><!-- end header -->
+  
+  <div id="content" class="page">
+    <img class="l" src="images/slider_c_l.png" width="181" height="180" alt="" />
+    <img class="r" src="images/slider_c_r.png" width="181" height="180" alt="" />
+    <div class="top clearfix">
+      <div class="img-holder">
+        <img src="images/dummy/green_tea_02.jpg" width="305" height="360" alt="" />
+        <div>
+          <p>
+            Regenerate with this zesty tonic, rich in anti-oxidants
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h1>Green Tea Tonic</h1>
+        <h2>Sencha leaf with jasmine</h2>
+        <p class="ingredients">
+          <strong>Ingredients: </strong>Sencha green tea*, ginger pieces*, jasmine flower
+        </p>
+        <p class="footer">
+          * Certified organic ingredients. Caffiene Free
+        </p>
+        <img src="images/underline_2.png" width="519" height="16" alt="" />
+        <ul>
+          <li class="first">
+            <div class="product clearfix">
+              <img src="images/dummy/tin.png" width="51" height="73" alt="" />
+              <h2>Tin</h2>
+              <span>100 grams</span>
+              <span>50 cups</span>
+            </div>
+            <div class="buy">
+              <span class="price">$18.95</span> <input type="text" value="1" /> <a href="javascript:void(0);" onclick="cartBuyAffect()" class="buy-button">Buy</a>
+            </div>
+          </li>
+          <li>
+            <div class="product clearfix">
+              <img src="images/dummy/refill.png" width="47" height="84" alt="" />
+              <h2>Refill Bag</h2>
+              <span>100 grams</span>
+              <span>50 cups</span>
+            </div>
+            <div class="buy">
+              <span class="price">$18.95</span> <input type="text" value="1" /> <a href="javascript:void(0);" onclick="cartBuyAffect()" class="buy-button">Buy</a>
+            </div>
+          </li>
+          <li class="last">
+            <div class="product clearfix">
+              <h2>Tea Bags</h2>
+              <span>20 bags</span>
+            </div>
+            <div class="buy">
+              <span class="price">$18.95</span> <input type="text" value="1" /> <a href="javascript:void(0);" onclick="cartBuyAffect()" class="buy-button">Buy</a>
+            </div>
+          </li>
+        </ul>
+        <img src="images/underline_2.png" width="519" height="16" alt="" />
+      </div>
+    </div><!-- end top -->
+    <div class="mid">
+      <div class="mid-inner clearfix">
+        <div class="tip">
+          <h2>Green Tea Brewing Tips</h2>
+          <p>
+            This tea is brewed simply by infusing one teaspoon per cup in a tea pot or plunger,
+            with boiling water. Let steep for 2 minutes to ensure the best flavour  - strain and serve.
+          </p>
+          <p>
+            It is recommended that Green Tea Tonic is enjoyed freshly made and not left to steep too long (only 2 minutes) 
+            as it can develop a bitter taste if over steeped.
+          </p>
+        </div><!-- end tip -->
+        <div class="about">
+          <h2>About this tea</h2> 
+          <p>
+            Green Tea has become popular in the Western world after being used as a staple herb in China for thousands of years.
+          </p>
+          <p>
+            The Tea Lady’s Green Tea Tonic is a fine blend of the highest quality Certified Organic Sencha Green Tea,
+            with nutritiously warming Certified Organic Ginger pieces and delicate, aromatic Jasmine Flowers.
+          </p>
+          <p>
+            These herbs combined create a delicious low caffeine, 
+            rejuvenating beverage which contains powerful anti-oxidants and 
+            is a fantastic tonic used to promote cardiovascular health.
+          </p>
+          <p>
+            <a href="#">Read more</a> about Green Tea Tonic including health benefits of this herbal tea
+          </p>
+        </div><!-- end about -->
+      </div><!-- end mid-inner -->
+    </div><!-- end mid -->
+    <div class="bottom clearfix">
+      <div class="description">
+        <h2>Gifts & Teaware</h2>  
+        <p><a href="#">Click here</a> to view our range of gifts and teaware.</p>
+      </div>
+      <div class="imgs">
+        <img src="images/dummy/Gifts_Teaware_01.jpg" width="128" height="120" alt="" />
+        <img src="images/dummy/Gifts_Teaware_02.jpg" width="128" height="120" alt="" />
+        <img src="images/dummy/Gifts_Teaware_03.jpg" width="128" height="120" alt="" />
+        <img src="images/dummy/Gifts_Teaware_04.jpg" width="128" height="120" alt="" />
+        <img src="images/dummy/Gifts_Teaware_05.jpg" width="128" height="120" alt="" />
+      </div>
+    </div><!-- end bottom -->
+
+<div class="sample">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<p>And some lovely lorem ipsum!</p>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<h4>Heading 4</h4>
+<p>Lorem ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><strong>Bold text ipsum dolor sit amet</strong>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<p><em>Italic text ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</em></p>
+<p><a href="/ecommerce/p/13">Links to something dolor sit amet</a>, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+<blockquote>
+<p>Blockquote blockquote ipsum dolor sit amet, adis consectetur adipiscing elit. Quisque pulvinar, justo vel molestie interdum, odio orci ornare arcu, et condimentum elit leo et enim. Nunc quis pulvinar urna. Aliquam et.</p>
+</blockquote>
+<ul>
+<li>bullet list 1</li>
+<li>bullet list 2</li>
+<li>bullet list 3</li>
+</ul>
+<ol>
+<li>numbered list 1</li>
+<li>numbered list 2</li>
+<li>numbered list 3</li>
+</ol>
+</div>
+    
+    
+  </div> <!-- end content -->
+  
+  <div id="footer" class="page">
+    <div class="col1">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li class="clearfix"><span class="item">Phone</span><span class="value">0408 922 652</span></li>
+        <li class="clearfix"><span class="item">Email</span><span class="value"><a href="mailto:sales@thetealady.com.au">sales@thetealady.com.au</a></span></li>
+        <li class="clearfix"><span class="item">Address</span><span class="value">P.O. Box 248, (22 Edina Street) Ferntreee Gully. Vic 3156</span></li>
+      </ul>
+    </div><!-- end col1 -->
+    <div class="col2">
+      <h3>join our mailing list</h3>
+      <p>And receive our free eBook report on organic tea blends, created by a medical herbalist Cath Minter:</p>
+      <form action="#" method="post">
+        <input class="text radius" type="text" name="name" placeholder="NAME" />
+        <input class="text radius" type="text" name="email" placeholder="EMAIL ADDRESS" />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div><!-- end col2 -->
+    <div class="col3">
+      <h3>promotion code</h3>
+      <form action="#" method="post">
+        <input class="text radius" type="text" name="code" placeholder="ENTER CODE" />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div><!-- end col3 -->
+    <img class="flower_l" src="images/flower_l.png" width="122" height="45" alt="" />
+    <img class="flower_r" src="images/flower_r.png" width="122" height="45" alt="" />
+  </div><!-- end footer -->
+  <div id="siteinfo">
+    <p>&copy; Copyright 2009 The Tea Lady   Privacy Policy   Sitemap. 17 Apr 2012   valid HTML by Evolved Websites</p>
+  </div><!-- end siteinfo -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

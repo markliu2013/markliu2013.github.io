@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Vimeo / Buick Six's videos</title>
+    <link>http://vimeo.com/buicksix/videos</link>
+    <description>Videos uploaded by Buick Six on Vimeo.</description>
+    <pubDate>Wed, 13 Mar 2013 05:51:24 -0400</pubDate>
+    <atom:link href="http://vimeo.com/buicksix/videos/rss" rel="self"/>
+    <generator>Vimeo</generator>
+    <image>
+      <url>http://b.vimeocdn.com/ps/272/574/2725745_100.jpg</url>
+      <title>Vimeo / Buick Six's videos</title>
+      <link>http://vimeo.com/buicksix/videos</link>
+    </image>
+    <item>
+      <title>ZOMG GRIFF ON DRUMZ</title>
+      <pubDate>Sun, 10 Apr 2011 05:51:39 -0400</pubDate>
+      <link>http://vimeo.com/22189404</link>
+      <dc:creator>Buick Six</dc:creator>
+      <description>&lt;p&gt;&lt;a href=&quot;http://vimeo.com/22189404&quot;&gt;&lt;img src=&quot;http://b.vimeocdn.com/ts/143/224/143224937_200.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;p class=&quot;first&quot;&gt;Bass players.  Woo.&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; &lt;a href=&quot;http://vimeo.com/buicksix&quot;&gt;Buick Six&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt; &lt;/p&gt;</description>
+      <guid isPermaLink="false">tag:vimeo,2011-04-10:clip22189404</guid>
+      <enclosure length="1119209" type="application/x-shockwave-flash" url="http://vimeo.com/moogaloop.swf?clip_id=22189404"/>
+      <media:content>
+        <media:player url="http://vimeo.com/moogaloop.swf?clip_id=22189404"/>
+        <media:credit role="author" scheme="http://vimeo.com/buicksix"></media:credit>
+        <media:thumbnail height="150" width="200" url="http://b.vimeocdn.com/ts/143/224/143224937_200.jpg"/>
+        <media:title>ZOMG GRIFF ON DRUMZ</media:title>
+      </media:content>
+    </item>
+    <item>
+      <title>Velvet (extended jam) - BUICK SIX</title>
+      <pubDate>Sat, 13 Nov 2010 01:36:45 -0500</pubDate>
+      <link>http://vimeo.com/16787966</link>
+      <dc:creator>Buick Six</dc:creator>
+      <description>&lt;p&gt;&lt;a href=&quot;http://vimeo.com/16787966&quot;&gt;&lt;img src=&quot;http://b.vimeocdn.com/ts/103/341/103341445_200.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;p class=&quot;first&quot;&gt;Sometimes we like to jam.&lt;/p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Cast:&lt;/strong&gt; &lt;a href=&quot;http://vimeo.com/buicksix&quot;&gt;Buick Six&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt;  &lt;a href=&quot;http://vimeo.com/tag:buicksix&quot;&gt;buick six&lt;/a&gt;,  &lt;a href=&quot;http://vimeo.com/tag:jam&quot;&gt;jam&lt;/a&gt;,  &lt;a href=&quot;http://vimeo.com/tag:band&quot;&gt;band&lt;/a&gt;  and &lt;a href=&quot;http://vimeo.com/tag:live&quot;&gt;live&lt;/a&gt;&lt;/p&gt;</description>
+      <guid isPermaLink="false">tag:vimeo,2010-11-13:clip16787966</guid>
+      <enclosure length="13282630" type="application/x-shockwave-flash" url="http://vimeo.com/moogaloop.swf?clip_id=16787966"/>
+      <media:content>
+        <media:player url="http://vimeo.com/moogaloop.swf?clip_id=16787966"/>
+        <media:credit role="author" scheme="http://vimeo.com/buicksix"></media:credit>
+        <media:thumbnail height="150" width="200" url="http://b.vimeocdn.com/ts/103/341/103341445_200.jpg"/>
+        <media:title>Velvet (extended jam) - BUICK SIX</media:title>
+      </media:content>
+    </item>
+  </channel>
+</rss>

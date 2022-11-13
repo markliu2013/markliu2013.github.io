@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>present-view-count</title>
+    <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+    <style>
+        ul {
+            list-style: none;
+        }
+        #page {
+            margin: 0 auto;
+            width: 800px;
+        }
+        .gallery-container {
+            width: 100%;
+        }
+        .slider-section {
+            position: relative;
+        }
+        .slider-panel {
+            margin: 0;
+            overflow-x: scroll!important;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+        .media-contain ul {
+            margin: 0px;
+            padding: 0px;
+            white-space: normal;
+            list-style: none;
+        }
+        .gallery-slider {
+            margin: 0px;
+            padding: 0px;
+            white-space: nowrap;
+            display: inline-flex;
+            width: auto !important;
+        }
+        .gallery-item {
+            position: relative;
+            list-style: none;
+            display: table;
+            width: 180px;
+            border-radius: 3px;
+            background: #FFF;
+            margin: 3px;
+            padding: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+        }
+        .media-view-count {
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="page">
+    <section class="gallery-container mt-4">
+
+        <div class="slider-section">
+            <div class="slider-panel" id="middle-slider">
+                <ul id="gallery_loader" class="gallery-slider slider-inner">
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader1">
+                        <div class="gallery-info">
+                                <div class="img_list">
+                                    <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                    <div class="media-view-count"></div>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader2">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader3">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader4">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader5">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader6">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader7">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader8">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader9">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader10">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader11">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery-item gallery_intial_loader h110" id="gallery_intial_loader12">
+                        <div class="gallery-info">
+                            <div class="img_list">
+                                <img class="gal-list img-fluid 0" src="01.jpg" alt="" />
+                                <div class="media-view-count"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script>
+
+    function throttle(fn, wait) {
+        var time = Date.now();
+        return function() {
+            if ((time + wait - Date.now()) < 0) {
+                fn();
+                time = Date.now();
+            }
+        }
+    }
+
+    var mediaJson = {
+        isInViewport: false,
+        startTimeInViewport: null, // current millisecond, when media scrolled into viewport, record the startTime
+        viewDurations: new Array(),
+    };
+
+    var mediaPadding = 10;
+
+    function mediaIsInView(element) {
+        var left_of_element = $(element).position().left + mediaPadding;
+        if (left_of_element < 0) return false;
+        var right_of_element = $(element).position().left + $(element).innerWidth() - mediaPadding;
+        var container_width = $('#middle-slider').innerWidth();
+        if (right_of_element > container_width)  return false;
+        return true;
+    }
+
+    function checkViewed() {
+        $('.gallery-container .gallery-item').each(function(index, element) {
+            var preMediaJson = $(element).data('mediaJson');
+            preMediaJson = preMediaJson ? preMediaJson : JSON.parse(JSON.stringify(mediaJson));
+            var newMediaJson = JSON.parse(JSON.stringify(preMediaJson));
+            var isInView = window.mediaIsInView(element);
+            var curTime = new Date().getTime();
+            if (isInView && !preMediaJson.isInViewport) {
+                newMediaJson.startTimeInViewport = curTime;
+            }
+            if (!isInView && preMediaJson.isInViewport) {
+                if (preMediaJson.startTimeInViewport) {
+                    var duration = new Array(2);
+                    duration[0] = preMediaJson.startTimeInViewport;
+                    duration[1] = curTime;
+                    newMediaJson.viewDurations.push(duration);
+                }
+            }
+            newMediaJson.isInViewport = isInView;
+            if (!isInView) {
+                newMediaJson.startTimeInViewport = null;
+            }
+            var viewRow = '';
+            for (var i = 0; i < newMediaJson.viewDurations.length; i++) {
+                var startDate = new Date(parseInt(newMediaJson.viewDurations[i][0]));
+                var endDate = new Date(parseInt(newMediaJson.viewDurations[i][1]));
+                var startDateStr = startDate.getHours()+':'+startDate.getMinutes()+':'+startDate.getSeconds();
+                var endDateStr = endDate.getHours()+':'+endDate.getMinutes()+':'+endDate.getSeconds();
+                viewRow += '<div>'+startDateStr+'-'+endDateStr+'</div>'
+            }
+            $(element).find('.media-view-count').html(viewRow);
+            // should add ajax request here, send media data to back end.
+            // TODO ajax request
+            $(element).data('mediaJson', newMediaJson);
+        });
+    }
+
+    $( document ).ready(function() {
+        checkViewed();
+        $('#middle-slider').on('scroll', throttle(checkViewed, 100));
+        // I skipped window scroll for now.
+    });
+</script>
+</body>
+</html>

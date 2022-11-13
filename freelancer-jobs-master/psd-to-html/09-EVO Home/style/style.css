@@ -1,0 +1,190 @@
+/* Clear Floats Without Structural Markup */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* Layout */
+body {
+	margin: 0 auto;
+	font-size: 62.5%;
+	font-family: Futura Book, Verdana, Geneva, sans-serifVerdana;
+	background: #0a0a0a url(../images/bg.png) repeat-x;
+}
+#page {
+	width: 1200px;
+	margin: 0 auto;
+}
+/* Header */
+#header a {
+	display: block;
+	float: left;
+	display: inline;/* for ie6 */
+	margin: 30px 0 0 100px;
+}
+/* Menu */
+#menu ul {
+	float: right;
+	margin-right: 91px;
+}
+#menu ul li {
+	float: left;
+	margin-left: 1px;
+}
+#menu ul li a {
+	display: block;
+	width: 79px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	font-size: 1.093em;
+	color: #cecece;
+	background: url(../images/menu_bg_inactive.gif);
+}
+#menu ul li a:hover {
+	color: #dde791;
+}
+#menu ul li.current a {
+	color: #dde791;
+	background: url(../images/menu_bg_active.gif)
+}
+/* Main */
+#main a.arrow_left {
+	float: right;
+	display: inline;/* for ie6 */
+	width: 12px;
+	height: 24px;
+	margin: 255px 0 0 35px;
+	float: left;
+}
+#main a.arrow_right {
+	float: right;
+	display: inline;/* for ie6 */
+	width: 12px;
+	height: 24px;
+	margin: 255px 35px 0 0;
+}
+/* Main -> Slider */
+#slider {
+	width: 1067px;
+	height: 625px;
+	margin-left: 67px;
+	background: url(../images/slider_bg.gif) 0 0 no-repeat;
+}
+/* Main -> Slider -> Slider Content -> Description */
+div#slider .description {
+	float: left;
+	display: inline;/* for ie6 */
+	width: 231px;
+	height: 348px;
+	margin: 76px 0 0 32px;
+}
+div#slider .description h3 {
+	margin: 5px 0 33px 5px;
+	font-family: Futura Bold, Verdana;
+	font-weight: normal;
+	font-size: 2.623em;
+	color: #cecece;
+}
+div#slider .description p {
+	margin: 0 0 20px 5px;
+	line-height: 1.5;
+	font-family: Futura Light, Verdana;
+	font-weight: normal;
+	font-size: 1.53em;
+	color: #e3dfdf;
+}
+div#slider .description span {
+	margin: 0 0 0 5px;
+	font-family: Futura Light, Verdana;
+	font-weight: normal;
+	font-size: 1.093em;
+	color: #e3dfdf;
+}
+div#slider .description span a {
+	margin: 5px 0 0 5px;
+	display:block;
+	color: #e3dfdf;
+	text-decoration:underline;
+}
+div#slider .description .detail_link {
+	width: 198px;
+	height: 27px;
+	padding-left: 5px;
+	margin: 68px 0 0 0;
+	background: url(../images/detail_link_bg.jpg);
+}
+div#slider .description .detail_link a {
+	display: block;
+	height: 27px;
+	font-family: Futura Bold, Verdana;
+	line-height: 27px;
+	font-size: 0.874em;
+	color: #c4d82e;
+}
+div#slider .description .detail_link a img {
+	margin-left: 26px;
+}
+div#slider .image {
+	float: right;
+	width: 764px;
+	height: 490px;
+	margin: 30px 0 0 24px;
+	background: url(../images/image_shadow_bg.jpg);
+}
+div#slider .image img {
+	display: block;
+	padding:7px 0 0 10px;
+}
+/* Main -> Slider -> Page Nav Wrap -> Page Nav */
+#page_nav {
+	float: right;
+	display: inline;/* for ie6 */
+	margin: 6px 24px 0 0;
+}
+#page_nav a {
+	float: left;
+	margin: 0 0 0 10px;
+	font-family: Tahoma, Verdana;
+	font-size: 0.874em;
+	color: #cecece;
+}
+#page_nav a:hover, #page_nav a.activeSlide {
+	text-decoration: underline;
+}
+/* Main -> Slider -> Bottom Text */
+#bottom_text {
+	width: 515px;
+	margin: 20px 0 0 290px;
+	color: #cecece;
+}
+#bottom_text h3 {
+	line-height: 1.5;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 0.874em;
+}
+#bottom_text p {
+	line-height: 1.5;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 0.874em;
+}
+/* Footer */
+#footer p {
+	padding: 5px 0 5px 67px;
+	font-family: Tahoma;
+	font-size: 0.9em;
+	color: #969393;
+}
+#footer p a {
+	font-family: Tahoma;
+	font-size: 0.9em;
+	color: #969393;
+}

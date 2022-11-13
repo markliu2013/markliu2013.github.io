@@ -1,0 +1,10 @@
+1. 背景图片跟随viewpoint 比率变化
+2. 文字在固定地方,大小可变
+
+对应upwork case 03
+
+dynamic font size to fit div
+https://codepen.io/LukeXF/pen/yOQWNb
+https://stackoverflow.com/questions/6364310/dynamic-text-fitting-into-div
+
+https://github.com/jquery-textfill/jquery-textfill/

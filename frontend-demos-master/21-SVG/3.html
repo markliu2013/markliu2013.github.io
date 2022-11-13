@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <style>
+        #page {
+            margin: 0 auto;
+            width: 800px;
+            border: 1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+
+<div id="page">
+    <svg width="800" height="800">
+        <text x="5" y="30">A nice rectangle</text>
+
+        <path d="M 200 200 L 200 300  L 300 300 Z"
+              fill="#59fa81" stroke="#d85b49" stroke-width="3" />
+
+    </svg>
+    <svg width="200" height="200" style="border: 1px solid #0f0;">
+        <circle cx="100" cy="100" r="100" fill="#529fca" />
+    </svg>
+
+
+    <svg width="200" height="200" viewBox="0 0 100 100" style="border: 1px solid #0f0;">
+        <circle cx="100" cy="100" r="100" fill="#529fca" />
+    </svg>
+
+    <svg width="200" height="100" viewBox="0 0 200 100">
+        <path d="M10 10 C 100 100, 150 100, 150 10" stroke="#000" fill="transparent"/>
+    </svg>
+
+</div>
+
+
+</body>
+</html>

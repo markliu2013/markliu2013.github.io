@@ -1,0 +1,4 @@
+dear Mingwei: I am looking for an open source code for a video audo player which can play files of all leading formats.. The layout of this player needs to look like this and it should also adjust in responsive UI and work on all browsers and devices.  By any chance do you have any pointers ?
+
+
+https://www.linkedin.com/company/diversified-/videos/

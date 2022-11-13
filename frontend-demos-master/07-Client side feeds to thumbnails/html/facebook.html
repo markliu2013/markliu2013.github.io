@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+</head>
+<body>
+  <div id="images">
+ 
+</div>
+<script>
+$.getJSON("https://graph.facebook.com/nospuds?fields=photos.type(uploaded)&callback=?",
+  
+  function(data) {
+    $.each(data.photos.data, function(i,item){
+		console.log(item.picture);
+    });
+  });</script>
+ 
+</body>
+</html>
