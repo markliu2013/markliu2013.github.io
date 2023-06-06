@@ -292,7 +292,7 @@
             <p class="panel-subheading">Creator</p>
             <p class="panel-postscript">Nov 2017 – Mar 2018(4 mos)</p>
             <p class="panel-postscript">Technologies: VueJS, Restful API, Mobile Responsive</p>
-            <p>The project contains the public modules for developing Hybrid App, I created a private npm repository server use sinopia to hold the modules. The modules contains 4 parts, driver, util, UI and package.</p>
+            <p>The project contains the public modules for developing Hybrid App, I created a private npm repository server use sinopia to hold the modules, driver, util, UI and package.</p>
             <p>The driver part is the bridge between html5 and native, you can invoke native method in html5, invoke JavaScript method in native. It contains jsbridge-core, jsbridge-util and jsbridge-shim, provides method about net, cache, forward and ui(native).</p>
             <p>The util part provides JavaScript util methods, like DateUtil, CheckUtil, Request, CustomerUtil, etc. It is easy to extend new features.</p>
             <p>The UI part encapsulates public ui for your, like toast, dialog(alert, confirm), date, etc.</p>
@@ -306,7 +306,6 @@
             <p class="panel-subheading">Creator</p>
             <p class="panel-postscript">Mar 2017 – Oct 2017(3 mos)</p>
             <p class="panel-postscript">Technologies: Golang, TCP, HTTP</p>
-            <p>The project contains the public modules for developing Hybrid App, I created a private npm repository server use sinopia to hold the modules. The modules contains 4 parts, driver, util, UI and package.</p>
             <p>The main function of the service is pull message from our system, then push to our customer's mobile device, there are broadcast message and customer message. The service can support different products in the company, and each module has their own running thread, it is very independent. The whole service is very easy to be extended, like add new products and new features.</p>
             <p>I built the service from scratch using golang, I separated the service to different modules, include pull, pool, store, connect, push and log.</p>
             <p>The pull module is a thread to pull messages from other system by RESTful API. It is a timer ticker to pull every 5 minutes, you can change the timer by a config file. The pull module support multiple product, each product has its own thread. It is very easy to add new API as data input, and won't affect other modules. Different API data will be converted to uniformed Message struct in service.</p>
